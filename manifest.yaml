@@ -1,0 +1,17 @@
+specVersion: "1"
+id: lax-496464
+leanVersion: "v4.33.0"
+mathlibVersion: "db584cd6d46c92f209a44c0f1c829460d327499d"
+title: "Just-in-time scheduling in two-stage flexible flow shops"
+authors:
+  - name: Yuval Itzhaki
+    github: yuvalyitz
+  - name: Claude
+bibEntries:
+  - "@article{heeger2026jitflowshop,\n  author  = {Heeger, Klaus and Hermelin, Danny and Itzhaki, Yuval and Schieber, Baruch and Shabtay, Dvir},\n  title   = {Just-in-time scheduling in two-stage flexible flow shops},\n  journal = {European Journal of Operational Research},\n  volume  = {333},\n  pages   = {652--664},\n  year    = {2026},\n  doi     = {10.1016/j.ejor.2026.02.017}\n}\n"
+  - "@incollection{karp1972reducibility,\n  author    = {Karp, Richard M.},\n  title     = {Reducibility among combinatorial problems},\n  booktitle = {Complexity of Computer Computations},\n  editor    = {Miller, Raymond E. and Thatcher, James W.},\n  publisher = {Plenum Press},\n  address   = {New York},\n  pages     = {85--103},\n  year      = {1972},\n  doi       = {10.1007/978-1-4684-2001-2_9}\n}\n"
+  - "@book{garey1979computers,\n  author    = {Garey, Michael R. and Johnson, David S.},\n  title     = {Computers and Intractability: A Guide to the Theory of NP-Completeness},\n  publisher = {W. H. Freeman},\n  year      = {1979}\n}\n"
+  - "@book{downey1999parameterized,\n  author    = {Downey, Rodney G. and Fellows, Michael R.},\n  title     = {Parameterized Complexity},\n  publisher = {Springer},\n  year      = {1999}\n}\n"
+  - "@article{fulkerson1965incidence,\n  author  = {Fulkerson, Delbert R. and Gross, Oliver A.},\n  title   = {Incidence matrices and interval graphs},\n  journal = {Pacific Journal of Mathematics},\n  volume  = {15},\n  number  = {3},\n  pages   = {835--855},\n  year    = {1965}\n}\n"
+  - "@incollection{hoffman1956integral,\n  author    = {Hoffman, Alan J. and Kruskal, Joseph B.},\n  title     = {Integral boundary points of convex polyhedra},\n  booktitle = {Linear Inequalities and Related Systems},\n  pages     = {223--246},\n  publisher = {Princeton University Press},\n  year      = {1956}\n}\n"
+  - "@article{carlisle1995coloring,\n  author  = {Carlisle, Martin C. and Lloyd, Errol L.},\n  title   = {On the $k$-coloring of intervals},\n  journal = {Discrete Applied Mathematics},\n  volume  = {59},\n  number  = {3},\n  pages   = {225--235},\n  year    = {1995}\n}\n"
