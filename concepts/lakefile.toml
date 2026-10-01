@@ -30,5 +30,34 @@ git = "https://github.com/EdouardBonnet/cook-levin"
 rev = "905f2da2698d5b38002676f74632aa716e731389"
 subDir = "concepts"
 
+# parameterized problems and strict fpt-reductions on the word RAM; a path require while
+# lax-888481 is a draft, to become a git require on its registered commit
+[[require]]
+name = "Lax888481"
+path = "../../isem-lax/concepts"
+
+# the compressed sparse row encoding of a graph, and the graph-with-parameter word format
+[[require]]
+name = "Lax271696"
+git = "https://github.com/lax-archive/lax-submissions"
+rev = "0503df0eaf4e41104b9a3aa31e3e028b5adf7a0e"
+subDir = "ram-linear-time/concepts"
+
+# Independent Set on adjacency-matrix words, and its NP-hardness
+[[require]]
+name = "Lax762056"
+git = "https://github.com/EdouardBonnet/dms-conjecture"
+rev = "9b1cc5b95978a6f5e63bca5bcbf7262a1bd7a25c"
+subDir = "concepts"
+
+# polynomial-time computation on the word RAM
+[[require]]
+name = "Lax759944"
+git = "https://github.com/szymtor/RAM-TM"
+rev = "134e398cef46599371df99f10c9007bc34ba3868"
+subDir = "concepts"
+
+# CNF formulas and their evaluation (Cook–Levin)
+
 [[lean_lib]]
 name = "Lax496464"

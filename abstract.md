@@ -49,3 +49,23 @@ polynomial running time is transferred to a Turing machine. For the reduction fr
 Set the encoding of Hitting Set requires the universe to be no larger than the word that
 presents it, since otherwise a word of a few entries could name a universe no reduction could
 write in time bounded by the word.
+
+**The W-hierarchy.** The submission also formalizes the theory that W[1]- and W[2]-hardness proofs
+rely on, following Flum and Grohe (*Parameterized Complexity Theory*, 2006). Fixed-parameter time is
+$f(k)\cdot|x|^{O(1)}$ with computable $f$, on the word RAM with the bit size of the input as input
+size; fpt-reductions are stated as three separately provable conditions — construction and
+correctness, a computable bound on the new parameter, and the running time. On top of these come
+finite relational structures, first-order formulas and the classes $\Sigma_t$ and $\Pi_t$, model
+checking and weighted Fagin definability, and the classes W[$t$] and A[$t$]. Clique, Independent Set,
+Dominating Set, Hitting Set — the problem of the flow shop reductions above — and weighted CNF
+satisfiability are defined on the archive's existing word formats.
+
+The results are the calculus of fpt-reductions and the conditional lower bound "not in FPT unless
+W[$t$] $\subseteq$ FPT"; bridges turning the polynomial-time and strict fpt-reductions already in the
+archive into fpt-reductions; that Clique, Independent Set and Multicoloured Clique are
+W[1]-complete, Clique is A[1]-complete, and W[1] = A[1]; that Hitting Set and Dominating Set are
+W[2]-complete; and that Multicoloured Clique is NP-hard, by a reduction from Independent Set that is
+both an fpt-reduction and a polynomial-time reduction. The intermediate results are stated
+separately — Lemmas 6.11, 6.13 and 6.14, Lemma 6.37, Theorem 6.28, and Theorem 7.1 for $t = 2$ — and
+every reduction is proved with its construction, its parameter bound, and a verified word-RAM program
+bounding its running time.

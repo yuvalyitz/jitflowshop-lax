@@ -68,5 +68,18 @@ git = "https://github.com/EdouardBonnet/classical-complexity"
 rev = "0c0840319318215fd7b36a9a822b81ce55cf6941"
 subDir = "proofs"
 
+# parameterized problems and strict fpt-reductions on the word RAM; a path require while
+# lax-888481 is a draft, to become a git require on its registered commit
+[[require]]
+name = "Lax888481"
+path = "../../isem-lax/concepts"
+
+# Independent Set on adjacency-matrix words, and its NP-hardness
+[[require]]
+name = "Lax762056"
+git = "https://github.com/EdouardBonnet/dms-conjecture"
+rev = "9b1cc5b95978a6f5e63bca5bcbf7262a1bd7a25c"
+subDir = "concepts"
+
 [[lean_lib]]
 name = "Lax496464Proofs"
