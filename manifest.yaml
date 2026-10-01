@@ -15,3 +15,6 @@ bibEntries:
   - "@article{fulkerson1965incidence,\n  author  = {Fulkerson, Delbert R. and Gross, Oliver A.},\n  title   = {Incidence matrices and interval graphs},\n  journal = {Pacific Journal of Mathematics},\n  volume  = {15},\n  number  = {3},\n  pages   = {835--855},\n  year    = {1965}\n}\n"
   - "@incollection{hoffman1956integral,\n  author    = {Hoffman, Alan J. and Kruskal, Joseph B.},\n  title     = {Integral boundary points of convex polyhedra},\n  booktitle = {Linear Inequalities and Related Systems},\n  pages     = {223--246},\n  publisher = {Princeton University Press},\n  year      = {1956}\n}\n"
   - "@article{carlisle1995coloring,\n  author  = {Carlisle, Martin C. and Lloyd, Errol L.},\n  title   = {On the $k$-coloring of intervals},\n  journal = {Discrete Applied Mathematics},\n  volume  = {59},\n  number  = {3},\n  pages   = {225--235},\n  year    = {1995}\n}\n"
+paper:
+  folder: paper
+  main: main.tex
