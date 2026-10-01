@@ -39,11 +39,12 @@ rev = "134e398cef46599371df99f10c9007bc34ba3868"
 subDir = "concepts"
 
 # the word-RAM/Turing-machine bridge (`RamToTuring`, `TMCompose`, `TMToNats`, `TMToBits`), the
-# input reader, the CNF scan and the number writer; a path require while lax-391470 is a draft,
-# to become a git require on its registered commit
+# input reader, the CNF scan and the number writer; lax-391470 at its registered commit
 [[require]]
 name = "Lax391470Proofs"
-path = "../../rjlmax-lax/proofs"
+git = "https://github.com/yuvalyitz/rjlmax-lax"
+rev = "6268ca44402d39b523265ae02123b467fe8af2d4"
+subDir = "proofs"
 
 # the Cook–Levin theorem, CNF formulas and their encoding, polynomial many-one reductions
 [[require]]

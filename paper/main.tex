@@ -334,7 +334,8 @@ carries weight $W'$ exactly when a feasible set of weight $W'$ exists.
 % lax begin Lax496464.Profile
 The second program sweeps the jobs in EST order and carries, instead of the selected jobs alive
 at $s_j$, only their \emph{profile}: the vector $\vecx\in\{0,\ldots,m\}^{\qmax}$ whose $i$th
-entry counts the selected jobs due at $s_j+i$. Stepping from $s_{j-1}$ to $s_j$ moves the
+entry is the number of machines that complete their last selected job at $s_j+i$, equivalently
+the number of selected jobs due at $s_j+i$. Stepping from $s_{j-1}$ to $s_j$ moves the
 reference point by $\delta_j=s_j-s_{j-1}$, so a profile at $s_{j-1}$ becomes a profile at $s_j$
 shifted by $\delta_j$; let $\vecx[\delta]$ be the set of vectors that shift to $\vecx$, and
 $\vecx^{(q)}$ the vector with entry $q$ decreased by one. The table
@@ -353,10 +354,16 @@ The first case passes job $j$ over, the second selects it (\Cref{fig:profile}).
 
 \begin{figure}[tb]
     \centering
-    \input{figures/profile}
-    \caption{The profile for $\qmax=4$ and its update from $s_{j-1}$ to $s_j=s_{j-1}+2$. The
-    entries of the profile at $s_{j-1}$ for $i\le\delta_j$ are dropped, and the others move left
-    by $\delta_j$; selecting a job $j$ with $q_j=3$ adds one to entry $3$.}
+    \input{figures/dp_visualized}
+    \caption{The dynamic program visualized. A set~$\calZ$ of jobs is shown in three reference
+    frames: the top axis is the main line beginning at $0$, the middle axis the reference of $j-1$
+    beginning at $s_{j-1}$, and the bottom one the reference of $j$ beginning at $s_j$. The boxes
+    above each sliding window represent the number of machines that complete processing their last
+    job at that time. In the example, assuming that all jobs can be preprocessed in time, $\calZ$
+    has profile $\vecx$ at $s_j$ and the solution $\calZ\setminus\{j\}$ has profile $\vec y$ at
+    $s_{j-1}$, with $\qmax=9$, $\delta_j=3$, $\vecx=(0,1,0,2,0,0,0,1,0)$ and
+    $\vec y=(0,1,0,0,1,0,2,0,0)$. Observe that $\vec y\in\vecx^{(q_j)}[\delta_j]$, and also
+    $\vec y\in\vecx[\delta_j]$; in the example this set is $\vecx^{(8)}[3]$.}
     \label{fig:profile}
 \end{figure}
 
