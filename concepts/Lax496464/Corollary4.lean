@@ -7,27 +7,19 @@ import Lax496464.W2Hardness
 title: Corollary 4
 type: theorem
 ---
-Just-in-time scheduling in a two-stage flexible flow shop is W[2]-hard with respect to
-the number $m$ of second-stage machines. So it is fixed-parameter tractable for that
-parameter only if $\mathrm{W}[2] = \mathrm{FPT}$, and the dependence on $m$ in the
-running time of the paper's first dynamic program cannot be confined to a function of
-$m$ alone.
+There exists an FPT-reduction from Hitting Set, parameterized by solution size, to
+just-in-time scheduling parameterized by the number of second-stage machines.
+The construction preserves the parameter: a hitting-set instance with solution size
+$k$ produces a shop with exactly $k$ machines.
 
-The construction of the previous theorem is already an fpt-reduction for this parameter:
-the shop it builds has exactly $k$ machines, so the new parameter is the old one, and
-everything else about the construction is polynomial in the size of the instance it
-reads.
+The W[2]-hardness consequence follows from the W[2]-hardness of Hitting Set.
 
 # Formalization Notes
 
-The claim is about the parameterized problem whose parameter is the word's second entry,
-the number of machines, and it unfolds to the existence of an fpt-reduction from Hitting
-Set, parameterized by the solution size. Nothing about the class W[2] appears, by the
-choice made in the definition of W[2]-hardness.
-
-The parameter is preserved exactly rather than merely bounded, which is stronger than
-what an fpt-reduction requires. The bound is the identity, and stating it that way would
-add nothing to the claim that is proved.
+The statement uses `W2Hard`, which unfolds to the existence of this reduction.
+Its proof establishes correctness and the required running-time and parameter bounds.
+It does not depend on the supporting `WH_*` development, included for completeness
+beyond the scope of the scheduling project.
 -/
 
 namespace Lax496464.Corollary4

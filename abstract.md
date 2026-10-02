@@ -10,12 +10,16 @@ algorithm for equal preprocessing times and unit weights, a totally unimodular i
 program for proper instances with equal preprocessing times, and approximation schemes
 for bounded $m$, $\omega$ or $q_{\max}$. Here $W$ is the total job weight, $\omega$ is
 the maximum overlap of second-stage intervals, and $q_{\max}$ is the largest second-stage
-processing time. A reduction from Hitting Set establishes strong NP-hardness and
-W[2]-hardness for the number of machines, even with unit weights.
+processing time. The formalized reduction from Hitting Set preserves the solution-size parameter as the
+number of machines and produces instances with unit weights. Strong NP-hardness and
+W[2]-hardness follow from the corresponding hardness of Hitting Set and the bounds
+established for the reduction.
 
-The submission also formalizes the W-hierarchy foundations used in the parameterized
-hardness arguments, following Flum and Grohe (2006). This supporting development includes
-FPT-reductions and the relevant completeness results for standard parameterized problems.
+**The W-Hierarchy.** For completeness, the submission includes a supporting development
+of the W-hierarchy following Flum and Grohe (2006). This material goes beyond the scope
+of the scheduling project. The scheduling theorem for parameterized hardness states the
+existence of an FPT-reduction from Hitting Set; its interpretation as W[2]-hardness uses
+the W[2]-hardness of Hitting Set.
 
 **Machine Model and Hypotheses.** Algorithms and reductions are implemented on the
 archive's word RAM through its verified IMP+ compiler. Scheduling running-time

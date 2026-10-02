@@ -55,10 +55,12 @@ the jobs whose second operation ends exactly at their due date. Heeger, Hermelin
 Schieber and Shabtay~\cite{HHISS26} characterize the sets of jobs that can all be completed
 just in time, give five algorithms built on the characterization, and show that the problem
 is strongly \NP-hard, and \Wtwo-hard for the number of machines, already for unit weights.
-All of these results are proved in Lean, including the running times of the algorithms as word
-RAM programs and the \NP-hardness of \HS. This note presents the scheduling results in the
-notation of~\cite{HHISS26}, with links to Lean. The accompanying archive's concept pages
-also document the W-hierarchy development.
+The formalization verifies the scheduling algorithms as word RAM programs and the reductions
+from \HS, including their correctness and complexity bounds. The hardness consequences
+follow from the corresponding hardness of \HS; its \NP-hardness is also formalized.
+This note presents the scheduling results in the notation of~\cite{HHISS26}, with links
+to Lean. For completeness, the accompanying archive includes a supporting W-hierarchy
+development, which goes beyond the scope of this scheduling project.
 \end{abstract}
 
 \section{Introduction}
@@ -622,8 +624,9 @@ $\FFu$ is \Wtwo-hard with respect to the number $m$ of machines.
 \end{corollary}
 % lax begin Lax496464Proofs.Corollary4.w2Hard_byMachines
 The shop of \Cref{const:hardness} has exactly $k$ machines, so the construction is an
-fpt-reduction from \HS. Hence an algorithm with running time $f(m)\cdot n^{O(1)}$ would give
-$\FPT=\Wtwo$.
+fpt-reduction from \HS. This existence of a reduction is the formal statement.
+Together with the W[2]-hardness of \HS, it yields the stated hardness consequence;
+an algorithm with running time $f(m)\cdot n^{O(1)}$ would therefore give $\FPT=\Wtwo$.
 % lax end
 % lax end
 

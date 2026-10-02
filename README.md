@@ -1,4 +1,4 @@
-# Just-in-Time Scheduling in Two-Stage Flexible Flow Shops and the W-Hierarchy
+# Just-in-Time Scheduling in Two-Stage Flexible Flow Shops
 
 A [Lax archive](https://github.com/lax-archive/lax) submission (`lax-496464`) formalizing the
 paper of Heeger, Hermelin, Itzhaki, Schieber and Shabtay on the two-stage flexible flow shop
@@ -6,10 +6,11 @@ paper of Heeger, Hermelin, Itzhaki, Schieber and Shabtay on the two-stage flexib
 just in time, the five algorithms built on it, and the hardness of the general case. See
 `abstract.md` for the mathematics.
 
-The submission also includes the W-hierarchy foundations used by parameterized hardness
-proofs, following Flum and Grohe (2006): FPT-reductions, W[1] = A[1], W[1]-completeness of
-Clique, Independent Set and Multicoloured Clique, and W[2]-completeness of Hitting Set and
-Dominating Set. These are documented in the `WH_*` concept modules.
+**The W-Hierarchy.** For completeness, the submission includes supporting material
+following Flum and Grohe (2006), documented in the `WH_*` concept modules. This material
+goes beyond the scope of the scheduling project. The scheduling hardness development
+establishes reductions from Hitting Set, with correctness, parameter and running-time
+bounds. The hardness consequences use the corresponding hardness of Hitting Set.
 
 **Scope.** The annotated manuscript covers the flow-shop results. The W-hierarchy material
 is documented in the archive's concept pages and Lean modules.
