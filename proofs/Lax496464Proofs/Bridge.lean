@@ -2,7 +2,7 @@ import Lax496464Proofs.Model.IntervalColoring
 import Lax496464.Feasibility
 
 /-!
-# The concepts' instances are the development's instances, numbered
+# The Concepts' Instances Are the Development's Instances, Numbered
 
 The ported development of `Model/` takes the jobs of an instance to be an arbitrary finite
 type, so that a gadget construction can name its jobs structurally. The concepts number

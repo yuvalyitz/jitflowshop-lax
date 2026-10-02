@@ -2,7 +2,7 @@ import Lax496464Proofs.Ram.Imp
 import Lax496464Proofs.Ram.Q3Defs
 
 /-!
-# Theorem 3, profile sweep: the per-job event
+# Theorem 3, Profile Sweep: the per-Job Event
 
 The bookkeeping of one event (`prepCom`): load the job's data from the sorted arrays, compute the
 new reference time `rf = d - q`, the shift `dl = min (rf - pt) qm`, advance `pt`, and the

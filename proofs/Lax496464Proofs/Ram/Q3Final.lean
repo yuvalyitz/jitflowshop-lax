@@ -4,7 +4,7 @@ import Lax496464Proofs.Ram.Corollary1Prog
 import Lax496464.Theorem3
 
 /-!
-# Theorem 3, the profile sweep: the running time statement
+# Theorem 3, the Profile Sweep: the Running Time Statement
 
 `prog3` (front end, core, read-off) solves the decision problem within `cost3`, at every word length
 at which the concept's two admissibility clauses hold, and `cost3` is `O(N (n+1) + sortCost)` with

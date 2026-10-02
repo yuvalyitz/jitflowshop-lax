@@ -2,7 +2,7 @@ import Lax496464Proofs.HittingSet.Emit
 import Lax496464Proofs.HittingSet.Model
 
 /-!
-# The pairs
+# The Pairs
 
 For each variable `i` below `V`: the size `2`, then `2i` and `2i + 1`.
 -/

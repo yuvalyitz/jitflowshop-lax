@@ -3,7 +3,7 @@ import Lax759944.TuringPolytime
 
 /-!
 ---
-title: Polynomial-time and strict reductions are fpt-reductions
+title: Polynomial-Time and Strict Reductions Are FPT-Reductions
 type: theorem
 ---
 Most reductions in parameterized complexity are computable in polynomial time, and many are
@@ -22,7 +22,7 @@ already proved in the archive in one of the following forms. Each yields an fpt-
    time $c\,g(k)\,(|x|+1)$ on the tape $x$), when $g$ and $h$ are computable and the output entries
    have fixed-parameter bit length; likewise the archive's strict fpt-algorithms.
 
-# Formalization notes
+# Formalization Notes
 
 **Output entries in the strict case.** The strict definition bounds the running time but not the
 size of the numbers written: a program that repeatedly squares a number writes, in $m$ steps, a

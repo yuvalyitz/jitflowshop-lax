@@ -1,7 +1,7 @@
 import Mathlib.Data.List.GetD
 
 /-!
-# Two facts about `List.set`, in the `getD` form every array invariant is written in
+# Two Facts About `List.set`, in the `getD` Form Every Array Invariant Is Written in
 -/
 
 namespace Lax496464Proofs.Ram.ListUtil

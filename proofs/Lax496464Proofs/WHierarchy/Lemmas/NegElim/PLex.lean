@@ -137,7 +137,13 @@ theorem lexCom_value {k1 g1 k2 g2 m : ℕ} (hok : LexOK x k1 g1 k2 g2 m) (out0 :
       (fun _ σ' => σ'.out = out0 ++ (lexF (seqL x k1 g1 m) (seqL x k2 g2 m)).encode)
       ((80 + 4) * (m - 1) + 100) := by
   have hl := len_lt_Bv x
-  obtain ⟨hm, hk1, hk2, hr1, hr2, hb1, hb2⟩ := hok
+  have hm := hok.pos
+  have hk1 := hok.kk1
+  have hk2 := hok.kk2
+  have hr1 := hok.r1
+  have hr2 := hok.r2
+  have hb1 := hok.b1
+  have hb2 := hok.b2
   have hbody : Spec (Bv x) (fun σ => LXI x k1 g1 k2 g2 m out0 σ ∧ σ.vars "ll" < m - 1) lexBody
       (fun σ σ' => LXI x k1 g1 k2 g2 m out0 σ' ∧ σ'.vars "ll" = σ.vars "ll" + 1) 80 := by
     refine Spec.pre (P := fun σ => (LXI x k1 g1 k2 g2 m out0 σ ∧ σ.vars "ll" < m - 1) ∧

@@ -4,7 +4,7 @@ import Mathlib.Order.Interval.Finset.Nat
 
 /-!
 ---
-title: The due-date profile of Section 5, and recursion (5)
+title: The Due-Date Profile of Section 5, and Recursion (5)
 type: definition
 ---
 The algorithm behind the second half of the third theorem. It sweeps the start times in
@@ -20,7 +20,7 @@ down by $\delta_j$. The paper writes $\vec{x}[\delta]$ for the vectors that shif
 $\vec{x}$, and recursion (5) has the two branches of every such sweep: job $j$ is passed
 over, or job $j$ is selected, in which case its own coordinate $q_j$ drops by one.
 
-# Formalization notes
+# Formalization Notes
 
 The profile is carried as a function on all $i \ge 1$ rather than as a vector of length
 $q_{\max}$. This is deliberate. The coordinates beyond $q_{\max}$ are not free: the jobs

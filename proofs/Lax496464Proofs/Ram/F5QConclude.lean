@@ -2,7 +2,7 @@ import Lax496464Proofs.Ram.F5QFinal
 import Lax496464.Theorem5
 
 /-!
-# Theorem 5 from the profile sweep, tagged as the concept's conclusion
+# Theorem 5 from the Profile Sweep, Tagged as the Concept's Conclusion
 -/
 
 namespace Lax496464Proofs.F5QConclude

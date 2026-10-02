@@ -3,7 +3,7 @@ import Mathlib.Data.Finset.Max
 
 /-!
 ---
-title: The dynamic program of Section 3, and its table
+title: The Dynamic Program of Section 3, and Its Table
 type: definition
 ---
 The algorithm behind the second theorem. The jobs are in earliest-start-time order and
@@ -27,7 +27,7 @@ $X_1$. If it is, the weight drops by $w_j$ and the budget by $p_j$, and $j$ is r
 the smallest index not already a threshold whose second operation starts at or after
 $d_j$ — the paper's $j_2$ — giving $X_2$.
 
-# Formalization notes
+# Formalization Notes
 
 The table is recorded as the predicate "a set of weight $W'$ compatible with $X$ can be
 preprocessed starting from $P'$" rather than as a value in $\mathbb{Z}$ extended by two

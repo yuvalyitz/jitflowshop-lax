@@ -3,7 +3,7 @@ import Lax496464Proofs.Section8
 import Lax496464.Corollary4
 
 /-!
-# Section 8's construction as a map on words
+# Section 8's Construction as a Map on Words
 
 The mathematics of the reduction is `Section8.construct_correct`; what is added here is the
 passage to words. A Hitting Set word determines its instance and its solution size — that is

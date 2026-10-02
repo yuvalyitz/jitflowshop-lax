@@ -4,7 +4,7 @@ import Lax496464.WH_C1_GraphProblems
 
 /-!
 ---
-title: Σ₁ model checking over binary relations reduces to Clique
+title: Σ₁ Model Checking over Binary Relations Reduces to Clique
 type: theorem
 ---
 $p\text{-MC}(\Sigma_1[2]) \le^{\mathrm{fpt}} p\text{-Clique}$, where $\Sigma_1[2]$ is the class of

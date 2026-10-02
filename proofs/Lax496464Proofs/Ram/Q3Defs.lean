@@ -4,9 +4,9 @@ import Lax496464Proofs.Model.Lemma2_Sweep
 import Lax496464.Profile
 
 /-!
-# Theorem 3, the profile sweep on a word RAM: design and the definitions everything shares
+# Theorem 3, the Profile Sweep on a Word RAM: Design and the Definitions Everything Shares
 
-## The algorithm behind `theorem3_qmax_time`
+## The Algorithm Behind `theorem3_qmax_time`
 
 Statement: decide `Yes x` within `c·(W+1)·(m+1)^qmax·(n+1) + c·sortCost` instructions, on words
 that fit at word length `w` with `c·(W+1)·(m+1)^qmax·(n+1) ≤ 2^w`.  It *can* be met, with the
@@ -34,14 +34,14 @@ that fit at word length `w` with `c·(W+1)·(m+1)^qmax·(n+1) ≤ 2^w`.  It *can
   (`bt = 1`), `W = 0` (`w1 = 1`) are all covered by the same code.
 * **Read-off.**  After all jobs, `Yes` iff some `x < bt` has `T[x][W] < INF`.
 
-## Structure (reused by Theorem 5)
+## Structure (Reused by Theorem 5)
 
 `core` = everything from the sorted arrays `PS QS DS WS` and the scalars `n m W` to the final
 table, with a Spec that describes the WHOLE final table (`TabSem bt w1 INF (Rsem ..) T`: for
 every `c ≤ W` and every profile, whether weight `≥ c` is reachable within load `P`); `finish` =
 the answer scan.  The weight array and `W` are inputs of the core, not literals.
 
-## Naming convention shared by every file of the `Q3` family
+## Naming Convention Shared by Every File of the `Q3` Family
 
 Live scalars (never used as temporaries by a loop): `"n" "m" "W" "qm" "bb" "bt" "w1" "N" "cinf"
 "jj" "pt" "pj" "qj" "dj" "wj" "rf" "dl" "pwd" "pwq" "ex"`.

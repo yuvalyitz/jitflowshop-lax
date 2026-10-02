@@ -6,7 +6,7 @@ import Lax496464Proofs.Model.Theorem5_FPTAS
 import Lax496464.Theorem5
 
 /-!
-# Section 7: the rounding argument
+# Section 7: the Rounding Argument
 
 The approximation scheme divides every weight by `k` and rounds up, solves the rounded
 instance exactly with one of the pseudo-polynomial algorithms — whose running times depend

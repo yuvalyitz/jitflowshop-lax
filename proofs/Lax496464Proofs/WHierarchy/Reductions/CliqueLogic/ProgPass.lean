@@ -1,7 +1,7 @@
 import Lax496464Proofs.WHierarchy.Reductions.CliqueLogic.ProgAdj
 
 /-!
-# The two passes over the pairs, and the word of the graph structure
+# The Two Passes over the Pairs, and the Word of the Graph Structure
 
 `countPass` counts the adjacent ordered pairs, `emitPass` writes them, and `graphCom` writes the
 word of the graph structure `1, 2, n, M, pairs`.

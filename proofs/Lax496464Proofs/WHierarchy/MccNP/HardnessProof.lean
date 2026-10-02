@@ -7,7 +7,7 @@ import Lax391470Proofs.TMCompose
 import Lax391470Proofs.Bits
 
 /-!
-# The reductions and NP-hardness from the properties of `reduce`
+# The Reductions and NP-Hardness from the Properties of `reduce`
 
 The strict fpt-reduction, the polynomial-time reduction and NP-hardness of Multicoloured Clique,
 each proved from the properties of `reduce` taken as hypotheses. NP-hardness composes the Turing

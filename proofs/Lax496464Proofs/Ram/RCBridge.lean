@@ -3,7 +3,7 @@ import Lax496464Proofs.Ram.CsrWord
 import Lax496464Proofs.Ram.Build
 
 /-!
-# From the scan's scratch arrays to `Build.RC`
+# From the Scan's Scratch Arrays to `Build.RC`
 
 `ScanProg.lean`'s scan writes into `"OFFS"`/`"MEMS"` arrays sized generously (bounded by the
 tape's length, since the true CSR size isn't known until the scan finishes) — but `Build.RC`

@@ -3,7 +3,7 @@ import Lax496464Proofs.Ram.W3Front
 import Lax496464Proofs.Ram.W3Front2
 
 /-!
-# Theorem 3's front end, with the sorted instance's identity
+# Theorem 3's Front End, with the Sorted Instance's Identity
 
 `sortSetup3` reads the instance and the threshold, sorts the jobs by earliest start time,
 builds the sorted `PS`/`QS`/`DS`/`WS` arrays, and then sorts the positions again, by due date.

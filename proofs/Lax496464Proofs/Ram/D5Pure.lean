@@ -2,7 +2,7 @@ import Lax496464Proofs.Ram.D3Cor3
 import Lax496464Proofs.Ram.D2StepPure
 
 /-!
-# Corollary 3's machine, part 2: the table invariant and what one block establishes
+# Corollary 3's Machine, Part 2: the Table Invariant and What One Block Establishes
 
 `UTab` is `D3Cor3.UTabOK` together with the bound `≤ W` on every entry (the machine adds
 `w_j + T[..]` and must not overflow, also on cells that are not good).  `ublock` is

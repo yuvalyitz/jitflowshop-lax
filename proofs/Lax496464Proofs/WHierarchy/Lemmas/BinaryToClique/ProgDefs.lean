@@ -2,7 +2,7 @@ import Lax808846Proofs.Tactic
 import Lax496464Proofs.WHierarchy.Lemmas.BinaryToClique.Defs
 
 /-!
-# Σ₁[2] model checking to Clique: the IMP+ program
+# Σ₁[2] Model Checking to Clique: the IMP+ Program
 
 The array `a` holds the word `x` and `rt_n` its length (after `readTape`). The phases mirror
 `Defs` step for step:

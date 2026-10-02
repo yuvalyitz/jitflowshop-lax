@@ -2,7 +2,7 @@ import Lax496464.WH_A2_FptReductions
 
 /-!
 ---
-title: The calculus of fpt-reductions
+title: The Calculus of FPT-Reductions
 type: theorem
 ---
 The rules by which hardness results are combined and applied.
@@ -17,7 +17,7 @@ The rules by which hardness results are combined and applied.
 * FPT is closed under fpt-reductions [FG06, Lemma 2.2], so a $C$-hard problem in FPT places all of
   $C$ in FPT. This is the sense in which W[1]-hardness is a lower bound.
 
-# Formalization notes
+# Formalization Notes
 
 Each rule follows from the two machine facts of `WH_A4_MachineFacts` — the identity is computable,
 and fixed-parameter computations compose — and none of the statements mentions a program.

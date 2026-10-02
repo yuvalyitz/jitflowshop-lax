@@ -19,6 +19,8 @@ namespace Lax496464Proofs.WHierarchy.Lemmas.Incidence.Tok
 
 open Lax496464.WH_B2_FirstOrder
 
+set_option genInjectivity false in
+set_option genSizeOfSpec false in
 /-- The tokens of the prefix code of formulas. -/
 inductive Token
   | rel (i : ℕ) (ys : List ℕ)
@@ -79,15 +81,15 @@ def nrelT (l : List Token) : ℕ := (l.map Token.isRel).sum
 /-- The largest number of arguments of an atom of a relation symbol in a list of tokens. -/
 def rmaxT (l : List Token) : ℕ := l.foldr (fun t m => max t.relLen m) 0
 
-@[simp] theorem nrelT_nil : nrelT [] = 0 := rfl
+@[simp] theorem nrelT_nil : nrelT [] = 0 := by unfold nrelT; try rfl
 @[simp] theorem nrelT_cons (t : Token) (l : List Token) : nrelT (t :: l) = t.isRel + nrelT l := by
   simp [nrelT]
 @[simp] theorem nrelT_append (l l' : List Token) : nrelT (l ++ l') = nrelT l + nrelT l' := by
   simp [nrelT]
 
-@[simp] theorem rmaxT_nil : rmaxT [] = 0 := rfl
+@[simp] theorem rmaxT_nil : rmaxT [] = 0 := by unfold rmaxT; try rfl
 @[simp] theorem rmaxT_cons (t : Token) (l : List Token) : rmaxT (t :: l) = max t.relLen (rmaxT l) :=
-  rfl
+  by unfold rmaxT; try rfl
 theorem rmaxT_append (l l' : List Token) : rmaxT (l ++ l') = max (rmaxT l) (rmaxT l') := by
   induction l with
   | nil => simp
@@ -145,6 +147,8 @@ theorem relLe_rOf (φ : Formula) : RelLe (rOf φ) φ := relLe_of_rmaxT_le φ le_
 
 /-! ### The translation -/
 
+set_option genInjectivity false in
+set_option genSizeOfSpec false in
 /-- What the translation needs to know: the number `s` of symbols and the arities `ar` of the old
 vocabulary, the number `r` of binary symbols `E_l`, and the first fresh variable `F`. -/
 structure TrCtx where

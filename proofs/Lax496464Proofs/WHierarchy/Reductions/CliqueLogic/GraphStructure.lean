@@ -71,7 +71,7 @@ noncomputable def graphStructure (n : ℕ) (G : SimpleGraph (Fin n)) : Structure
     (graphStructure n G).size = n := rfl
 
 theorem graphStructure_rel_zero (n : ℕ) (G : SimpleGraph (Fin n)) :
-    (graphStructure n G).rel 0 = edgeRel n G := rfl
+    (graphStructure n G).rel 0 = edgeRel n G := by unfold graphStructure; try rfl
 
 /-! ### The word, computed from the graph word -/
 

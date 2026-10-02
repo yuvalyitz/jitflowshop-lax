@@ -4,7 +4,7 @@ import Lax496464.Normalization
 import Lax496464.Lemma2
 
 /-!
-# Section 4: the normalization, and the sweep over endpoints
+# Section 4: the Normalization, and the Sweep over Endpoints
 
 Sections 4 and 5 assume the `2n` endpoints `s_j` and `d_j` are pairwise distinct, so that a
 sweep from left to right meets one event at a time. `scale` is the normalization that

@@ -2,7 +2,7 @@ import Lax496464Proofs.WHierarchy.Lemmas.PiTwoToMonotone.PConf
 import Lax496464Proofs.WHierarchy.Lemmas.WDToWSat.ProgZ
 
 /-!
-# The evaluation of the quantifier-free formula
+# The Evaluation of the Quantifier-Free Formula
 
 `evalCom_spec`: with the digits `ds` of an assignment in `od` and a block with values in `bd1, vd1`,
 `evalCom ψ` computes `Eval.ev` of the oracle `Out.oracle`: `w_f` is its value, and `g_und` is set if

@@ -2,7 +2,7 @@ import Lax496464Proofs.WHierarchy.Lemmas.PiTwoToMonotone.PDefs
 import Lax496464Proofs.WHierarchy.Lemmas.WDToWSat.ProgLoop
 
 /-!
-# Generic pieces of the program: digits, powers, counted loops
+# Generic Pieces of the Program: Digits, Powers, Counted Loops
 
 `decG_spec`: the `c` lowest digits of `w` into positions `j, …, j+c-1` of an array.
 `powG_spec`: a power. `loopC_out`: a counted loop whose iteration `i` writes `g i` and keeps a

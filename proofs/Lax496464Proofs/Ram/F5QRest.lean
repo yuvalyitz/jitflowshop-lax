@@ -2,7 +2,7 @@ import Lax496464Proofs.Ram.F5QLift
 import Lax496464Proofs.Ram.Q3Core
 
 /-!
-# Theorem 5 (profile sweep): everything after the front end
+# Theorem 5 (Profile Sweep): Everything After the Front End
 
 `rest5` takes the sorted arrays of an instance `J` and the accuracy `e` (in the scalar `W`) and
 writes `fptasOut J e`: fit pass, scale factor, rescaling, threshold `W := 2 e n²`, the exact core

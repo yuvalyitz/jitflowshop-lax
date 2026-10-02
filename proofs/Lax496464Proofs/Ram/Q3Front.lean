@@ -3,7 +3,7 @@ import Lax496464Proofs.Ram.W3Front
 import Lax496464Proofs.Ram.Reduction
 
 /-!
-# Theorem 3's machine (`Q3`), the front end
+# Theorem 3's Machine (`Q3`), the Front End
 
 `frontQ` reads the instance and the threshold, sorts the jobs by earliest start time and builds
 the sorted `PS`/`QS`/`DS`/`WS` arrays.  Unlike `W3Front2.sortSetup3` there is no second sort, and

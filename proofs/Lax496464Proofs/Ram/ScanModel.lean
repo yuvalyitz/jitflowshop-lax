@@ -2,7 +2,7 @@ import Lax496464Proofs.Ram.CsrWord
 import Lax496464Proofs.Ram.BitsNat
 
 /-!
-# Decoding a Hitting Set word as a finite-state scan of its bits
+# Decoding a Hitting Set Word as a Finite-State Scan of Its Bits
 
 `HittingSet.encodeInstance` is `n`, `m`, `k`, then for each of the `m` sets its size
 followed by its members, every number in the self-delimiting code of `BitsNat`/
@@ -25,6 +25,8 @@ namespace Lax496464Proofs.Ram.ScanModel
 open Lax496464.HittingSet Lax496464Proofs.Ram.CsrWord
 open Lax496464Proofs.Ram.BitsNat (digit bitsNat sum_digit natBits natBits_encodeNat)
 
+set_option genInjectivity false in
+set_option genSizeOfSpec false in
 /-- The scan's state.
 
 `ph = 0`: counting the leading `1`s of a number into `cc`. `ph = 1`: reading `cc` bits of

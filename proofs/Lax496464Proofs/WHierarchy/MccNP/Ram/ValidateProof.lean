@@ -1,7 +1,7 @@
 import Lax496464Proofs.WHierarchy.MccNP.Ram.ValidateMain
 
 /-!
-# The specification of the validator
+# The Specification of the Validator
 
 `validate_spec_list`, composed from the specifications of its loops.
 -/

@@ -9,7 +9,7 @@ import Lax496464Proofs.Ram.Fits
 import Lax496464Proofs.Ram.Reduction
 
 /-!
-# Corollary 3: the running time
+# Corollary 3: the Running Time
 
 `Corollary3.corollary3_time`, by the dual table of Section 3 with equal preprocessing times: the
 rows are the `n + 1` instants `u · p`, so the table has `(n+1)^m · (n+1)` entries and the running

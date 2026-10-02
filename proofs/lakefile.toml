@@ -68,11 +68,12 @@ git = "https://github.com/EdouardBonnet/classical-complexity"
 rev = "0c0840319318215fd7b36a9a822b81ce55cf6941"
 subDir = "proofs"
 
-# parameterized problems and strict fpt-reductions on the word RAM; a path require while
-# lax-888481 is a draft, to become a git require on its registered commit
+# Parameterized problems and strict FPT-reductions from registered lax-888481.
 [[require]]
 name = "Lax888481"
-path = "../../isem-lax/concepts"
+git = "https://github.com/yuvalyitz/isem-lax"
+rev = "3cdde85ce7b7eed2938def9b9be0b5434f615c0f"
+subDir = "concepts"
 
 # Independent Set on adjacency-matrix words, and its NP-hardness
 [[require]]

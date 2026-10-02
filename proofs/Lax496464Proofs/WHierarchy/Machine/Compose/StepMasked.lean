@@ -39,41 +39,6 @@ theorem mem_set {A n : ℕ} (hA : A < 2 ^ w) (S : State) (c : ℕ) :
     (plainEff w (.set A n) S).mem c = if c = A then n % 2 ^ w else S.mem c := by
   simp [plainEff, Instr.effect, setCell_apply hA]
 
-theorem mem_add {A B C : ℕ} (hA : A < 2 ^ w) (hB : B < 2 ^ w) (hC : C < 2 ^ w) (S : State)
-    (c : ℕ) : (plainEff w (.add A B C) S).mem c =
-      if c = A then (S.mem B + S.mem C) % 2 ^ w else S.mem c := by
-  simp [plainEff, Instr.effect, setCell_apply hA, Nat.mod_eq_of_lt hB, Nat.mod_eq_of_lt hC]
-
-theorem mem_sub {A B C : ℕ} (hA : A < 2 ^ w) (hB : B < 2 ^ w) (hC : C < 2 ^ w) (S : State)
-    (c : ℕ) : (plainEff w (.sub A B C) S).mem c =
-      if c = A then (S.mem B - S.mem C) % 2 ^ w else S.mem c := by
-  simp [plainEff, Instr.effect, setCell_apply hA, Nat.mod_eq_of_lt hB, Nat.mod_eq_of_lt hC]
-
-theorem mem_mul {A B C : ℕ} (hA : A < 2 ^ w) (hB : B < 2 ^ w) (hC : C < 2 ^ w) (S : State)
-    (c : ℕ) : (plainEff w (.mul A B C) S).mem c =
-      if c = A then (S.mem B * S.mem C) % 2 ^ w else S.mem c := by
-  simp [plainEff, Instr.effect, setCell_apply hA, Nat.mod_eq_of_lt hB, Nat.mod_eq_of_lt hC]
-
-theorem mem_load {A B : ℕ} (hA : A < 2 ^ w) (hB : B < 2 ^ w) (S : State) (hSB : S.mem B < 2 ^ w)
-    (c : ℕ) : (plainEff w (.load A B) S).mem c =
-      if c = A then S.mem (S.mem B) % 2 ^ w else S.mem c := by
-  simp [plainEff, Instr.effect, setCell_apply hA, Nat.mod_eq_of_lt hB, Nat.mod_eq_of_lt hSB]
-
-theorem mem_store {A B : ℕ} (hA : A < 2 ^ w) (hB : B < 2 ^ w) (S : State) (hSA : S.mem A < 2 ^ w)
-    (c : ℕ) : (plainEff w (.store A B) S).mem c =
-      if c = S.mem A then S.mem B % 2 ^ w else S.mem c := by
-  simp [plainEff, Instr.effect, setCell_apply hSA, Nat.mod_eq_of_lt hB, Nat.mod_eq_of_lt hA]
-
-theorem mem_inputLoad {A B : ℕ} (hA : A < 2 ^ w) (hB : B < 2 ^ w) (S : State)
-    (hSB : S.mem B < 2 ^ w) (c : ℕ) : (plainEff w (.inputLoad A B) S).mem c =
-      if c = A then (S.input[S.mem B]?.getD 0) % 2 ^ w else S.mem c := by
-  simp [plainEff, Instr.effect, setCell_apply hA, Nat.mod_eq_of_lt hB, Nat.mod_eq_of_lt hSB]
-
-theorem mem_inputLength {A : ℕ} (hA : A < 2 ^ w) (S : State) (c : ℕ) :
-    (plainEff w (.inputLength A) S).mem c =
-      if c = A then S.input.length % 2 ^ w else S.mem c := by
-  simp [plainEff, Instr.effect, setCell_apply hA]
-
 theorem out_plainEff_of_ne_write {i : Instr} (hi : ∀ a, i ≠ .write a) (S : State) :
     (plainEff w i S).out = S.out := by
   cases i with
@@ -82,9 +47,6 @@ theorem out_plainEff_of_ne_write {i : Instr} (hi : ∀ a, i ≠ .write a) (S : S
     simp only [plainEff, Instr.effect]
     rcases S.inp.head? with _ | v <;> rfl
   | _ => simp [plainEff, Instr.effect]
-
-theorem input_plainEff {i : Instr} (hi : isPlain i = true) (S : State) :
-    (plainEff w i S).input = S.input := plainEff_input hi S
 
 end
 

@@ -1,7 +1,7 @@
 import Lax496464Proofs.Ram.Imp
 
 /-!
-# Writing a block
+# Writing a Block
 
 A reduction's output is a handful of blocks, each of them a range mapped by an expression:
 the `R·L` zeros of the selection jobs' preprocessing times, the `R·m·n` due dates of a

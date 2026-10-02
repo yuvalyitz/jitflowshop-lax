@@ -2,7 +2,7 @@ import Lax496464Proofs.Ram.DpCore
 import Lax496464Proofs.Section3
 
 /-!
-# The dynamic program for `m` machines, as a function of the threshold set
+# The Dynamic Program for `m` Machines, as a Function of the Threshold Set
 
 `Dp1.lean` codes the single-machine table, where a threshold set is `∅` or one job, as a
 function of a plain natural number `j`. With `m` machines a threshold set is an arbitrary

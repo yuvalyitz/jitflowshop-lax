@@ -3,7 +3,7 @@ import Mathlib.Data.List.GetD
 import Mathlib.Tactic
 
 /-!
-# A maximum tree, as a pure list
+# A Maximum Tree, as a Pure List
 
 A word RAM keeps a set of jobs, each with a key, in a *maximum tree* over `N = 2^h` leaves:
 an array `T` of `2N` cells whose cell `i` (`1 ≤ i < N`) is the larger of cells `2i` and

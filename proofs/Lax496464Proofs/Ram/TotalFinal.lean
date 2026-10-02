@@ -4,7 +4,7 @@ import Lax391470Proofs.RamBridge2
 import Lax391470Proofs.BitSize
 
 /-!
-# `totalProg` is polynomial-time on the word RAM
+# `totalProg` Is Polynomial-Time on the Word RAM
 
 The assembly of `RamPolytime f` for `TotalReduction.f`, following `rjlmax-lax`'s `L2Final`/
 `L1Final`: `Shape`, `Solves`, `prog_runs`, the fitting condition, the bit-size polynomial

@@ -43,7 +43,7 @@ theorem Compat.mem_L (hc : Compat A D) {i : ℕ} (hi : i < D.s) {t : List ℕ} :
   rw [← (hc.L i hi).2, List.mem_toFinset]
 
 theorem Compat.extAr (hc : Compat A D) : ExtAr A.arities D.arities :=
-  NData.extAr hc.valid hc.s.symm fun i hi => (hc.ar i hi).symm
+  NData.extAr hc.s.symm fun i hi => (hc.ar i hi).symm
 
 /-! ### The lexicographic order -/
 

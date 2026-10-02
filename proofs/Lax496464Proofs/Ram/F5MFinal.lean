@@ -2,7 +2,7 @@ import Lax496464Proofs.Ram.F5MBound
 import Lax496464Proofs.Ram.F5WFinal
 
 /-!
-# Theorem 5, table of Section 3: the running time statement
+# Theorem 5, Table of Section 3: the Running Time Statement
 
 `prog5m` solves, on the words that present an instance and an accuracy `e`, the function
 `x ↦ [fptasOut I e]`, within `cost5mX`, at every word length at which the admissibility clauses

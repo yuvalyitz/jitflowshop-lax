@@ -3,7 +3,7 @@ import Mathlib.Data.Finset.Powerset
 import Mathlib.Algebra.BigOperators.Group.Finset.Basic
 
 /-!
-# Theorem 2, pure layer 4: how many sets of thresholds there are
+# Theorem 2, Pure Layer 4: How Many Sets of Thresholds There Are
 
 The machine's scan of a set costs `O(|X|)`, and there is a set for every code, so the running time
 is `O(Σ_X (|X|+1))` over the sets of at most `m` of the `n` indices.  That sum is at most

@@ -3,7 +3,7 @@ import Lax496464Proofs.WHierarchy.Machine.ImpBridge
 import Lax496464Proofs.WHierarchy.Machine.SizeFacts
 
 /-!
-# Σ₁[2] model checking to Clique (Flum–Grohe, Lemma 6.14)
+# Σ₁[2] Model Checking to Clique (Flum–Grohe, Lemma 6.14)
 
 The map `Defs.reduce` is a reduction (`MathFinal`), its parameter is at most twice the old one,
 and the IMP+ program of `ProgTop` computes it in time `10^7 · 32^|φ| · (|x| + 1)^3`: the graph has

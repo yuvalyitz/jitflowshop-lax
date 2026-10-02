@@ -4,7 +4,7 @@ import Lax496464Proofs.Ram.Decode
 import Lax496464Proofs.Ram.Dp1
 
 /-!
-# The sorted arrays
+# The Sorted Arrays
 
 `EstSort.estSortCom` leaves the sort's output permutation `P` in `SA`. What every downstream
 program of this submission wants is not the permutation but three arrays `PS`, `QS`, `DS`,

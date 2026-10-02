@@ -2,7 +2,7 @@ import Lax496464Proofs.Ram.T4Job
 import Lax496464Proofs.Ram.BitsNat
 
 /-!
-# Theorem 4's machine, part 5: the height of the trees, and the answer
+# Theorem 4's Machine, Part 5: the Height of the Trees, and the Answer
 -/
 
 namespace Lax496464Proofs.Ram.T4Setup

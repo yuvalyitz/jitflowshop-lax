@@ -1,7 +1,7 @@
 import Lax496464Proofs.Ram.F5MScan
 
 /-!
-# Theorem 5 (table of Section 3): small facts
+# Theorem 5 (Table of Section 3): Small Facts
 
 The degenerate cases (no job or no machine) and the read-off of the scan.
 -/

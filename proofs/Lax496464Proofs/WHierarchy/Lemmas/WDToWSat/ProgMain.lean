@@ -1,7 +1,7 @@
 import Lax496464Proofs.WHierarchy.Lemmas.WDToWSat.ProgFill
 
 /-!
-# The whole program
+# The Whole Program
 
 `mainCom_spec`: on a word that fits, the main part writes `outWords D x`. `prog_run`: from the initial
 environment on the tape `x.length :: x`, the program runs to the output `R D x`.

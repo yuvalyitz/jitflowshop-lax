@@ -4,7 +4,7 @@ import Lax496464Proofs.Ram.Corollary1Init
 import Lax496464Proofs.Section6
 
 /-!
-# Theorem 4's machine, part 7: everything after the sorted arrays exist
+# Theorem 4's Machine, Part 7: Everything After the Sorted Arrays Exist
 -/
 
 namespace Lax496464Proofs.Ram.T4Tail

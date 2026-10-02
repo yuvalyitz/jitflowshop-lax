@@ -1,7 +1,7 @@
 import Lax496464Proofs.WHierarchy.MccNP.Ram.ValidateMat
 
 /-!
-# The validator around the matrix loop
+# The Validator Around the Matrix Loop
 
 The checks that the matrix fits into the word and follows a zero, and, after the matrix, the run
 of ones for `k` ending in the last entry `0`.

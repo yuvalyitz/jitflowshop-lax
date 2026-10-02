@@ -2,7 +2,7 @@ import Lax496464Proofs.WHierarchy.Lemmas.BinaryToClique.Core
 import Lax496464Proofs.WHierarchy.Reductions.CliqueMCC.CsrWord
 
 /-!
-# Σ₁[2] model checking to Clique: the map on words
+# Σ₁[2] Model Checking to Clique: the Map on Words
 
 Everything is read off the word `x = (structure) ++ (formula)` by total functions that mirror the
 program step for step (every read of the word is a read with default `0`):
@@ -47,6 +47,7 @@ def hp (x : List ℕ) : ℕ → ℕ
 
 /-! ### The tokenizer -/
 
+set_option genSizeOfSpec false in
 /-- The tokenizer state. -/
 structure TS where
   /-- The position in the word. -/

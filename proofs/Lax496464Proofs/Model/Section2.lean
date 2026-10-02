@@ -5,7 +5,7 @@ import Mathlib.Data.Fintype.EquivFin
 namespace Lax496464Proofs
 
 /-!
-# Section 2: what a feasible set is
+# Section 2: What a Feasible Set Is
 
 The paper's Section 2 replaces the shop — two stages, one preprocessing machine, `m`
 parallel processing machines, non-preemption — by two independent conditions on the set
@@ -20,7 +20,7 @@ Sections 3–5, the greedy algorithm of Section 6, the ILP of Section 6.2, and t
 analysis of Section 8 — reasons about `Preprocessable` and `MSchedulable` and never again
 about `JITSchedule`, exactly as the paper does.
 
-## The two halves
+## The Two Halves
 
 *Necessity* is `FlexFlowJIT.sum_len_le`: in any schedule, the first operations of the jobs
 whose second operations start no later than `s j` are pairwise non-overlapping intervals

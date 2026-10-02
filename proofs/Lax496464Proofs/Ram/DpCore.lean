@@ -3,7 +3,7 @@ import Mathlib.Tactic.Linarith
 import Mathlib.Tactic.Positivity
 
 /-!
-# The values of the dynamic program's table, as natural numbers
+# The Values of the Dynamic Program's Table, as Natural Numbers
 
 A table entry `T[X, W']` is the latest instant `P' ≥ 0` from which a set of weight `W'`
 compatible with `X` can be preprocessed. Machine words are natural numbers, and the entry

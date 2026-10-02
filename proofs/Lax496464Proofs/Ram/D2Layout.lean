@@ -1,7 +1,7 @@
 import Lax496464Proofs.Ram.D2Prog
 
 /-!
-# Theorem 2's program: its layout
+# Theorem 2's Program: Its Layout
 -/
 
 namespace Lax496464Proofs.Ram.D2Layout

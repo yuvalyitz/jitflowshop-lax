@@ -1,7 +1,7 @@
 import Lax496464Proofs.Ram.Q3Defs
 
 /-!
-# Q3: the table-chain lemmas (pure)
+# Q3: the Table-Chain Lemmas (Pure)
 
 `tab_init`, `tab_step`, `tab_final`: the initial table means `R0`, a marginalisation pass followed
 by a take pass turns a table meaning `R` into one meaning `Step .. R`, and the answer read-off.

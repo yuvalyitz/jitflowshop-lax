@@ -2,7 +2,7 @@ import Lax496464.Problems
 
 /-!
 ---
-title: Rounding the weights, and what an approximation scheme delivers
+title: Rounding the Weights, and What an Approximation Scheme Delivers
 type: definition
 ---
 The rounding behind the fifth theorem, and the shape of the guarantee it gives.
@@ -19,7 +19,7 @@ An *approximation scheme* is a program that is handed an instance together with 
 positive integer $e$ and returns a number $W$ that a feasible set reaches, and that is within
 a factor $1 - 1/e$ of the optimum.
 
-# Formalization notes
+# Formalization Notes
 
 The accuracy is a positive integer $e$ rather than a rational $\varepsilon$, and the
 guarantee is written as $(e-1)\,\mathrm{opt} \le e\,W$. This is the same statement as

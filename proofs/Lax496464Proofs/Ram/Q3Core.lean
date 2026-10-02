@@ -1,7 +1,7 @@
 import Lax496464Proofs.Ram.Q3Loop
 
 /-!
-# Theorem 3, profile sweep: the core
+# Theorem 3, Profile Sweep: the Core
 
 `coreCom` takes the sorted arrays `PS QS DS WS`, the scalars `n m W`, and leaves the final table in
 `T`: `qm` and the sentinel `cinf = INF` are computed by scans, `bb = m+1`, `bt = bb^qm`,
@@ -115,7 +115,10 @@ theorem coreCom_spec {J : Instance} {W qm INF bb bt w1 N B : ℕ} (hd : Dims J W
   refine Spec.of_exists fun σ0 ⟨hB0, hTl0, hSl0, hG0⟩ => ?_
   have hB1 := hBd.B1
   have hd' := hd
-  obtain ⟨hbbd, hbtd, hw1d, hNd⟩ := hd
+  have hbbd := hd.bb
+  have hbtd := hd.bt
+  have hw1d := hd.w1
+  have hNd := hd.N
   have hnB := hBd.n
   have hmB := hBd.m
   have hWB := hBd.W

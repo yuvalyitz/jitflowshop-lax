@@ -2,7 +2,7 @@ import Lax496464Proofs.Ram.F5QProg
 import Lax496464Proofs.Ram.Q3Final
 
 /-!
-# Theorem 5 (profile sweep): the layout of `prog5`
+# Theorem 5 (Profile Sweep): the Layout of `prog5`
 -/
 
 namespace Lax496464Proofs.F5QOk

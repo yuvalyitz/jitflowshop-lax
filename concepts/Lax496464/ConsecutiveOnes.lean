@@ -2,7 +2,7 @@ import Mathlib.LinearAlgebra.Matrix.Determinant.TotallyUnimodular
 
 /-!
 ---
-title: Consecutive ones implies total unimodularity
+title: Consecutive Ones Implies Total Unimodularity
 type: theorem
 ---
 A matrix of zeros and ones has the *consecutive ones property* when the ones in each row
@@ -12,7 +12,7 @@ square submatrix has determinant $0$, $1$ or $-1$.
 This is the theorem of Fulkerson and Gross, and it is what makes the integer program of
 Section 6.2 solvable as a linear program.
 
-# Formalization notes
+# Formalization Notes
 
 The property is stated as a closure condition — if a row has a one at two columns then it
 has a one at every column between them — rather than through an ordering of the columns

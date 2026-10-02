@@ -77,11 +77,11 @@ def structOf (Q : Instance) : Structure where
       · have := j.isLt; omega
     · simp at ht
 
-@[simp] theorem structOf_rel0 (Q : Instance) : (structOf Q).rel 0 = vertRel Q.n := rfl
-@[simp] theorem structOf_rel1 (Q : Instance) : (structOf Q).rel 1 = edgeRel Q.n Q.m := rfl
-@[simp] theorem structOf_rel2 (Q : Instance) : (structOf Q).rel 2 = incRel Q := rfl
-@[simp] theorem structOf_size (Q : Instance) : (structOf Q).size = Q.n + Q.m := rfl
-@[simp] theorem structOf_arities (Q : Instance) : (structOf Q).arities = [1, 1, 2] := rfl
+@[simp] theorem structOf_rel0 (Q : Instance) : (structOf Q).rel 0 = vertRel Q.n := by unfold structOf; try rfl
+@[simp] theorem structOf_rel1 (Q : Instance) : (structOf Q).rel 1 = edgeRel Q.n Q.m := by unfold structOf; try rfl
+@[simp] theorem structOf_rel2 (Q : Instance) : (structOf Q).rel 2 = incRel Q := by unfold structOf; try rfl
+@[simp] theorem structOf_size (Q : Instance) : (structOf Q).size = Q.n + Q.m := by unfold structOf; try rfl
+@[simp] theorem structOf_arities (Q : Instance) : (structOf Q).arities = [1, 1, 2] := by simp only [structOf]
 
 /-! ## Witnesses are hitting sets -/
 
@@ -218,7 +218,7 @@ theorem nodup_map_singleton (l : List ℕ) (hl : l.Nodup) : (l.map fun i => [i])
   hl.map (fun a b h => by simpa using h)
 
 theorem compress_n (P : Instance) (k : ℕ) : (compress P k).n = NN P k := rfl
-theorem compress_m (P : Instance) (k : ℕ) : (compress P k).m = P.m := rfl
+theorem compress_m (P : Instance) (k : ℕ) : (compress P k).m = P.m := by simp only [compress]
 
 theorem inc_toFinset (P : Instance) (k : ℕ) :
     ((List.range (total P)).map (fun p => [fst P p, NN P k + (ownL P).getD p 0])).toFinset =

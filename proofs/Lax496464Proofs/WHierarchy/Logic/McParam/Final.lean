@@ -4,7 +4,7 @@ import Lax496464Proofs.WHierarchy.Machine.ImpBridge
 import Lax496464Proofs.WHierarchy.Machine.SizeFacts
 
 /-!
-# The parameter of model checking is computable in polynomial time
+# The Parameter of Model Checking Is Computable in Polynomial Time
 
 The program `prog` reads the word, skips the structure with `headSkip` and adds up the size of the
 formula with `scanLoop`, in `O(|x|)` steps with values below `(|x| + 2)² + max x + 9`.

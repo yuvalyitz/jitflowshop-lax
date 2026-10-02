@@ -312,6 +312,8 @@ theorem index_cases (k : ℕ) : k = 0 ∨ ∃ i j, j < 5 ∧ k = 5 * i + 1 + j :
 
 /-! ### The data of the expanded structure -/
 
+set_option genInjectivity false in
+set_option genSizeOfSpec false in
 /-- The data the expanded structure is built from: the number of old symbols, the size of the
 universe, the arities, and the tuples of each old symbol as the word lists them. -/
 structure NData where
@@ -464,12 +466,11 @@ theorem mem_rel_z (hv : D.Valid) {i : ℕ} (hi : i < D.s) {t : List ℕ} :
   rw [← mem_zList]; exact mem_rel_blk hv hi 4 (by decide)
 
 /-- The expanded vocabulary of `as`. -/
-theorem extAr {as : List ℕ} (hv : D.Valid) (hs : as.length = D.s)
+theorem extAr {as : List ℕ} (hs : as.length = D.s)
     (har : ∀ i < D.s, as.getD i 0 = D.ar i) : ExtAr as D.arities where
   len := by rw [length_arities, hs]
   zero := rfl
   blk i hi j hj := by rw [arities_blk D i j hj, if_pos (by omega), har i (by omega)]
-  pos i hi := by rw [har i (by omega)]; exact hv.pos i (by omega)
 
 end NData
 

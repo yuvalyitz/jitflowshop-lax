@@ -2,7 +2,7 @@ import Lax496464.FlowShop
 
 /-!
 ---
-title: Word encoding of an instance
+title: Word Encoding of an Instance
 type: definition
 ---
 An instance is handed to a word random access machine as a word of numbers: the number
@@ -10,7 +10,7 @@ $n$ of jobs, the number $m$ of machines, then the $n$ preprocessing times, the $
 processing times, the $n$ due dates and the $n$ weights, in that order. A decision
 instance appends the threshold $W$ as a final entry.
 
-# Formalization notes
+# Formalization Notes
 
 This is the point at which magnitudes stop being free. The preprocessing times,
 processing times, due dates and weights are entries of the word, so a claim about a

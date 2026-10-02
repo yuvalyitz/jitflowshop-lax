@@ -29,6 +29,8 @@ set of *exactly* `k` elements, so the equality version is the one to reduce from
 
 namespace FlexFlowJIT
 
+set_option genInjectivity false in
+set_option genSizeOfSpec false in
 /-- An instance of Hitting Set: a universe `Fin n` and a family of `m` subsets of it. The
 solution size `k` is carried separately, as the problem's parameter. -/
 structure HSInstance where

@@ -3,7 +3,7 @@ import Lax496464Proofs.WHierarchy.MccNP.Ram.ValidateDefs
 import Lax496464Proofs.WHierarchy.MccNP.Ram.ValidateProof
 
 /-!
-# The specification of the validator
+# The Specification of the Validator
 
 `validate_spec_list`: from `a = x` and `L = |x|`, `validate` ends with `ok = 1 ↔ Shape.Valid x`
 within `Kval x` steps, leaving the arrays, the tapes and every scalar outside `validateVars`

@@ -6,14 +6,14 @@ import Mathlib.Algebra.Order.BigOperators.Group.Finset
 namespace Lax496464Proofs
 
 /-!
-# Section 8, Lemmas 7–9: extracting a hitting set from a schedule
+# Section 8, Lemmas 7–9: Extracting a Hitting Set from a Schedule
 
 The converse of `Lemma6_Schedule.lean`, and the longest file of the development. It runs
 from the arithmetic core of Lemma 7 — the paper's inequality (9), in the form that makes
 it a statement about prefix counts rather than about schedules — through Lemma 8 and the
 stable-segment argument to `Setup.lemma9`, which hands the hitting set back.
 
-## What inequality (9) actually says
+## What Inequality (9) Actually Says
 
 Lemma 7 bounds how many dummy jobs a feasible set can contain: at most `2(k−1)` per epoch
 on average, over every prefix of the epochs. The proof is by minimal counterexample. Fix
@@ -38,7 +38,7 @@ side into `Q·ℓ(ℓ+1) + ℓ(n+1)`, which strictly exceeds `Q·ℓ(ℓ+1) + n`
 time of any dummy in the first `ℓ` epochs*, since `s(B) = g(g+1)Q + o` with `o ≤ n`. So
 `FFJ.Preprocessable` fails at that job, and the counterexample cannot have been feasible.
 
-## The route through Abel summation
+## The Route Through Abel Summation
 
 `abel_prefix` is the only non-obvious step: writing `F t = ∑_{g<t} c g` for the prefix
 counts,
@@ -1129,6 +1129,8 @@ lemma closerOff_eq {Z : Finset (Jobs P k)} {c : Jobs P k → ℕ} (hk : 2 ≤ k)
 
 variable {P k}
 
+set_option genInjectivity false in
+set_option genSizeOfSpec false in
 /-- Bundling what the scheduling side supplies, so the long argument below reads. -/
 structure Setup (Z : Finset (Jobs P k)) where
   /-- At least two machines — the construction is wrong below that. -/

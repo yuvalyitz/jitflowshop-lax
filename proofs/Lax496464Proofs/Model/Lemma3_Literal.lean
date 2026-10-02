@@ -5,7 +5,7 @@ import Mathlib.Data.Fin.VecNotation
 namespace Lax496464Proofs
 
 /-!
-# Lemma 3 as printed is false: two machine-checked counterexamples
+# Lemma 3 as Printed Is False: Two Machine-Checked Counterexamples
 
 Lemma 3 claims that recursion (5) *"correctly computes `Tⱼ[x⃗, W']`"*, where `Tⱼ[x⃗, W']` is
 the least preprocessing load of a feasible `Z ⊆ Jⱼ` of weight `W'` whose due-date profile at

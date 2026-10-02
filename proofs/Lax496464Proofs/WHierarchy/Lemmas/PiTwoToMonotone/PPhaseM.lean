@@ -2,7 +2,7 @@ import Lax496464Proofs.WHierarchy.Lemmas.PiTwoToMonotone.PPhaseX
 import Lax496464Proofs.WHierarchy.Lemmas.PiTwoToMonotone.PEval
 
 /-!
-# Phase M: the clauses of the universal assignments
+# Phase M: the Clauses of the Universal Assignments
 
 Loops over `za` (its digits into `od[q..r)`), the blocks `b1`, the values `v1` and `zb` (its digits
 into `od[0..q)`); for each, the evaluation of `ψ` and the literal of `OutW.mWords`.

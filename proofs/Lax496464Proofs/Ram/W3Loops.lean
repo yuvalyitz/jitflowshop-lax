@@ -3,7 +3,7 @@ import Lax496464Proofs.Ram.ListUtil
 import Lax496464Proofs.Ram.W3Tab
 
 /-!
-# The sweep table's updates, as IMP+ loops
+# The Sweep Table's Updates, as IMP+ Loops
 
 The width sweep's table is a flat array `TB` with the entry of mask `X` and weight `c` at index
 `X * W1 + c` (`W1 = W + 1`, scalar `"W1"`); the popcounts live in an array `PC` with

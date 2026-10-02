@@ -2,7 +2,7 @@ import Lax496464.WH_D01_CliqueInW1
 
 /-!
 ---
-title: Clique is in A[1]
+title: Clique Is in A[1]
 type: theorem
 ---
 $p$-Clique is in A[1] [FG06, Example 5.8]: a graph has a clique of $k$ vertices exactly when it

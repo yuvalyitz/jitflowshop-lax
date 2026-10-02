@@ -3,7 +3,7 @@ import Lax429075.CNF
 
 /-!
 ---
-title: Weighted satisfiability of CNF formulas
+title: Weighted Satisfiability of CNF Formulas
 type: definition
 ---
 An assignment to the variables of a propositional formula $\alpha$ has *weight* $k$ if it sets
@@ -17,7 +17,7 @@ The classes used are the CNF formulas with clauses of at most $d$ literals, **$d
 ($\Gamma_{1,d}$ in [FG06]), and the **monotone** CNF formulas, all of whose literals are positive
 ($\Gamma^+_{2,1}$).
 
-# Formalization notes
+# Formalization Notes
 
 A CNF formula is the archive's `Lax429075.CNF.Formula`, a list of clauses, each a list of literals
 with a variable index and a sign. The variables of $\alpha$ are the indices occurring in it, and an

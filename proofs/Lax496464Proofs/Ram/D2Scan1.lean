@@ -4,7 +4,7 @@ import Lax496464Proofs.Ram.Sort
 import Lax496464Proofs.Ram.ListUtil
 
 /-!
-# Theorem 2's machine, part 1: the scan of one set
+# Theorem 2's Machine, Part 1: the Scan of One Set
 
 `scanCom` does, on the number `zc` (a code of a nonempty set, `m` digits in base `nb = n+1`) and a
 starting candidate `zy`, what `D2Scan.scanF` does on the tail of its digit string, and then builds

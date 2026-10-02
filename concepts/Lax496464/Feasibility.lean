@@ -2,7 +2,7 @@ import Lax496464.Conditions
 
 /-!
 ---
-title: A set of jobs is feasible exactly when it satisfies both conditions
+title: A Set of Jobs Is Feasible Exactly When It Satisfies Both Conditions
 type: theorem
 ---
 A set $Z$ of jobs can be completed just in time if and only if it satisfies Condition 1
@@ -15,7 +15,7 @@ when at most $m$ of its jobs are running at any one instant. One direction is im
 since jobs running at a common instant pairwise conflict; the other is the perfectness of
 interval graphs.
 
-# Formalization notes
+# Formalization Notes
 
 The characterization is what every algorithm of the paper runs on, so it is stated about
 the schedule itself rather than assumed. `Feasible` unfolds to the existence of a

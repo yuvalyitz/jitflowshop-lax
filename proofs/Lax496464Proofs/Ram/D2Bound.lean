@@ -2,7 +2,7 @@ import Lax496464Proofs.Ram.D2Layout
 import Lax496464Proofs.Ram.Sort
 
 /-!
-# Theorem 2: the running time, against the printed bound
+# Theorem 2: the Running Time, Against the Printed Bound
 
 The program's cost is `O((W+1)(n+1)^m + sortCost)`.  `loopWork_le` uses `D2Count.sum_codes_le`
 (the sets have `Σ(|X|+1) ≤ 2(n+1)^m`), which is why no factor `m` appears.

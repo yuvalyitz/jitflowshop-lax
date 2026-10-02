@@ -212,17 +212,14 @@ structure Dom (x : List ℕ) (φ : Formula) : Prop where
   drop_eq : x.drop (bo x (sOf x)) = φ.encode
   fs_eq : bo x (sOf x) + φ.encode.length = x.length
   ar_pos : ∀ i < sOf x, 1 ≤ arOf x i
-  nodup : ∀ i < sOf x, (listOf x i).Nodup
-  sigma : IsSigma 1 φ
-  nsv : φ.NoSetVar
 
 /-- **An instance word has what the program needs.** -/
 theorem dom_of_mem {x : List ℕ} (hx : x ∈ (pMC {φ | IsSigma 1 φ}).Domain) :
     ∃ A φ, EncodesMC x A φ ∧ Dom x φ := by
-  obtain ⟨A, φ, h, hσ, hns⟩ := hx
+  obtain ⟨A, φ, h, -, -⟩ := hx
   obtain ⟨y, hy, hxy⟩ := h
-  obtain ⟨hs, hN, har, hlist, hbo⟩ := parse hy hxy
-  refine ⟨A, φ, ⟨y, hy, hxy⟩, ⟨?_, ?_, ?_, fun i hi => (hlist i hi).1, hσ, hns⟩⟩
+  obtain ⟨hs, hN, har, -, hbo⟩ := parse hy hxy
+  refine ⟨A, φ, ⟨y, hy, hxy⟩, ⟨?_, ?_, ?_⟩⟩
   · rw [hbo, hxy, List.drop_left]
   · rw [hbo, hxy, List.length_append]
   · intro i hi

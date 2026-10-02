@@ -4,7 +4,7 @@ import Lax496464Proofs.WHierarchy.ComputableBounds
 import Lax496464.WH_D07_DefinabilityToWSat
 
 /-!
-# `p-WD_φ ≤fpt p-WSat(d-CNF)` for `Π_1`-sentences `φ` (Flum–Grohe, Lemma 6.37)
+# `p-WD_φ ≤fpt p-WSat(d-CNF)` for `Π_1`-Sentences `φ` (Flum–Grohe, Lemma 6.37)
 
 The reduction `R (dataOf xs ψ s)` of `Reduction` is computed by the IMP+ program `prog` within
 `400 · (Cc · (|x| + 1) · (k + 1))^(r+s+2)` steps with values below `Bv`: fixed-parameter time.

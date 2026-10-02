@@ -19,6 +19,7 @@ namespace Lax496464Proofs.WHierarchy.Machine.Compose.Translate
 
 open Lax808846.Ram Lax496464Proofs.WHierarchy.Machine.Compose.RunBasics
 
+set_option genSizeOfSpec false in
 /-- Where the simulated program's input comes from. -/
 inductive InM
   /-- The machine's own input, with `δ` entries in front. -/
@@ -27,6 +28,7 @@ inductive InM
   | buffer
   deriving DecidableEq
 
+set_option genSizeOfSpec false in
 /-- Where the simulated program's output goes. -/
 inductive OutM
   /-- The buffer: its length at cell `1`, entry `i` at cell `4 * (i + 1) + 1`. -/
@@ -35,6 +37,8 @@ inductive OutM
   | real
   deriving DecidableEq
 
+set_option genInjectivity false in
+set_option genSizeOfSpec false in
 /-- A mode of simulation. -/
 structure Mode where
   /-- The offset of the simulated memory. -/
@@ -102,14 +106,6 @@ theorem length_compileI (M : Mode) (lab : ℕ → ℕ) (ex : ℕ) (i : Instr) :
     first
     | rfl
     | (cases M.inm <;> rfl)
-
-theorem blen_le (M : Mode) (i : Instr) : blen M i ≤ 10 := by
-  unfold blen
-  cases i <;> simp only [compileI] <;>
-    first
-    | (simp)
-    | (cases M.inm <;> simp)
-    | (cases M.outm <;> simp)
 
 /-- The position of the translation of instruction `l` relative to the start of the translated
 program. -/

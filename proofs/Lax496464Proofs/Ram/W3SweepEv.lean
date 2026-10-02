@@ -4,7 +4,7 @@ import Lax496464Proofs.Ram.DpMArr
 import Lax496464Proofs.Ram.W3SweepModel
 
 /-!
-# The sweep loop's events, on the machine
+# The Sweep Loop's Events, on the Machine
 
 The two kinds of event, as IMP+ commands, each proved to move the machine's state along the
 model's `step` (`startEv_spec`, `dueEv_spec`), and the test that chooses between them

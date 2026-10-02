@@ -59,7 +59,7 @@ theorem anyB_succ (x : List ℕ) (st v j : ℕ) :
   simp [anyB, List.range_succ, List.any_append]
 
 theorem adjX_eq (x : List ℕ) (u v : ℕ) :
-    adjX x u v = anyB x (3 + nV x + offX x u) v (offX x (u + 1) - offX x u) := rfl
+    adjX x u v = anyB x (3 + nV x + offX x u) v (offX x (u + 1) - offX x u) := by unfold adjX; try rfl
 
 /-- The invariant of the scan. -/
 def SI (x : List ℕ) (st v dg : ℕ) (σ : Env) : Prop :=

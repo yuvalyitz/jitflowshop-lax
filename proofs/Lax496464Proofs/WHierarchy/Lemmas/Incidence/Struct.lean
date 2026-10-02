@@ -19,6 +19,8 @@ namespace Lax496464Proofs.WHierarchy.Lemmas.Incidence.Struct
 
 open Lax496464.WH_B1_Structures Lax496464Proofs.WHierarchy.Logic.StructureCode
 
+set_option genInjectivity false in
+set_option genSizeOfSpec false in
 /-- The data the incidence structure is built from. -/
 structure IncData where
   s : ℕ
@@ -130,7 +132,7 @@ def toStructure : Structure where
     simp only [good, List.all_eq_true, decide_eq_true_eq] at h2
     exact h2 a ha
 
-@[simp] theorem toStructure_arities : D.toStructure.arities = D.arities := rfl
+@[simp] theorem toStructure_arities : D.toStructure.arities = D.arities := by simp only [toStructure]
 @[simp] theorem toStructure_size : D.toStructure.size = D.size := rfl
 
 theorem mem_rel {k : ℕ} {t : List ℕ} :
@@ -142,7 +144,7 @@ theorem mem_rel {k : ℕ} {t : List ℕ} :
 theorem po_succ (i : ℕ) : D.po (i + 1) = D.po i + D.cnt i := by
   simp [po, List.range_succ]
 
-theorem po_zero : D.po 0 = 0 := rfl
+theorem po_zero : D.po 0 = 0 := by unfold po; try rfl
 
 theorem po_mono {i i' : ℕ} (h : i ≤ i') : D.po i ≤ D.po i' := by
   induction i', h using Nat.le_induction with

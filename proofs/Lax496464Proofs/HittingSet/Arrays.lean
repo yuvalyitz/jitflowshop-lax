@@ -2,7 +2,7 @@ import Lax496464Proofs.HittingSet.Correct
 import Lax391470Proofs.L2ScanModel
 
 /-!
-# Positions and clauses
+# Positions and Clauses
 
 The scan presents a formula as its literals in order with the clause number of each. A
 literal belongs to clause `c` exactly when it stands at a position whose clause number

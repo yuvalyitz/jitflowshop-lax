@@ -2,7 +2,7 @@ import Lax496464.WH_B1_Structures
 
 /-!
 ---
-title: First-order formulas and the classes Σ_t and Π_t
+title: First-Order Formulas and the Classes Σ_t and Π_t
 type: definition
 ---
 First-order formulas over a relational vocabulary, with equality and one free *relation variable*
@@ -16,7 +16,7 @@ the hierarchies [FG06, Section 4.2]:
 * a formula is *at most $u$-ary* if every relation symbol in it has arity at most $u$, as in
   $\Sigma_1[2]$.
 
-# Formalization notes
+# Formalization Notes
 
 **Syntax.** Variables and relation symbols are numbers: `rel i xs` is the atom
 $R_i\,x_{a_1}\dots x_{a_r}$ for symbol $i$ and the variables listed in `xs`, and `setVar xs` is the

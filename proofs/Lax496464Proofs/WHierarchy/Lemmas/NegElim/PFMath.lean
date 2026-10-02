@@ -28,12 +28,10 @@ def trL : List (Bool × Formula) → ℕ → List ℕ
   | [], _ => []
   | (p, f) :: fs, c => (tr p f c).encode ++ trL fs (c + cnt p f)
 
-@[simp] theorem pend_nil : pend [] = [] := rfl
 @[simp] theorem pend_cons (f : Bool × Formula) (fs : List (Bool × Formula)) :
-    pend (f :: fs) = f.2.encode ++ pend fs := rfl
-@[simp] theorem cntL_nil : cntL [] = 0 := rfl
+    pend (f :: fs) = f.2.encode ++ pend fs := by unfold pend; try rfl
 @[simp] theorem cntL_cons (f : Bool × Formula) (fs : List (Bool × Formula)) :
-    cntL (f :: fs) = cnt f.1 f.2 + cntL fs := rfl
+    cntL (f :: fs) = cnt f.1 f.2 + cntL fs := by unfold cntL; try rfl
 
 /-! ### One turn -/
 
@@ -102,7 +100,7 @@ theorem seqL_fresh (x : List ℕ) (k g n : ℕ) (hk : k ≠ 0) : seqL x k g n = 
 def lexBodyL (ys zs : List ℕ) (m : ℕ) : List ℕ :=
   (List.range m).flatMap fun l => [5, 0, 0, 2, ys.getD l 0, zs.getD l 0, 4, 2, ys.getD l 0, zs.getD l 0]
 
-@[simp] theorem lexBodyL_zero (ys zs : List ℕ) : lexBodyL ys zs 0 = [] := rfl
+@[simp] theorem lexBodyL_zero (ys zs : List ℕ) : lexBodyL ys zs 0 = [] := by unfold lexBodyL; try rfl
 
 theorem lexBodyL_succ (ys zs : List ℕ) (m : ℕ) : lexBodyL ys zs (m + 1) = lexBodyL ys zs m ++
     [5, 0, 0, 2, ys.getD m 0, zs.getD m 0, 4, 2, ys.getD m 0, zs.getD m 0] := by

@@ -1,7 +1,7 @@
 import Lax496464Proofs.Ram.T4Expire
 
 /-!
-# Theorem 4's machine, part 3: one job
+# Theorem 4's Machine, Part 3: One Job
 
 `stepJob` considers job `jj`: expire, decide whether it fits (`okCom`), insert it into both
 trees, and either count it or drop the running job of largest due date. `stepJob_run` says that

@@ -7,7 +7,7 @@ import Lax391470Proofs.RamToTuring
 import Lax391470Proofs.TMCompose
 
 /-!
-# Theorem 1's hardness claim, from the running-time and correctness results
+# Theorem 1's Hardness Claim, from the Running-Time and Correctness Results
 
 The word-RAM reduction `TotalReduction.f` is polynomial-time (`TotalFinal.ramPolytime_f`) and
 computes, on the bits of a canonical encoding, the bits of the constructed shop. This file

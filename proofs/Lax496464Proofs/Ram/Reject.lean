@@ -1,7 +1,7 @@
 import Lax496464Proofs.Ram.InstanceWord
 
 /-!
-# The fixed output for a tape that does not decode
+# The Fixed Output for a Tape That Does Not Decode
 
 `Ram/Validate.lean`'s `validate` leaves `"valid"` at `0` when the scan's data does not satisfy
 `HittingSet.Encodes`'s own conditions. What the total program does on such an input does not

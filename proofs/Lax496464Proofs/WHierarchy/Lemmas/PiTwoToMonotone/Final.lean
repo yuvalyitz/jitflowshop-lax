@@ -5,9 +5,9 @@ import Lax496464Proofs.WHierarchy.Machine.ImpBridge
 import Lax496464.WH_E2_HittingSetW2Complete
 
 /-!
-# `p-WD_φ ≤fpt p-WSat(monotone)` for `Π₂`-sentences `φ` (Flum–Grohe, Theorem 7.1(1), `t = 2`)
+# `p-WD_φ ≤fpt p-WSat(monotone)` for `Π₂`-Sentences `φ` (Flum–Grohe, Theorem 7.1(1), `t = 2`)
 
-## The reduction
+## The Reduction
 
 `φ = ∀ x̄ ∃ ȳ ψ(X)`, `ψ` quantifier-free, `X` of arity `s`; an instance `(A, k)`.
 
@@ -40,7 +40,7 @@ has one per block, so `k = 0`, an empty universe (then `N = 0^s`), `s = 0` (`N =
 a `∀` over an empty universe is vacuous since the universal positions of shadowed variables are
 kept (`Syntax.posList`).
 
-## The program
+## The Program
 
 An IMP+ program (`PDefs.prog`), verified phase by phase (`PMain.prog_run`), runs within
 `Kc · G⁵` steps (`PBounds.Kprog_le`) for `G = (c₀ (|x|+1) (k+1))^E₀`: fixed-parameter time.

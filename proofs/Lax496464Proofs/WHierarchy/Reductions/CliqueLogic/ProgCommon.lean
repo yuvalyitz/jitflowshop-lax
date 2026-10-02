@@ -4,7 +4,7 @@ import Lax496464Proofs.WHierarchy.Machine.ImpBridge
 import Lax496464Proofs.WHierarchy.Machine.SizeFacts
 
 /-!
-# What the two whole programs share
+# What the Two Whole Programs Share
 
 The facts about a graph word the programs use (`Good`), the value bound, the reading of `n` and
 `k`, the layout, and the numeric bounds the time statements need.

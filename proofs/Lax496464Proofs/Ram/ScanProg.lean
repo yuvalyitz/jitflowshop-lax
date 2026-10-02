@@ -2,7 +2,7 @@ import Lax496464Proofs.Ram.ScanModel
 import Lax391470Proofs.ReadAll
 
 /-!
-# The scan, as an IMP+ program
+# The Scan, as an IMP+ Program
 
 `Ram/ScanModel.lean`'s `step`/`run` is a total function of a small state and one input
 entry at a time, proved (there) to decode a genuine `HittingSet.encodeInstance P k`

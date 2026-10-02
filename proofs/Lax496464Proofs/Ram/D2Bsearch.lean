@@ -2,7 +2,7 @@ import Lax496464Proofs.Ram.Nxt1
 import Mathlib.Data.Nat.Size
 
 /-!
-# Theorem 2's machine, part 4: the array `NX` in `O(n log n)`
+# Theorem 2's Machine, Part 4: the Array `NX` in `O(n log n)`
 
 `Nxt1.nxtLoop` fills `NX` by a scan per job, `O(n²)` in all — too slow for Theorem 2 when `m = 1`,
 whose bound only leaves `O(n log n)` besides the table.  Start times are nondecreasing, so

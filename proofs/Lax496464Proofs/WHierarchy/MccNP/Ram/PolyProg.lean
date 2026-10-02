@@ -3,7 +3,7 @@ import Lax496464Proofs.WHierarchy.MccNP.Ram.BodyOk
 import Lax391470Proofs.ReadAll
 
 /-!
-# The program on every word
+# The Program on Every Word
 
 The program reads the length and the word into array `a`, decides whether the word is valid, and
 writes the word of the multicoloured graph if it is.

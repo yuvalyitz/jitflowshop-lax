@@ -9,7 +9,7 @@ With a single second-stage machine and no weights, the problem is solved in $O(n
 time. It is the program of the second theorem at $m = 1$: the table has $n$ columns, the
 threshold is at most $n$ because every weight is one, and the two bounds multiply.
 
-# Formalization notes
+# Formalization Notes
 
 The claim is about the slice of instances with one machine and unit weights, so the
 statement restricts the admissible words to those rather than asking a program to behave

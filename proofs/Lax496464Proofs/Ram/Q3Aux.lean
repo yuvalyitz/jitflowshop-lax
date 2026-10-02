@@ -4,7 +4,7 @@ import Lax496464Proofs.Ram.Q3Model
 import Lax496464Proofs.Ram.T4Tail
 
 /-!
-# Theorem 3, profile sweep: small glue lemmas between the pure layer and the loops
+# Theorem 3, Profile Sweep: Small Glue Lemmas Between the Pure Layer and the Loops
 -/
 
 namespace Lax496464Proofs.Ram.Q3Aux

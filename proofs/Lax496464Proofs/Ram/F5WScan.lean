@@ -2,7 +2,7 @@ import Lax496464Proofs.Ram.F5QFit
 import Lax496464Proofs.Ram.W3Sweep
 
 /-!
-# Theorem 5 (endpoint sweep): the read-off
+# Theorem 5 (Endpoint Sweep): the Read-Off
 
 The exact core leaves in `TB[0 … W]` the row of the endpoint sweep: `TB[c] < INF` iff weight `c`
 is reached.  `scanW` finds the largest `c ≤ W` with `TB[c] < INF` (the last finite cell of a

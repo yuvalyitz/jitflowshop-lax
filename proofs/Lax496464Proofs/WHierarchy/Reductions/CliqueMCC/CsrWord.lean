@@ -3,7 +3,7 @@ import Mathlib.Combinatorics.SimpleGraph.DegreeSum
 import Mathlib.Data.List.GetD
 
 /-!
-# The compressed sparse row word of a decidable adjacency
+# The Compressed Sparse Row Word of a Decidable Adjacency
 
 For a Boolean relation `r` on `0, …, N-1` that is the adjacency of a graph `H`, the word
 `[N, M, 0, psum 1, …, psum N] ++ targets`, where the targets list the neighbours of each vertex in

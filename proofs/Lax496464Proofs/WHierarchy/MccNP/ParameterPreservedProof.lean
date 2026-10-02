@@ -2,7 +2,7 @@ import Lax496464.WH_F4_IndependentSetToMcc
 import Lax496464Proofs.WHierarchy.MccNP.Shape
 
 /-!
-# The parameter is preserved
+# The Parameter Is Preserved
 
 The word of the multicoloured graph ends with the number `k` of colours, and the parameter of the
 word of an instance is its threshold `k` (`Shape.threshold_word`).

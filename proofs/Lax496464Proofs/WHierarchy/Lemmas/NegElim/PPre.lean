@@ -180,8 +180,8 @@ theorem nT_eq (x : List ℕ) : nT x = oo x (sOf x) := by rw [nT, entries_eq]; rf
 theorem nT_le (hd : Dom x φ) : nT x + 2 ≤ x.length := by
   have := hd.oo_le (le_refl (sOf x)); rw [nT_eq]; omega
 
-@[simp] theorem entsUpTo_zero (x : List ℕ) : entsUpTo x 0 = [] := rfl
-@[simp] theorem bo_zero' (x : List ℕ) : bo x 0 = 2 + sOf x := rfl
+@[simp] theorem entsUpTo_zero (x : List ℕ) : entsUpTo x 0 = [] := by unfold entsUpTo; try rfl
+@[simp] theorem bo_zero' (x : List ℕ) : bo x 0 = 2 + sOf x := by unfold bo; try rfl
 
 
 /-- The array `E` after `entPass`. -/

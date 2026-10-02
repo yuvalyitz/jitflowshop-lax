@@ -2,7 +2,7 @@ import Lax496464Proofs.Ram.Imp
 import Lax496464Proofs.Ram.SegTree
 
 /-!
-# The maximum tree on the machine
+# The Maximum Tree on the Machine
 
 Two operations on the array `a` of a maximum tree (`Ram/SegTree.lean`) over `N = 2^h` leaves:
 

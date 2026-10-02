@@ -1,7 +1,7 @@
 import Lax496464Proofs.Ram.W3Front2
 
 /-!
-# Corollary 3's machine, part 0: the front end, with the processing times of the sorted instance
+# Corollary 3's Machine, Part 0: the Front End, with the Processing Times of the Sorted Instance
 
 `W3Front2.sortSetup3_spec` with one more conjunct: the sorted instance `J` is a renumbering of
 `I`: each processing time and weight of `J` is one of `I`, so bounds and uniformity transfer.

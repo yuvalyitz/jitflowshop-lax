@@ -2,7 +2,7 @@ import Lax496464Proofs.Ram.D5Core
 import Lax496464Proofs.Ram.D2Prog
 
 /-!
-# Corollary 3's program, top level
+# Corollary 3's Program, Top Level
 
 `prog5 = sortSetup3 ; if n < 1 then answer(W = 0) else if m < 1 then answer(W = 0) else
 (Wc := W ; W := n ; core5 ; finish5)`.  `finish5` reads the entry of the block of the first `m`

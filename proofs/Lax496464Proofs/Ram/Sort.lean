@@ -4,7 +4,7 @@ import Lax496464Proofs.Ram.ListUtil
 import Mathlib.Data.Nat.Log
 
 /-!
-# Bottom-up merge sort on the machine
+# Bottom-Up Merge Sort on the Machine
 
 Two arrays, `SA` holding the sequence and `SB` a buffer. A pass merges neighbouring runs of
 width `w` from `SA` into `SB` and copies `SB` back; `⌈log₂ n⌉` passes sort. The comparison
@@ -40,6 +40,8 @@ theorem seg_cons {a : List ℕ} {i j : ℕ} (h : i < j) (hj : j ≤ a.length) :
   rw [seg, List.drop_eq_getElem_cons hl, List.getElem_take]
   simp [seg, List.getD_eq_getElem?_getD, show i < a.length by omega]
 
+set_option genInjectivity false in
+set_option genSizeOfSpec false in
 /-- What a comparison hook owes. -/
 structure Cmp (B : ℕ) (r : ℕ → ℕ → Prop) (Base : Env → Prop) where
   com : Com

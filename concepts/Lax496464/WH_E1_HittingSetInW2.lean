@@ -3,7 +3,7 @@ import Lax496464.WH_C2_HittingSet
 
 /-!
 ---
-title: Hitting Set is in W[2]
+title: Hitting Set Is in W[2]
 type: theorem
 ---
 $p$-Hitting-Set is in W[2] [FG06, Example 5.2]. A hypergraph becomes the structure whose universe
@@ -17,7 +17,7 @@ Iyx)) \wedge (Xz \to \mathrm{VERT}\,z)\big),$$
 
 whose second conjunct makes the $k$ elements of $X$ vertices [FG06, Example 4.42].
 
-# Formalization notes
+# Formalization Notes
 
 In `hsFormula` the variables $x, y, z$ are $0, 1, 2$, and the relation symbols $\mathrm{VERT},
 \mathrm{EDGE}, I$ are $0, 1, 2$. Since the universe size is written in binary, the reduction first

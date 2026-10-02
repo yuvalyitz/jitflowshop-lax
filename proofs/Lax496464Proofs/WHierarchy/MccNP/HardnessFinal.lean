@@ -6,7 +6,7 @@ import Lax496464Proofs.WHierarchy.MccNP.Ram.PolyTimeProof
 import Lax496464.WH_A5_Bridges
 
 /-!
-# Independent Set reduces to Multicoloured Clique; Multicoloured Clique is NP-hard
+# Independent Set Reduces to Multicoloured Clique; Multicoloured Clique Is NP-Hard
 
 The general arguments of `HardnessProof` applied to the proved properties of `reduce`, and the
 fpt-reduction of `WH_A2_FptReductions` obtained from them by `WH_A5_Bridges.fptReduces_of_polyTime`.

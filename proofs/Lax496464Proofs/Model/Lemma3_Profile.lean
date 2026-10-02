@@ -4,7 +4,7 @@ import Mathlib.Order.Interval.Finset.Nat
 namespace Lax496464Proofs
 
 /-!
-# Section 5: the due-date profile behind Theorem 3's second program
+# Section 5: the Due-Date Profile Behind Theorem 3's Second Program
 
 Section 5's program replaces Section 4's *set* `X` of running jobs by a *count vector*
 `x⃗ = (x₁, …, x_{q_max}) ∈ {0, …, m}^{q_max}`, where `xᵢ` is the number of second-stage

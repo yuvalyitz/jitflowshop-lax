@@ -10,7 +10,7 @@ type: definition
 $k \in \mathbb N$. *Parameter:* $k$. *Question:* is there a set of $k$ elements of the universe that
 meets every set of the family? [FG06, Example 4.42]
 
-# Formalization notes
+# Formalization Notes
 
 The instances and the question are those of the Hitting Set of the just-in-time flow shop part of
 this submission (`Lax496464.HittingSet`): a universe $\{0,\dots,n-1\}$, sets

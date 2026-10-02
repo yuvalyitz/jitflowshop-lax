@@ -121,8 +121,6 @@ theorem cell_ne {M : Mode} (hM : Valid M) (a : ℕ) :
       (4 * a + M.o) % 4 ≠ 1 := by
   rcases hM.o with h | h <;> rw [h] <;> omega
 
-theorem cell_inj {M : Mode} {a a' : ℕ} : 4 * a' + M.o = 4 * a + M.o ↔ a' = a := by omega
-
 /-! ### Plain blocks -/
 
 theorem plainRun_input {w : ℕ} :

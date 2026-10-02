@@ -18,7 +18,7 @@ the shop it builds has exactly $k$ machines, so the new parameter is the old one
 everything else about the construction is polynomial in the size of the instance it
 reads.
 
-# Formalization notes
+# Formalization Notes
 
 The claim is about the parameterized problem whose parameter is the word's second entry,
 the number of machines, and it unfolds to the existence of an fpt-reduction from Hitting

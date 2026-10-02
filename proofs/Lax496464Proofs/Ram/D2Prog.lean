@@ -1,7 +1,7 @@
 import Lax496464Proofs.Ram.D2Core
 
 /-!
-# Theorem 2's program, top level
+# Theorem 2's Program, Top Level
 
 `prog2 = sortSetup3 ; if n < 1 then answer(W = 0) else if m < 1 then answer(W = 0) else
 core2 ; finish`.  `finish` reads the entry of the column at the threshold and writes the bit.

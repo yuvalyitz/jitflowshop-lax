@@ -2,7 +2,7 @@ import Lax496464Proofs.Ram.F5WPre
 import Lax496464Proofs.Ram.D2Final
 
 /-!
-# Theorem 5 (table of Section 3): the read-off
+# Theorem 5 (Table of Section 3): the Read-Off
 
 The exact core leaves in `TAB[code·(W+1) + r]`, `r ≤ W`, the entry of the first `m` indices at weight
 `r`: non-zero iff weight `r` is reached.  `scanM` finds the largest `r ≤ W` with a non-zero entry

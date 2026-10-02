@@ -6,7 +6,7 @@ import Mathlib.Algebra.BigOperators.Ring.Finset
 namespace Lax496464Proofs
 
 /-!
-# Section 7: the rounding scheme behind the FPTAS
+# Section 7: the Rounding Scheme Behind the FPTAS
 
 Theorem 5 has two halves. One is algorithmic: the dynamic programs of Sections 3 and 5
 solve the problem in time polynomial in the *total weight* `W`, so making the weights
@@ -16,7 +16,7 @@ what says the small weights cost almost nothing — the paper's chain of inequal
 This file is the second half, in full. It is the part of Theorem 5 that is mathematics
 rather than a resource bound, and it is the part the paper actually writes out.
 
-## The construction
+## The Construction
 
 `rescale I k` divides every weight by the *scaling factor* `k` and rounds up. Nothing else
 changes — not `p`, not `q`, not `d`, not `m` — so `feasible_rescale` is `Iff.rfl` and a
@@ -24,7 +24,7 @@ solution of one instance is literally a solution of the other. The scaling facto
 paper picks is `k = ε · w_max / n`; the theorem below takes any `k` satisfying
 `k · n ≤ ε · w_max`, which is what that choice is for and all the argument uses.
 
-## The chain
+## The Chain
 
 With `Z` optimal for `I` and `Z*` optimal for `rescale I k`, and writing `w*` for the
 rounded weights, every step is a one-line consequence of `k·(w*ⱼ − 1) ≤ wⱼ ≤ k·w*ⱼ`:
@@ -56,7 +56,7 @@ def rescale (I : FFJ) (k : ℕ) : FFJ where
 
 variable (I : FFJ) (k : ℕ)
 
-@[simp] lemma rescale_w (j : I.Job) : (I.rescale k).w j = (I.w j + (k - 1)) / k := rfl
+@[simp] lemma rescale_w (j : I.Job) : (I.rescale k).w j = (I.w j + (k - 1)) / k := by simp only [rescale]
 
 /-- `k·⌈wⱼ/k⌉` brackets `wⱼ`: it is at least `wⱼ`, and overshoots by less than `k`. -/
 theorem rescale_bounds (hk : 0 < k) (j : I.Job) :

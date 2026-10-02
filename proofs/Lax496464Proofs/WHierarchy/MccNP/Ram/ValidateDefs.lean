@@ -1,7 +1,7 @@
 import Lax808846Proofs.Tactic
 
 /-!
-# The validator: definitions
+# The Validator: Definitions
 
 `validate` reads `L` and array `a` and sets `ok` to `1` if the word is `Shape.Valid` and to `0`
 otherwise. It is total on every word, never stores into an array, and assigns only `ok` and scalars

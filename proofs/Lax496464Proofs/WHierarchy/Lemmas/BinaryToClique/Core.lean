@@ -3,7 +3,7 @@ import Mathlib.Data.Nat.Find
 import Mathlib.Tactic
 
 /-!
-# Σ₁[2] model checking to Clique: the graph, abstractly
+# Σ₁[2] Model Checking to Clique: the Graph, Abstractly
 
 The graph of the reduction, described by a handful of functions on numbers (`Params`): the number
 `k = 2q` of rows, the number `ne` of candidate values and the value `E e` of candidate `e`, the
@@ -30,6 +30,8 @@ def bitv (c m : ℕ) : ℕ := c / 2 ^ m % 2
 theorem bitv_le_one (c m : ℕ) : bitv c m ≤ 1 := by
   unfold bitv; have := Nat.mod_lt (c / 2 ^ m) (show 0 < 2 by norm_num); omega
 
+set_option genInjectivity false in
+set_option genSizeOfSpec false in
 /-- The data of the graph. -/
 structure Params where
   /-- The number of rows, twice the number of atoms. -/

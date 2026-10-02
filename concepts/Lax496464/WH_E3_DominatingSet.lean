@@ -4,7 +4,7 @@ import Lax496464.WH_C2_HittingSet
 
 /-!
 ---
-title: Dominating Set is W[2]-complete
+title: Dominating Set Is W[2]-Complete
 type: theorem
 ---
 $p$-Dominating-Set is W[2]-complete under fpt-reductions [FG06, Corollary 7.15]: it is

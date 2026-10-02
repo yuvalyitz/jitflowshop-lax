@@ -3,7 +3,7 @@ import Lax496464Proofs.Section3
 import Lax496464Proofs.Ram.EstPermute
 
 /-!
-# The dynamic program for one machine
+# The Dynamic Program for One Machine
 
 With a single machine a set of thresholds is `∅` or one job, so the table of Section 3 is an
 array `T[j][W']` for `j = 0 … n` and `W' = 0 … n` (`j = n` standing for `∅`). This file is

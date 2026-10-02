@@ -82,7 +82,7 @@ theorem wsProg_run {x : List ℕ} (hx : x ∈ (pWSat {α | IsMonotone α}).Domai
   have hkS := size_le_bitSize hkmem
   have hcode : ∀ C ∈ α, ∀ l ∈ C, litCode l < B := fun C hC l hl => by
     have := hxs _ (by rw [hxdef]; exact List.mem_append_left _ (code_mem α hC hl)); omega
-  have hfits : WSHSRead.Fits α k B := ⟨hcode, by omega, by omega⟩
+  have hfits : WSHSRead.Fits α k B := ⟨hcode, by omega⟩
   have hlB : ∀ v ∈ litsL α, v < B := fun v hv => by
     obtain ⟨C, hC, l, hl, rfl⟩ := index_lt_of_mem α hv
     exact lt_of_le_of_lt (index_le_code l) (hcode C hC l hl)

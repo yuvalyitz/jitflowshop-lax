@@ -3,7 +3,7 @@ import Lax496464.WH_A2_FptReductions
 
 /-!
 ---
-title: The W-hierarchy and the A-hierarchy
+title: The W-Hierarchy and the A-Hierarchy
 type: definition
 ---
 For $t \ge 0$,
@@ -20,7 +20,7 @@ definition by weighted satisfiability of circuits of bounded weft [FG06, Theorem
 places the classes, the model-checking problems and the reductions between them on the same
 objects, structures and first-order formulas.
 
-# Formalization notes
+# Formalization Notes
 
 $p\text{-WD-}\Pi_t$ (`pWDPi t`) is the set of problems $p\text{-WD}_\varphi$ for all
 $\Pi_t$-sentences $\varphi$ and all arities of $X$; `W t` and `A t` are the closures of

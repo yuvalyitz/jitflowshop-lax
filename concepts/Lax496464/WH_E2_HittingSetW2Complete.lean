@@ -4,7 +4,7 @@ import Lax496464.WH_C3_WeightedSat
 
 /-!
 ---
-title: Hitting Set is W[2]-complete
+title: Hitting Set Is W[2]-Complete
 type: theorem
 ---
 $p$-Hitting-Set is W[2]-complete under fpt-reductions [FG06, Theorem 7.14]. It is in W[2]

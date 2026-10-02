@@ -3,7 +3,7 @@ import Lax496464.WH_B3_LogicProblems
 import Lax496464Proofs.WHierarchy.Logic.StructureCode
 
 /-!
-# Σ₁[2] model checking to Clique: reading the structure off the word
+# Σ₁[2] Model Checking to Clique: Reading the Structure Off the Word
 
 For a word `x = y ++ rest` with `y` an encoding of the structure `A`: the number of symbols, the
 arities and the size are where the header says; the header walk `hp` finds the start of every

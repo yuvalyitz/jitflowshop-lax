@@ -2,7 +2,7 @@ import Lax496464Proofs.WHierarchy.Lemmas.PiTwoToMonotone.PPhaseM
 import Lax496464Proofs.WHierarchy.Lemmas.WDToWSat.ProgMain
 
 /-!
-# The whole program
+# The Whole Program
 
 `mainCom_run`: the setup of `Lemmas/WDToWSat` (block positions, `L`, the elements, powers of `n`),
 the constants, the number of clauses, the phases B, X, M and `W`; the output is `OutW.outWords`.

@@ -3,7 +3,7 @@ import Lax496464Proofs.WHierarchy.MccNP.Ram.ValidateDefs
 import Lax496464Proofs.WHierarchy.MccNP.Ram.ValidateLemmas
 
 /-!
-# The run-of-ones loop of the validator
+# The Run-of-Ones Loop of the Validator
 -/
 
 namespace Lax496464Proofs.WHierarchy.MccNP.Validate

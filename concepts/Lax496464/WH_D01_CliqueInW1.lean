@@ -3,7 +3,7 @@ import Lax496464.WH_C1_GraphProblems
 
 /-!
 ---
-title: Clique is in W[1]
+title: Clique Is in W[1]
 type: theorem
 ---
 $p$-Clique is in W[1] [FG06, Example 5.2]. A set $X$ of vertices is a clique exactly when the graph
@@ -14,7 +14,7 @@ $$\mathrm{clique}(X) \;=\; \forall y\,\forall z\,\big((Xy \wedge Xz \wedge \neg\
 so $p$-Clique fpt-reduces to $p\text{-WD}_{\mathrm{clique}}$: the graph becomes the structure whose
 universe is its vertex set and whose one relation is its edge relation, and $k$ is unchanged.
 
-# Formalization notes
+# Formalization Notes
 
 In `cliqueFormula` the variables $y, z$ are $0, 1$, the edge relation $E$ is the binary symbol $0$,
 and $X$ is unary. The edge relation contains both $(u, v)$ and $(v, u)$ for every edge $uv$.

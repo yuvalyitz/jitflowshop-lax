@@ -1,7 +1,7 @@
 import Lax496464Proofs.WHierarchy.MccNP.Shape
 
 /-!
-# List facts for the validator
+# List Facts for the Validator
 
 Runs of ones, and `Shape.Valid` in the form the validator checks.
 -/

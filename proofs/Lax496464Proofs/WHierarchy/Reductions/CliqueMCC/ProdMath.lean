@@ -2,7 +2,7 @@ import Lax496464Proofs.WHierarchy.Reductions.CliqueMCC.CsrWord
 import Lax496464Proofs.WHierarchy.Reductions.CliqueMCC.Common
 
 /-!
-# p-Clique to Multicoloured Clique: construction and correctness
+# P-Clique to Multicoloured Clique: Construction and Correctness
 
 For a graph `G` on `n` vertices and `k ≤ n`, the multicoloured graph has the `k · n` vertices
 `s = c · n + v` (the copy of `v` in colour `c = s / n`, `v = s % n`), coloured `s / n`; two copies

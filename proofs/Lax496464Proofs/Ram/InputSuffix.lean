@@ -1,7 +1,7 @@
 import Lax808846Proofs.Reasoning
 
 /-!
-# A run is unaffected by appending unread input
+# A Run Is Unaffected by Appending Unread Input
 
 Theorem 1's reduction has to be a *total* word-RAM computation to be usable in the
 Turing-machine model (`Lax759944.RamPolytime`'s definition quantifies over every word, not

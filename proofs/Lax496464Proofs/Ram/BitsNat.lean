@@ -2,7 +2,7 @@ import Lax496464.HittingSet
 import Mathlib.Data.Nat.Size
 
 /-!
-# A number's self-delimiting code, as zeros and ones
+# A Number's Self-Delimiting Code, as Zeros and Ones
 
 `HittingSet.encodeNat n` is a list of `Bool`; a word RAM is handed zeros and ones, not
 booleans, so this restates the code as a list of `ℕ` and gives its digits a closed form:

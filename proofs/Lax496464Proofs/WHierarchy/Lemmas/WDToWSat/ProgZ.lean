@@ -1,7 +1,7 @@
 import Lax496464Proofs.WHierarchy.Lemmas.WDToWSat.ProgClause
 
 /-!
-# One clause, all clauses of an assignment
+# One Clause, All Clauses of an Assignment
 
 `clauseCom_spec`: `clauseCom C` writes `clauseWords D x ds C`; `clausesCom_spec`: the clauses of the
 CNF in turn.

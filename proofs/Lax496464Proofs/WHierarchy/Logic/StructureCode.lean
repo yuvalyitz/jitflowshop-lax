@@ -137,52 +137,6 @@ theorem encodes_prefix {y y' r r' : List ℕ} {A A' : Structure} (h : Encodes y 
   subst hA
   exact ⟨rfl, rfl, rfl⟩
 
-/-- An encoding determines the structure. -/
-theorem encodes_unique {y : List ℕ} {A A' : Structure} (h : Encodes y A) (h' : Encodes y A') :
-    A = A' :=
-  (encodes_prefix (r := []) (r' := []) h h' rfl).2.1
-
-/-- The word of a structure begins with its number of symbols. -/
-theorem encodes_head {y : List ℕ} {A : Structure} (h : Encodes y A) :
-    y = A.arities.length :: (A.arities ++ A.size :: y.drop (A.arities.length + 2)) := by
-  obtain ⟨bl, -, -, rfl⟩ := h
-  simp [List.drop_append]
-
-/-- The length of the word of a structure: the header and one block per symbol. -/
-theorem length_of_encodes {y : List ℕ} {A : Structure} (h : Encodes y A) :
-    y.length = 2 + A.arities.length +
-      ∑ i ∈ Finset.range A.arities.length, (1 + (A.rel i).card * A.arities.getD i 0) := by
-  obtain ⟨bl, hbl, hrel, rfl⟩ := h
-  have key : ∀ (bl : List (List ℕ)) (as : List ℕ) (R : ℕ → Finset (List ℕ)),
-      bl.length = as.length →
-      (∀ i < as.length, EncodesRel (R i) (bl.getD i [])) →
-      (∀ i, ∀ t ∈ R i, t.length = as.getD i 0) →
-      bl.flatten.length = ∑ i ∈ Finset.range as.length, (1 + (R i).card * as.getD i 0) := by
-    intro bl
-    induction bl with
-    | nil => intro as R h _ _; cases as <;> simp_all
-    | cons b bl ih =>
-      intro as R hl hr hlen
-      cases as with
-      | nil => simp at hl
-      | cons a as =>
-        rw [List.length_cons, Finset.sum_range_succ']
-        simp only [List.flatten_cons, List.length_append, List.getD_cons_succ,
-          List.getD_cons_zero]
-        rw [ih as (fun i => R (i + 1)) (by simpa using hl)
-          (fun i hi => by simpa using hr (i + 1) (by simp; omega))
-          (fun i t ht => by simpa using hlen (i + 1) t ht)]
-        obtain ⟨ts, hnd, hts, hb⟩ := hr 0 (by simp)
-        simp only [List.getD_cons_zero] at hb
-        rw [hb, ← hts, List.toFinset_card_of_nodup hnd]
-        simp only [List.length_cons]
-        rw [length_flatten_of_forall (a := a) fun t ht => by
-          simpa using hlen 0 t (by rw [← hts]; exact List.mem_toFinset.mpr ht)]
-        ring
-  rw [show (A.arities.length :: (A.arities ++ A.size :: bl.flatten)).length =
-    2 + A.arities.length + bl.flatten.length by simp; ring,
-    key bl A.arities A.rel hbl hrel fun i t ht => length_of_mem_rel A ht]
-
 /-! ### Building words -/
 
 /-- The block of a list of tuples. -/
@@ -205,32 +159,11 @@ theorem encodes_wordOf (A : Structure) (tss : List (List (List ℕ)))
 /-- The tuples of a relation in the lexicographic order of `List ℕ`. -/
 def sortedTuples (R : Finset (List ℕ)) : List (List ℕ) := R.sort
 
-theorem sortedTuples_nodup (R : Finset (List ℕ)) : (sortedTuples R).Nodup := Finset.sort_nodup _ _
-
-theorem sortedTuples_toFinset (R : Finset (List ℕ)) : (sortedTuples R).toFinset = R :=
-  Finset.sort_toFinset _ _
-
 /-- The canonical lists of tuples of a structure. -/
 def canonicalTuples (A : Structure) : List (List (List ℕ)) :=
   (List.range A.arities.length).map fun i => sortedTuples (A.rel i)
 
 /-- **The canonical word of a structure**: the relations' tuples sorted lexicographically. -/
 def canonicalWord (A : Structure) : List ℕ := wordOf A.arities A.size (canonicalTuples A)
-
-theorem encodes_canonicalWord (A : Structure) : Encodes (canonicalWord A) A := by
-  refine encodes_wordOf A _ (by simp [canonicalTuples]) fun i hi => ?_
-  have : (canonicalTuples A).getD i [] = sortedTuples (A.rel i) := by
-    simp [canonicalTuples, List.getD_eq_getElem?_getD, hi]
-  rw [this]
-  exact ⟨sortedTuples_nodup _, sortedTuples_toFinset _⟩
-
-/-- Every structure has an encoding. -/
-theorem exists_encodes (A : Structure) : ∃ y, Encodes y A := ⟨_, encodes_canonicalWord A⟩
-
-/-- The canonical word of a structure is its only word up to the listing order: every word of
-`A` has the same length as the canonical one. -/
-theorem length_eq_of_encodes {y y' : List ℕ} {A : Structure} (h : Encodes y A)
-    (h' : Encodes y' A) : y.length = y'.length := by
-  rw [length_of_encodes h, length_of_encodes h']
 
 end Lax496464Proofs.WHierarchy.Logic.StructureCode

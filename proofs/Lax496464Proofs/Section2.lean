@@ -2,7 +2,7 @@ import Lax496464Proofs.Bridge
 import Lax496464.Observation1
 
 /-!
-# Section 2: feasibility is two conditions, and the EST normal form
+# Section 2: Feasibility Is Two Conditions, and the EST Normal Form
 
 The paper's Section 2 replaces "the jobs of `Z` can all be completed just in time" by two
 separate conditions — one about the single first-stage machine, one about the `m`

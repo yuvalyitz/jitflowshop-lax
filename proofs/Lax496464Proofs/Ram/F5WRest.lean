@@ -3,7 +3,7 @@ import Lax496464Proofs.Ram.W3Width
 import Lax496464Proofs.Ram.W3Final
 
 /-!
-# Theorem 5 (endpoint sweep): everything after the front end
+# Theorem 5 (Endpoint Sweep): Everything After the Front End
 
 `rest5w = pre5w ; core ; scanW ; outCom`.  Given the sorted arrays of `J`, the accuracy `e` in `W`
 and the auxiliary arrays of the sweep, it writes `fptasOut J e`: the exact endpoint-sweep core

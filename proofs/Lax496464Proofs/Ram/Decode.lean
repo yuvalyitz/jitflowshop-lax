@@ -3,7 +3,7 @@ import Lax496464.WordEncoding
 import Mathlib.Data.List.GetD
 
 /-!
-# Reading the instance off the tape
+# Reading the Instance Off the Tape
 
 Every algorithm of this submission begins the same way. The word
 `[n, m, p₀ … p_{n−1}, q₀ …, d₀ …, w₀ …]`, possibly followed by a threshold, is

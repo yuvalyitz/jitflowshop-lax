@@ -2,7 +2,7 @@ import Lax496464Proofs.Ram.CsrWord
 import Lax496464Proofs.Ram.Validate
 
 /-!
-# Recovering an instance from a validated CSR array
+# Recovering an Instance from a Validated CSR Array
 
 `CsrWord.csrWord` builds a word from an `Instance`; `decodeInstance` goes the other way, building
 an `Instance` from the offsets `foff`, the members `fmem` and the counts `n`, `m` that a scan

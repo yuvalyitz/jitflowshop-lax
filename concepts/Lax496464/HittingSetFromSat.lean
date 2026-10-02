@@ -3,7 +3,7 @@ import Lax429075.Satisfiability
 
 /-!
 ---
-title: The reduction from satisfiability to Hitting Set
+title: The Reduction from Satisfiability to Hitting Set
 type: definition
 ---
 A CNF formula $F$ on the variables $x_0, \dots, x_{V-1}$ becomes an instance of Hitting Set
@@ -20,7 +20,7 @@ The reduction on words decodes a formula, builds the instance and encodes it; a 
 encodes no formula is treated as the formula with one empty clause, whose instance has no
 hitting set.
 
-# Formalization notes
+# Formalization Notes
 
 Formulas, their binary encoding and satisfiability are those of the archive's Cook–Levin
 theorem (`lax-429075`).

@@ -2,7 +2,7 @@ import Lax496464Proofs.Ram.F5Math
 import Lax496464Proofs.Ram.EstPermute
 
 /-!
-# Theorem 5 (profile sweep): the pure layer the machine needs
+# Theorem 5 (Profile Sweep): the Pure Layer the Machine Needs
 
 The machine runs on the *sorted* instance `J = permute I σ`.  The number it writes is
 `fptasOut J e`; this file shows it equals `fptasOut I e`, and reads the table off:

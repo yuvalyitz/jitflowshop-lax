@@ -3,7 +3,7 @@ import Lax496464Proofs.HittingSet.Front
 import Lax496464Proofs.HittingSet.Emit
 
 /-!
-# Marking the elements of a clause
+# Marking the Elements of a Clause
 
 One pass over the positions: at a position of clause `c`, the element of its literal is
 marked, and counted if it was not marked before.

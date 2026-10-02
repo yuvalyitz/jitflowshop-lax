@@ -2,7 +2,7 @@ import Lax496464Proofs.Ram.F5QRest
 import Lax496464Proofs.Ram.Q3Prog
 
 /-!
-# Theorem 5, profile sweep: the whole program
+# Theorem 5, Profile Sweep: the Whole Program
 
 `prog5 = frontQ ; rest5`.  The front end of the exact program (`Q3Front.frontQ`) reads the
 instance and puts the accuracy `e` in the threshold's place `W`, sorts by start time and builds the

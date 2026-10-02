@@ -1,7 +1,7 @@
 import Lax496464Proofs.WHierarchy.Lemmas.PiTwoToMonotone.PCtx
 
 /-!
-# Decoding blocks and values; phase B
+# Decoding Blocks and Values; Phase B
 
 `decB_spec`, `decV_spec`: the slots of block `b` (base `k+1`) and the values `v` (base `N+1`) into
 an array of length `D`. `phaseB_spec`: phase B writes the words of the block clauses.

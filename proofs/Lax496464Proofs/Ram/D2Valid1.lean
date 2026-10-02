@@ -2,7 +2,7 @@ import Lax496464Proofs.Ram.D2Scan1
 import Lax496464Proofs.Ram.ListUtil
 
 /-!
-# Theorem 2's machine, part 3: is the number a code?
+# Theorem 2's Machine, Part 3: Is the Number a Code?
 
 `vphase` decides, for a number `zc ≠ top` (so `m ≥ 1`), whether it is the code of a set, from the
 `VALID` entry of the number `zsuf` obtained by dropping its first digit (`D2Valid.isCode_iff`;

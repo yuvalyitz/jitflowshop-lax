@@ -1,7 +1,7 @@
 import Lax888481.MulticolouredClique
 
 /-!
-# A word determines its Multicoloured Clique instance up to the answer
+# A Word Determines Its Multicoloured Clique Instance Up to the Answer
 
 The graph block of a Multicoloured Clique word declares its length in its first two entries, so
 the block, the colours and the number of colours are determined by the word. Two instances with

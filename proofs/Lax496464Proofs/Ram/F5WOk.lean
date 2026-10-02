@@ -1,7 +1,7 @@
 import Lax496464Proofs.Ram.F5WRest
 
 /-!
-# Theorem 5 (endpoint sweep): the whole program and its layout
+# Theorem 5 (Endpoint Sweep): the Whole Program and Its Layout
 -/
 
 namespace Lax496464Proofs.F5WOk

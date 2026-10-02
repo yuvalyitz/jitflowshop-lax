@@ -2,7 +2,7 @@ import Mathlib.Data.List.Sort
 import Mathlib.Data.Nat.Log
 
 /-!
-# Bottom-up merge sort, on lists
+# Bottom-Up Merge Sort, on Lists
 
 The machine sorts an array by passes: pass `k` merges neighbouring runs of length `2^k`.
 This file is the pass and its two facts — a pass permutes, and a pass turns sorted runs of

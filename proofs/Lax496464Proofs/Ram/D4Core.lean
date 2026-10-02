@@ -3,7 +3,7 @@ import Lax496464Proofs.Ram.D4Sum
 import Lax496464Proofs.Ram.D2Core
 
 /-!
-# Corollary 2's machine: the core (dual table)
+# Corollary 2's Machine: the Core (Dual Table)
 
 `core4` takes the sorted arrays `PS QS DS WS` and the scalars `n m W` (as `sortSetup3` leaves them),
 sums `PS` into `R = P`, sets the block width `R + 1`, and fills the table.  `core4_spec` describes
@@ -79,7 +79,23 @@ theorem setup4_spec {J : Instance} {B n m W R : ℕ} (ci : CI4 J B n m W R) :
         σ'.vars "W" = W ∧ σ'.arrs "TAB" = List.replicate ((n + 1) ^ m * (R + 1)) 0 ∧
         σ'.arrs "VALID" = List.replicate ((n + 1) ^ m) 0)
       (setupCost4 n m) := by
-  obtain ⟨hB, hn, hmach, hn1, hm, hest, hq, hRsum, bpw, bm, bn, bW, bR, bd, bp, bs, bw⟩ := ci
+  have hB := ci.hB
+  have hn := ci.hn
+  have hmach := ci.hmach
+  have hn1 := ci.hn1
+  have hm := ci.hm
+  have hest := ci.hest
+  have hq := ci.hq
+  have hRsum := ci.hR
+  have bpw := ci.bpw
+  have bm := ci.bm
+  have bn := ci.bn
+  have bW := ci.bW
+  have bR := ci.bR
+  have bd := ci.bd
+  have bp := ci.bp
+  have bs := ci.bs
+  have bw := ci.bw
   have hNB : (n + 1) ^ m < B := lt_of_le_of_lt (Nat.le_mul_of_pos_right _ (by omega)) bR
   have hRB : R + 1 < B := lt_of_le_of_lt (Nat.le_mul_of_pos_left _ (pow_pos (by omega) _)) bR
   have hJn : (List.range J.jobs).length = n := by simp [hn]

@@ -3,7 +3,7 @@ import Mathlib.Algebra.Polynomial.Eval.Defs
 
 /-!
 ---
-title: Computable bounds
+title: Computable Bounds
 type: theorem
 ---
 The time factor and the parameter bound of an fpt-reduction must be computable. The bounds that
@@ -12,7 +12,7 @@ exponentials, and all of them are computable. Every computable $f\colon\mathbb N
 bounded by the computable nondecreasing function $k \mapsto \sum_{i \le k} f(i)$, which is what
 allows bounds to be composed.
 
-# Formalization notes
+# Formalization Notes
 
 Computability is Mathlib's `Computable`. Together with `Computable.const`, `Computable.id` and
 `Computable.comp`, these statements show a bound such as $(k+1)^2$ or $2^k \cdot k$ computable by

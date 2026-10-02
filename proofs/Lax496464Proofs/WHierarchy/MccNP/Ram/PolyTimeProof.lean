@@ -3,7 +3,7 @@ import Lax496464Proofs.WHierarchy.MccNP.Ram.PolyRun
 import Lax391470Proofs.RamBridge
 
 /-!
-# Polynomial time on every word
+# Polynomial Time on Every Word
 
 The IMP+ program `readAll; validate; if ok then body` is compiled and its verified run transferred
 to the word RAM; `RamBridge.ramPolytime_of_poly` gives `RamPolytime reduce`.

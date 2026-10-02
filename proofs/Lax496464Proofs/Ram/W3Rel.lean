@@ -1,7 +1,7 @@
 import Lax496464Proofs.Ram.W3Tab
 
 /-!
-# The width sweep's table: one event, and the two ends
+# The Width Sweep's Table: One Event, and the Two Ends
 
 Final statements (all over `scale J`; `hq : ∀ i, 0 < J.q i`; slots `sl : (scale J).Job → ℕ`):
 

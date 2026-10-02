@@ -7,11 +7,6 @@ namespace Lax496464Proofs.WHierarchy.Logic.FormulaCode
 
 open Lax496464.WH_B2_FirstOrder
 
-/-- Two lists of equal length followed by anything: the split is determined. -/
-theorem append_inj_of_length {l l' r r' : List ℕ} (h : l ++ r = l' ++ r')
-    (hl : l.length = l'.length) : l = l' ∧ r = r' :=
-  List.append_inj h hl
-
 /-- **The formula code is prefix-free.** -/
 theorem encode_prefix : ∀ (φ ψ : Formula) (r r' : List ℕ),
     φ.encode ++ r = ψ.encode ++ r' → φ = ψ ∧ r = r'
@@ -81,10 +76,6 @@ theorem encode_prefix : ∀ (φ ψ : Formula) (r r' : List ℕ),
 /-- **The formula code is injective.** -/
 theorem encode_injective : Function.Injective Formula.encode := fun φ ψ h =>
   (encode_prefix φ ψ [] [] (by simpa using h)).1
-
-/-- Equal codes, equal formulas. -/
-theorem encode_inj {φ ψ : Formula} : φ.encode = ψ.encode ↔ φ = ψ :=
-  encode_injective.eq_iff
 
 /-- The code of a formula is never empty. -/
 theorem encode_ne_nil (φ : Formula) : φ.encode ≠ [] := by

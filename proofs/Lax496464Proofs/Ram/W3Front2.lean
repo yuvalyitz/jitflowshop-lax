@@ -2,7 +2,7 @@ import Lax496464Proofs.Ram.T4Front
 import Lax496464Proofs.Ram.W3Front
 
 /-!
-# Theorem 3's machine, part 2: reading and sorting, twice
+# Theorem 3's Machine, Part 2: Reading and Sorting, Twice
 
 `sortSetup3` reads the instance and the threshold, sorts the jobs by earliest start time,
 builds the sorted `PS`/`QS`/`DS`/`WS` arrays, and then sorts the positions again, by due date.

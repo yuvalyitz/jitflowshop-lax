@@ -7,7 +7,7 @@ import Lax496464Proofs.Model.Lemma7to9_Extract
 import Lax496464.Construction
 
 /-!
-# Numbering the jobs of Section 8's construction
+# Numbering the Jobs of Section 8's Construction
 
 `Model/Theorem1_FromHittingSet.lean` names the constructed jobs structurally: a selection
 job is a triple (segment, set, element of that set), a dummy a triple (segment, set,

@@ -1,7 +1,7 @@
 import Lax496464Proofs.WHierarchy.Lemmas.WDToWSat.ProgCtx
 
 /-!
-# The atoms: scanning a block, comparing positions
+# The Atoms: Scanning a Block, Comparing Positions
 
 `relCom_spec`: `relCom i js` sets `w_f` to `1` exactly when the tuple of the elements at the
 positions `js` is listed in the block of symbol `i` (`memW`); `eqCom`: the equation of two

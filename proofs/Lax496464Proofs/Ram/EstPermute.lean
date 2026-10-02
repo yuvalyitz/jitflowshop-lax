@@ -4,7 +4,7 @@ import Lax496464Proofs.Transport
 import Lax496464.EstOrder
 
 /-!
-# What sorting the jobs does to an instance
+# What Sorting the Jobs Does to an Instance
 
 The sort of `Ram/EstSort.lean` returns a permutation `P` of `0 … n−1`. Numbering the jobs by
 `P` gives an instance that is the same shop — the answer to "is there a feasible set of weight

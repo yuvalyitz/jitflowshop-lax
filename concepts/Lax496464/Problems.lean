@@ -4,7 +4,7 @@ import Lax496464.WordEncoding
 
 /-!
 ---
-title: The just-in-time flow shop as a problem on words
+title: The Just-in-Time Flow Shop as a Problem on Words
 type: definition
 ---
 The decision problem: given an encoded instance and a threshold $W$, is there a feasible
@@ -17,7 +17,7 @@ algorithms and are defined here as functions of the word: the threshold $W$ itse
 largest processing time $q_{\max}$, the total preprocessing time $P$, and the width
 $\omega$ — the largest number of jobs whose second operations are alive at one instant.
 
-# Formalization notes
+# Formalization Notes
 
 The parameter is the word's second entry, so a program obtains it at no cost, and it is
 manifestly a function of the input rather than something supplied beside it.

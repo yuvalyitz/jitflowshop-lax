@@ -1,7 +1,7 @@
 import Lax496464Proofs.Ram.W3Front2
 
 /-!
-# Corollary 2's machine: reading and sorting, with the sum of the preprocessing times
+# Corollary 2's Machine: Reading and Sorting, with the Sum of the Preprocessing Times
 
 `sortSetup3` reads the instance and the threshold, sorts the jobs by earliest start time,
 builds the sorted `PS`/`QS`/`DS`/`WS` arrays, and then sorts the positions again, by due date.

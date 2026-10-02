@@ -2,7 +2,7 @@ import Mathlib.Tactic
 import Mathlib.Data.Finset.Sort
 
 /-!
-# Theorem 2, pure layer 1: numbers as digit strings
+# Theorem 2, Pure Layer 1: Numbers as Digit Strings
 
 A set of thresholds `X ⊆ {0,…,n-1}` with `|X| ≤ m` is written as its elements in increasing order,
 padded on the right with the digit `n` to length `m`; read in base `b = n+1` (most significant digit
@@ -18,7 +18,7 @@ def enc (b : ℕ) : List ℕ → ℕ
   | [] => 0
   | d :: L => d * b ^ L.length + enc b L
 
-@[simp] theorem enc_nil (b : ℕ) : enc b [] = 0 := rfl
+@[simp] theorem enc_nil (b : ℕ) : enc b [] = 0 := by simp only [enc]
 @[simp] theorem enc_cons (b d : ℕ) (L : List ℕ) : enc b (d :: L) = d * b ^ L.length + enc b L := rfl
 
 theorem enc_append (b : ℕ) (A C : List ℕ) :

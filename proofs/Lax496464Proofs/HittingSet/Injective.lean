@@ -5,7 +5,7 @@ import Lax429075.EncodingCorrect
 import Lax429075Proofs.DecoderSoundness
 
 /-!
-# The encoding is injective
+# The Encoding Is Injective
 
 The number code is prefix-free, and a set is written as its size followed by as many
 members, so a word determines the instance it encodes and the solution size.

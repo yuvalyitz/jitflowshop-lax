@@ -2,7 +2,7 @@ import Lax496464Proofs.Ram.D2Ach
 import Lax496464Proofs.Ram.DpM
 
 /-!
-# Theorem 2: reading the answer off the column
+# Theorem 2: Reading the Answer Off the Column
 -/
 
 namespace Lax496464Proofs.Ram.D2Answer

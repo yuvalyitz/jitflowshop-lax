@@ -2,7 +2,7 @@ import Lax496464Proofs.Ram.D2Rows
 import Lax496464Proofs.Ram.D3Cor3
 
 /-!
-# Corollary 3's machine, part 1: the cells of one set (the dual row block)
+# Corollary 3's Machine, Part 1: the Cells of One Set (the Dual Row Block)
 
 For the set with number `c`, whose `X₁` and `X₂` have numbers `c₁, c₂ > c`, the `n+1` cells of its
 block are `T[c,u] = max(T[c₁,u], min W (w_j + T[c₂,u+1]))`, the second term present only when the

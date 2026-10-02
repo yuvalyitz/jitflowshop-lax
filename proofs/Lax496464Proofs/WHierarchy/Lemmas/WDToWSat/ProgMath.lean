@@ -2,7 +2,7 @@ import Lax496464Proofs.WHierarchy.Lemmas.WDToWSat.ProgDefs
 import Lax496464Proofs.WHierarchy.Lemmas.WDToWSat.Reduction
 
 /-!
-# The output of the program, word by word
+# The Output of the Program, Word by Word
 
 `R_eq`: on a word that fits, the reduction is the word the program writes: the number of clauses,
 the clauses of every assignment `z < n^r` (`zWords`), the clauses `Y_c ∨ ¬Y_c` (`tautWords`), and `k`.

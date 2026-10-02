@@ -2,7 +2,7 @@ import Lax496464Proofs.Section8Bridge
 import Lax496464.Theorem1
 
 /-!
-# Section 8: the reduction from Hitting Set
+# Section 8: the Reduction from Hitting Set
 
 Given a Hitting Set instance and a size `k`, the construction builds a shop with `k`
 second-stage machines whose jobs come in `R·m` *epochs*. Each epoch admits one *selection*
@@ -12,7 +12,7 @@ counts exactly that many jobs per epoch. A hitting set of size `k` schedules the
 its machine offsets never decrease, and some segment repeats — whose `k` offsets are a
 hitting set (Lemmas 7 to 9).
 
-## Two errata
+## Two Errata
 
 Both surfaced in the formalization and are repaired in `Construction`; every result about
 the construction is generic in the parameters they touch, so the repair is free.

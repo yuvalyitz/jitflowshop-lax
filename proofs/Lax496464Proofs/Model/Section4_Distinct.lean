@@ -5,7 +5,7 @@ import Mathlib.Algebra.BigOperators.Ring.Finset
 namespace Lax496464Proofs
 
 /-!
-# Section 4's normalization: making all endpoints distinct
+# Section 4's Normalization: Making All Endpoints Distinct
 
 Sections 4 and 5 open with a *without loss of generality*:
 

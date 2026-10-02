@@ -17,7 +17,7 @@ $G$ have a clique of $k$ vertices?
 **$p$-Dominating-Set.** The same with $k$ vertices such that every vertex is one of them or adjacent
 to one of them.
 
-# Formalization notes
+# Formalization Notes
 
 The three problems share the archive's format for a graph with a parameter
 (`Lax271696.VertexCover.EncodesParamInstance`): the compressed sparse row encoding of the graph

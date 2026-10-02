@@ -2,7 +2,7 @@ import Lax496464.WH_A1_FptTime
 
 /-!
 ---
-title: Fixed-parameter computations compose
+title: Fixed-Parameter Computations Compose
 type: theorem
 ---
 The identity is computable in fixed-parameter time, and fixed-parameter computations compose: if
@@ -18,7 +18,7 @@ list: a word has at most as many entries as bits, and each entry is below $2^{|x
 These are the only facts about programs that the calculus of reductions (`WH_A3_ReductionCalculus`)
 uses.
 
-# Formalization notes
+# Formalization Notes
 
 The composite runs the first program, keeps its output in memory, and runs the second program on
 it. The output of the first program has at most $B_1 = f(\kappa(x))(|x|+1)^d$ entries of at most

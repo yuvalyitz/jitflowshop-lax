@@ -16,7 +16,7 @@ With weights, on a proper instance, the integer program of Section 6.2 has a tot
 unimodular constraint matrix and can therefore be solved as a linear program, in
 polynomial time. That case is stated here only through its first half; see the notes.
 
-# Formalization notes
+# Formalization Notes
 
 The first statement is the running time of the greedy, on the slice of instances with
 equal preprocessing times and unit weights. Its bound is the sorting term alone, which is

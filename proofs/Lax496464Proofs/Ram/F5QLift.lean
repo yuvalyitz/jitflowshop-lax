@@ -5,7 +5,7 @@ import Lax496464Proofs.Ram.Q3Tab
 import Lax496464Proofs.Ram.Q3Aux
 
 /-!
-# Theorem 5 (profile sweep): what the passes compute, as the pure objects of `F5Math`
+# Theorem 5 (Profile Sweep): What the Passes Compute, as the Pure Objects of `F5Math`
 
 The fit pass, the scale factor and the rescaling pass, run on the sorted arrays of an instance `J`,
 compute exactly `zeroUnfit J`, `scaleK J e` and the weights of `scaled J e`; the scan finds

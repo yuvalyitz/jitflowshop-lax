@@ -2,7 +2,7 @@ import Lax496464Proofs.Ram.T4Prog
 import Lax496464.Theorem4
 
 /-!
-# Theorem 4: the greedy on the word RAM
+# Theorem 4: the Greedy on the Word RAM
 -/
 
 namespace Lax496464Proofs.Ram.T4Final

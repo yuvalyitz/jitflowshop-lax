@@ -3,7 +3,7 @@ import Lax496464Proofs.Ram.Values
 import Lax496464Proofs.Ram.ListUtil
 
 /-!
-# Generating the jobs of Section 8 into three arrays
+# Generating the Jobs of Section 8 into Three Arrays
 
 The reduction of Section 8 writes four blocks of `N = R·|memberList| + 2·R·m·n` numbers:
 the preprocessing times, the processing times, the due dates and the weights. The first three

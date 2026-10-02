@@ -8,7 +8,7 @@ import Lax496464Proofs.Ram.Q3Init
 import Lax496464Proofs.Ram.Q3Passes
 
 /-!
-# Theorem 3, profile sweep: one event, then the loop over the jobs
+# Theorem 3, Profile Sweep: One Event, Then the Loop over the Jobs
 
 `eventCom` processes job `jj`: `prepCom` (data, reference time, shift), the two powers
 `pwd = bb^δ'`, `pwq = bb^(q-1)`, then fill `S` with INF, marginalise `T` into `S`, take into `T`.
@@ -113,7 +113,10 @@ theorem eventCom_spec {J : Instance} {W qm INF bb bt w1 N B : ℕ} (hd : Dims J 
       (fun _ σ' => Core J W qm INF bb bt w1 N (j + 1) σ' ∧ σ'.vars "jj" = j) (evK N qm bb) := by
   refine Spec.of_exists fun σ0 ⟨hC, hjj⟩ => ?_
   have hd' := hd
-  obtain ⟨hbbd, hbtd, hw1d, hNd⟩ := hd
+  have hbbd := hd.bb
+  have hbtd := hd.bt
+  have hw1d := hd.w1
+  have hNd := hd.N
   have hB1 := hBd.B1
   have hnB := hBd.n
   have hmB := hBd.m

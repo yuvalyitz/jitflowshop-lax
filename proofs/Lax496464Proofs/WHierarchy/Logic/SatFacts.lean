@@ -15,9 +15,6 @@ open Lax496464.WH_B1_Structures Lax496464.WH_B2_FirstOrder Lax496464.WH_B3_Logic
 theorem update_ne (ρ : Assignment) {x y : ℕ} (a : ℕ) (h : y ≠ x) : ρ.update x a y = ρ y := by
   simp [Assignment.update, h]
 
-theorem update_apply (ρ : Assignment) (x a y : ℕ) :
-    ρ.update x a y = if y = x then a else ρ y := rfl
-
 /-- **Satisfaction depends only on the free variables.** -/
 theorem sat_congr (A : Structure) (S : Set (List ℕ)) :
     ∀ (φ : Formula) {ρ ρ' : Assignment}, (∀ v ∈ φ.freeVars, ρ v = ρ' v) →
@@ -68,12 +65,12 @@ theorem sat_imp {A : Structure} {S : Set (List ℕ)} {φ ψ : Formula} {ρ : Ass
 
 /-! ### Blocks of quantifiers -/
 
-@[simp] theorem exBlock_nil (φ : Formula) : Formula.exBlock [] φ = φ := rfl
+@[simp] theorem exBlock_nil (φ : Formula) : Formula.exBlock [] φ = φ := by unfold Formula.exBlock; try rfl
 
 @[simp] theorem exBlock_cons (x : ℕ) (xs : List ℕ) (φ : Formula) :
     Formula.exBlock (x :: xs) φ = .ex x (Formula.exBlock xs φ) := rfl
 
-@[simp] theorem allBlock_nil (φ : Formula) : Formula.allBlock [] φ = φ := rfl
+@[simp] theorem allBlock_nil (φ : Formula) : Formula.allBlock [] φ = φ := by unfold Formula.allBlock; try rfl
 
 @[simp] theorem allBlock_cons (x : ℕ) (xs : List ℕ) (φ : Formula) :
     Formula.allBlock (x :: xs) φ = .all x (Formula.allBlock xs φ) := rfl
@@ -157,34 +154,16 @@ theorem isSentence_exBlock {φ : Formula} {xs : List ℕ} (h : ∀ v ∈ φ.free
     not_not]
   exact h v
 
-theorem isSentence_allBlock {φ : Formula} {xs : List ℕ} (h : ∀ v ∈ φ.freeVars, v ∈ xs) :
-    IsSentence (Formula.allBlock xs φ) := by
-  unfold IsSentence
-  rw [freeVars_allBlock]
-  ext v; simp only [Finset.mem_sdiff, List.mem_toFinset, Finset.notMem_empty, iff_false, not_and,
-    not_not]
-  exact h v
-
 /-- The code of an existential block: `6, x` per variable, then the formula. -/
 theorem encode_exBlock (φ : Formula) :
     ∀ xs : List ℕ, (Formula.exBlock xs φ).encode = xs.flatMap (fun x => [6, x]) ++ φ.encode
   | [] => by simp
   | x :: xs => by simp [Formula.encode, encode_exBlock φ xs]
 
-theorem encode_allBlock (φ : Formula) :
-    ∀ xs : List ℕ, (Formula.allBlock xs φ).encode = xs.flatMap (fun x => [7, x]) ++ φ.encode
-  | [] => by simp
-  | x :: xs => by simp [Formula.encode, encode_allBlock φ xs]
-
 theorem size_exBlock (φ : Formula) :
     ∀ xs : List ℕ, (Formula.exBlock xs φ).size = φ.size + 2 * xs.length
   | [] => by simp
   | x :: xs => by simp [Formula.size, size_exBlock φ xs]; ring
-
-theorem size_allBlock (φ : Formula) :
-    ∀ xs : List ℕ, (Formula.allBlock xs φ).size = φ.size + 2 * xs.length
-  | [] => by simp
-  | x :: xs => by simp [Formula.size, size_allBlock φ xs]; ring
 
 theorem fits_exBlock (arities : List ℕ) (s : ℕ) (φ : Formula) :
     ∀ xs : List ℕ, (Formula.exBlock xs φ).Fits arities s ↔ φ.Fits arities s
@@ -201,18 +180,9 @@ theorem noSetVar_exBlock (φ : Formula) :
   | [] => Iff.rfl
   | _ :: xs => noSetVar_exBlock φ xs
 
-theorem noSetVar_allBlock (φ : Formula) :
-    ∀ xs : List ℕ, (Formula.allBlock xs φ).NoSetVar ↔ φ.NoSetVar
-  | [] => Iff.rfl
-  | _ :: xs => noSetVar_allBlock φ xs
-
 /-- An existential block in front of a quantifier-free formula is `Σ_1`. -/
 theorem isSigma_one_exBlock {φ : Formula} (h : φ.IsQF) (xs : List ℕ) :
     IsSigma 1 (Formula.exBlock xs φ) := ⟨xs, φ, rfl, h⟩
-
-/-- A universal block in front of a quantifier-free formula is `Π_1`. -/
-theorem isPi_one_allBlock {φ : Formula} (h : φ.IsQF) (xs : List ℕ) :
-    IsPi 1 (Formula.allBlock xs φ) := ⟨xs, φ, rfl, h⟩
 
 /-! ### Model checking a sentence -/
 

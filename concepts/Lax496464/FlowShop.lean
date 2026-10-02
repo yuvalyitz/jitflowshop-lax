@@ -4,7 +4,7 @@ import Mathlib.Data.Fintype.Powerset
 
 /-!
 ---
-title: Just-in-time scheduling in a two-stage flexible flow shop
+title: Just-in-Time Scheduling in a Two-Stage Flexible Flow Shop
 type: definition
 ---
 An instance consists of $n$ jobs and $m$ identical second-stage machines. Job $j$ has a
@@ -26,7 +26,7 @@ Since the objective counts only the just-in-time jobs, a *solution* is the set $
 jobs completed just in time, and $Z$ is *feasible* when its jobs — and no others — admit
 a schedule completing every one of them exactly at its due date.
 
-# Formalization notes
+# Formalization Notes
 
 Jobs are `Fin n` rather than an abstract finite type: an instance is something a machine
 is handed as a word, and a word presents its jobs in an order.

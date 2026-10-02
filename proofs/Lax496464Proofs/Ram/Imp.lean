@@ -3,7 +3,7 @@ import Lax808846Proofs.Tactic
 import Lax808846Proofs.Lib
 
 /-!
-# The word RAM's IMP+ pipeline, re-exported
+# The Word RAM's IMP+ Pipeline, Re-Exported
 
 Every running-time statement of this submission is discharged the same way: the algorithm
 is written as an IMP+ command, its correctness and cost are proved on natural-number

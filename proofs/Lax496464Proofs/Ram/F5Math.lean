@@ -1,7 +1,7 @@
 import Lax496464Proofs.Section7
 
 /-!
-# Theorem 5, the pure mathematical layer of the value the schemes write
+# Theorem 5, the Pure Mathematical Layer of the Value the Schemes Write
 
 The three schemes of Theorem 5 run an *exact* program on weights rescaled by `k` and then
 write one number computed from the exact program's table. This file is that number and

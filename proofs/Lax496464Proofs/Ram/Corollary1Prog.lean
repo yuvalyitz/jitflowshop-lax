@@ -8,7 +8,7 @@ import Lax496464Proofs.Ram.Fits
 import Lax496464.Corollary1
 
 /-!
-# Corollary 1: the whole program
+# Corollary 1: the Whole Program
 
 Read the instance and the threshold, sort the jobs by start time, build the sorted arrays,
 find the table's sentinel, scan for every job's `nxt`, set up the table, fill it column by

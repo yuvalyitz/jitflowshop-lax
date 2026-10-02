@@ -3,7 +3,7 @@ import Lax496464Proofs.Ram.T4Model
 import Lax808846Proofs.Lib.Basic
 
 /-!
-# The two trees, as functions of the set they hold
+# The Two Trees, as Functions of the Set They Hold
 
 `TX` holds `d i + 1` at the leaf of every job `i` of the set and `0` elsewhere, so its root is
 one more than the largest due date; `TY` holds `BIG - d i`, so its root says which due date is

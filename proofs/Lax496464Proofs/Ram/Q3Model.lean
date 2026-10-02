@@ -3,7 +3,7 @@ import Lax496464Proofs.Model.Lemma3_Profile
 import Lax496464Proofs.Bridge
 
 /-!
-# Q3: correctness of the profile sweep (the semantics `Rsem`)
+# Q3: Correctness of the Profile Sweep (the Semantics `Rsem`)
 
 Three theorems about `Q3Defs.Rsem`: the base (`Rsem_zero`), the step (`Rsem_succ`, which is
 `Q3Defs.Step` applied to the previous stage), and the read-off (`Rsem_final`).  Unlike the

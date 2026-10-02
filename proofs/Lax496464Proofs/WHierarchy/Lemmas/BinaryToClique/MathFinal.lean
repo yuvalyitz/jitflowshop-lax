@@ -6,7 +6,7 @@ import Lax496464Proofs.WHierarchy.ComputableBounds
 import Lax496464.WH_D05_BinaryToClique
 
 /-!
-# Σ₁[2] model checking to Clique: construction, correctness, parameter
+# Σ₁[2] Model Checking to Clique: Construction, Correctness, Parameter
 
 On an instance `(A, ∃x̄ ψ)` of `p-MC(Σ₁[2])`: when `ψ` does not fit the vocabulary of `A`, the graph
 has no vertex (and `k ≥ 2`); otherwise the graph of `Core` on the candidate values `elL x` has a

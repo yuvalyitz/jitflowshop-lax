@@ -13,7 +13,7 @@ the reciprocal of the accuracy, so each of the three exact programs — the tabl
 Section 3, the endpoint sweep and the profile sweep — becomes an approximation scheme
 whose running time is that of the program with $W$ replaced by $n^2 e$.
 
-# Formalization notes
+# Formalization Notes
 
 Four statements. The first is the rounding argument itself, the chain of inequalities (8),
 which is where the approximation guarantee comes from and which says nothing about any

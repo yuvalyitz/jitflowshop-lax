@@ -2,7 +2,7 @@ import Lax496464Proofs.Ram.D4Layout
 import Lax496464Proofs.Ram.D2Bound
 
 /-!
-# Corollary 2: the running time, against the printed bound
+# Corollary 2: the Running Time, Against the Printed Bound
 
 The program's cost is `O((P+1)(n+1)^m + sortCost)`, with no factor `m`, by the same counting as
 Theorem 2 (`D2Bound.loopWork_le` at `W := P`).

@@ -2,7 +2,7 @@ import Lax496464.HittingSet
 
 /-!
 ---
-title: W[2]-hardness
+title: W[2]-Hardness
 type: definition
 ---
 A parameterized problem is *W[2]-hard* if Hitting Set, parameterized by the solution
@@ -12,7 +12,7 @@ Hitting Set is W[2]-complete for that parameter, so this agrees with the usual d
 — every problem in W[2] fpt-reduces to a W[2]-hard one — and a W[2]-hard problem is
 fixed-parameter tractable only if $\mathrm{W}[2] = \mathrm{FPT}$, which is not believed.
 
-# Formalization notes
+# Formalization Notes
 
 Hardness is stated against a fixed complete problem rather than by quantifying over a
 class. The two are equivalent given the W[2]-completeness of Hitting Set, which is the

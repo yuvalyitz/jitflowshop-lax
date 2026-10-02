@@ -1,7 +1,7 @@
 import Lax496464Proofs.WHierarchy.MccNP.Ram.BodyAdj
 
 /-!
-# One row of the multicoloured graph
+# One Row of the Multicoloured Graph
 
 The loop counting the neighbours of one vertex, with its invariant and cost.
 -/

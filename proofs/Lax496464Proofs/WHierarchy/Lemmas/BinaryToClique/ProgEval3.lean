@@ -1,7 +1,7 @@
 import Lax496464Proofs.WHierarchy.Lemmas.BinaryToClique.ProgEval2
 
 /-!
-# Σ₁[2] model checking to Clique: the evaluation under every valuation
+# Σ₁[2] Model Checking to Clique: the Evaluation Under Every Valuation
 
 `evl` fills `ok[c] = okv x c` for every `c < 2^q`.
 -/

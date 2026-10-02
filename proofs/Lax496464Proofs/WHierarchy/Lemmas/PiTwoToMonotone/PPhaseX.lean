@@ -2,7 +2,7 @@ import Lax496464Proofs.WHierarchy.Lemmas.PiTwoToMonotone.PPhaseB
 import Lax496464Proofs.WHierarchy.Lemmas.PiTwoToMonotone.PConf
 
 /-!
-# Phase X: the clauses of the pairs of blocks with values
+# Phase X: the Clauses of the Pairs of Blocks with Values
 
 Four nested loops over `b1, v1, b2, v2` (the slots decoded into `bd1, vd1, bd2, vd2`); for each
 pair, the conflict test and the `2C` literals of `OutW.xWords`.

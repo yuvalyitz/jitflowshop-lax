@@ -2,7 +2,7 @@ import Lax808846Proofs.Transfer
 import Lax496464Proofs.WHierarchy.MccNP.Shape
 
 /-!
-# The IMP+ program of the reduction: definitions
+# The IMP+ Program of the Reduction: Definitions
 
 `body` writes the word of the multicoloured graph of the instance held in array `a`; `readStruct`
 fills `a` from the input tape using the structure of the word. The scalars of both are prefixed

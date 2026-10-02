@@ -5,7 +5,7 @@ import Mathlib.Tactic.Positivity
 import Mathlib.Tactic.Linarith
 
 /-!
-# The jobs of Section 8, reached by counters
+# The Jobs of Section 8, Reached by Counters
 
 `Construction.slot` takes a job number apart with `/` and `%`. A program that walks the jobs
 in order never has to: it keeps the segment, the set and the element as counters, and the

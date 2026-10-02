@@ -3,7 +3,7 @@ import Lax496464Proofs.Ram.Col1
 import Lax496464Proofs.Ram.Dp1
 
 /-!
-# Theorem 2's machine, part 2: the cells of one set
+# Theorem 2's Machine, Part 2: the Cells of One Set
 
 For the set with number `c`, whose `X₁` and `X₂` have numbers `c₁, c₂ > c`, the `W+1` cells of its
 row block are `T[c,r] = max(T[c₁,r], f(T[c₂, r ∸ w_j]))`, each `O(1)`: two lookups, `fNat`, a

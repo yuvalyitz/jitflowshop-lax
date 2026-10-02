@@ -2,7 +2,7 @@ import Lax496464Proofs.WHierarchy.Lemmas.PiTwoToMonotone.PGen
 import Lax496464Proofs.WHierarchy.Lemmas.PiTwoToMonotone.OutW
 
 /-!
-# The value bound and the context of the phases
+# The Value Bound and the Context of the Phases
 
 `BB Dt x B`: the facts about the value bound `B` the program needs (those of `Lemmas/WDToWSat` for
 the setup, and one inequality bounding the constants of the formula). `GC Dt x σ`: the arrays and

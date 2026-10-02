@@ -7,7 +7,7 @@ import Lax496464Proofs.Ram.T4Final
 import Lax496464.Theorem3
 
 /-!
-# Theorem 3, the endpoint sweep, on the word RAM
+# Theorem 3, the Endpoint Sweep, on the Word RAM
 -/
 
 namespace Lax496464Proofs.Ram.W3Final

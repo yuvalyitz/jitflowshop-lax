@@ -3,14 +3,14 @@ import Mathlib.Algebra.BigOperators.Group.Finset.Defs
 
 /-!
 ---
-title: Finite relational structures
+title: Finite Relational Structures
 type: definition
 ---
 A *relational structure* $\mathcal A$ consists of a finite universe $A$ and, for each symbol of a
 finite vocabulary $\tau$, a relation on $A$ of the symbol's arity [FG06, Section 4.2]. The
 parameterized problems that define the W- and A-hierarchies take structures as input.
 
-# Formalization notes
+# Formalization Notes
 
 **Structures.** The universe is $\{0, \dots, \mathrm{size}-1\}$; the vocabulary is the list
 `arities`, symbol $i$ having arity `arities[i]` $\ge 1$. Both the universe and the vocabulary may

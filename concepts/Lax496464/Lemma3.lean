@@ -24,7 +24,7 @@ exact profile. A vector that overstates the profile only overstates how many mac
 busy, so the capacity test rejects more rather than less, and the optimum read off at the
 end is exact.
 
-# Formalization notes
+# Formalization Notes
 
 Three statements, in order of what they are about.
 

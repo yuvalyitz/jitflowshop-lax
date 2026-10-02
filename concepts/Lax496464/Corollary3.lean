@@ -11,7 +11,7 @@ $p_j = p$ the total preprocessing time a partial solution has spent is determine
 many jobs it has selected, so the instant the dual table runs over takes only $n+1$
 values, and the bound of the second corollary becomes $O(n \cdot n^m)$.
 
-# Formalization notes
+# Formalization Notes
 
 The slice is stated on the decoded instance, as the existence of a common preprocessing
 time, rather than as a condition on the entries of the word. The two say the same thing

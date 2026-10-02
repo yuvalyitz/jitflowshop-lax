@@ -2,7 +2,7 @@ import Lax496464.FlowShop
 
 /-!
 ---
-title: The two conditions on a feasible set
+title: The Two Conditions on a Feasible Set
 type: definition
 ---
 Two conditions on a set $Z$ of jobs, one for each stage of the shop.
@@ -13,7 +13,7 @@ whose second operations start no later than $j$'s fit, together, into $[0, s_j)$
 **Condition 2**, *$Z$ can be scheduled on $m$ machines*: the jobs of $Z$ can be
 partitioned into $m$ sets, no one of which contains two conflicting jobs.
 
-# Formalization notes
+# Formalization Notes
 
 The paper writes Condition 1 as $\sum_{i \in Z,\ i \le j} p_i \le s_j$ with the jobs
 indexed in nondecreasing order of $s$. That phrasing pins the sum down only once ties are

@@ -3,7 +3,7 @@ import Lax496464.WH_A2_FptReductions
 
 /-!
 ---
-title: Positive Σ₁ model checking reduces to binary relations
+title: Positive Σ₁ Model Checking Reduces to Binary Relations
 type: theorem
 ---
 $p\text{-MC}(\Sigma_1^+) \le^{\mathrm{fpt}} p\text{-MC}(\Sigma_1^+[2])$, where $\Sigma_1^+[2]$ is the class

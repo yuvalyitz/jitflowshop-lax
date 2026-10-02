@@ -5,7 +5,7 @@ import Mathlib.Data.Finset.Max
 namespace Lax496464Proofs
 
 /-!
-# Condition 2 is a depth condition
+# Condition 2 Is a Depth Condition
 
 The paper never states this, but uses it everywhere: a set of jobs fits on `m` machines
 exactly when no *instant* is covered by more than `m` of their second operations. It is
@@ -24,7 +24,7 @@ still running *at that instant*, so at most `m − 1` machines are busy and one 
 `FairRIS/Proofs-FairRIS/IntervalColoring.lean` proves the same fact for that paper's
 daily conflict graphs, by the same "take the job that starts last" argument.
 
-## The one side condition
+## The One Side Condition
 
 `m_schedulable_iff_card_running_le` assumes `0 < q j` for the jobs involved. A job with
 `q j = 0` occupies the empty interval `[d j, d j)`: it conflicts with nothing, so it is

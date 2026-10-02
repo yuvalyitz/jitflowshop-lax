@@ -2,7 +2,7 @@ import Lax496464Proofs.WHierarchy.Lemmas.BinaryToClique.ProgGph
 import Lax496464Proofs.WHierarchy.Machine.ReadTape
 
 /-!
-# Σ₁[2] model checking to Clique: the whole program
+# Σ₁[2] Model Checking to Clique: the Whole Program
 
 `prog` reads the tape and runs the five phases; from the initial environment (arrays sized by
 `ext`) it writes `reduce x`. Also the layout and `Com.Ok`.

@@ -3,7 +3,7 @@ import Lax496464Proofs.Model.IntervalColoring
 namespace Lax496464Proofs
 
 /-!
-# Section 4: the endpoint sweep behind Theorem 3's first program
+# Section 4: the Endpoint Sweep Behind Theorem 3's First Program
 
 Section 4's dynamic program sweeps the `2n` endpoints `t₁ < ⋯ < t_{2n}` of the jobs'
 second-operation intervals (assumed distinct, which the paper arranges by scaling), keeping

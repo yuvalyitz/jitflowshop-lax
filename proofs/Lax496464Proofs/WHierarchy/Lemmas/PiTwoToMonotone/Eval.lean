@@ -18,6 +18,8 @@ namespace Lax496464Proofs.WHierarchy.Lemmas.PiTwoToMonotone.Eval
 open Lax496464.WH_B1_Structures Lax496464.WH_B2_FirstOrder
 open Lax496464Proofs.WHierarchy.Lemmas.PiTwoToMonotone.Syntax
 
+set_option genInjectivity false in
+set_option genSizeOfSpec false in
 /-- What the reduction knows of the atoms. -/
 structure Oracle where
   /-- The value of a relation atom. -/

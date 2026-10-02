@@ -10,7 +10,7 @@ only those jobs, and dominates every feasible set of jobs among them. Consequent
 set it holds at the end is a feasible set of largest possible cardinality, which is the
 correctness of the algorithm of Section 6.1.
 
-# Formalization notes
+# Formalization Notes
 
 The statement is about every run of the relation, since the rule leaves choices open, and
 it is proved by induction along the run with the domination property as the invariant.

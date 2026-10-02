@@ -1,7 +1,7 @@
 import Lax496464Proofs.Ram.D4Prog
 
 /-!
-# Corollary 2's program: its layout
+# Corollary 2's Program: Its Layout
 -/
 
 namespace Lax496464Proofs.Ram.D4Layout

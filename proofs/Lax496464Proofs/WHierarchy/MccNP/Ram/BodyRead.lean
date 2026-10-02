@@ -1,7 +1,7 @@
 import Lax496464Proofs.WHierarchy.MccNP.Ram.BodyHead
 
 /-!
-# Reading the input tape
+# Reading the Input Tape
 
 `readStruct` copies a valid word from the input tape into array `a`, using the runs of ones to find
 its end, within `24 * |x| + 60` steps.

@@ -2,7 +2,7 @@ import Lax496464Proofs.Ram.Corollary1Prog
 import Lax496464Proofs.Ram.DpMArr
 
 /-!
-# Theorem 3's machine, part 1: the pieces of the front end
+# Theorem 3's Machine, Part 1: the Pieces of the Front End
 
 Theorem 3's two programs start like Theorem 4's, but for arbitrary weights and processing
 times, and with one more sort. This file has the pieces:

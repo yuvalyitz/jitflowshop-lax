@@ -1,7 +1,7 @@
 import Lax496464Proofs.WHierarchy.Lemmas.PiTwoToMonotone.PMain
 
 /-!
-# The layout of the program
+# The Layout of the Program
 
 The scalars of the reader, of the setup of `Lemmas/WDToWSat` and of the new part; the arrays `a`,
 `bo`, `U`, `od`, `bd1`, `vd1`, `bd2`, `vd2`. `ok_prog`: the program compiles under it. The pieces of

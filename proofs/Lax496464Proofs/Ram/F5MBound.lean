@@ -2,7 +2,7 @@ import Lax496464Proofs.Ram.F5MRun
 import Lax496464Proofs.Ram.D2Bound
 
 /-!
-# Theorem 5 (table of Section 3): the running time, against `(W+1)(n+1)^m + sortCost`
+# Theorem 5 (Table of Section 3): the Running Time, Against `(W+1)(n+1)^m + sortCost`
 -/
 
 namespace Lax496464Proofs.F5MBound

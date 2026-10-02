@@ -8,7 +8,7 @@ import Mathlib.Tactic.Ring
 namespace Lax496464Proofs
 
 /-!
-# The two-stage flexible flow shop `FF(1,m) || ∑ wⱼZⱼ`
+# The Two-Stage Flexible Flow Shop `FF(1,m) || ∑ wⱼZⱼ`
 
 The model of Heeger–Hermelin–Itzhaki–Schieber–Shabtay, *"Just-in-time scheduling in
 two-stage flexible flow shops"*, EJOR 333 (2026) 652–664, Sections 1 and 2.
@@ -23,7 +23,7 @@ Job `j` also carries a due date `d j` and a weight `w j`, and is *completed just
 when its second operation finishes exactly at `d j`. The objective is to maximize the
 total weight `∑ wⱼZⱼ` of the just-in-time jobs.
 
-## What a schedule is here
+## What a Schedule Is Here
 
 Because the objective counts only the just-in-time jobs, the paper adopts the convention
 (Section 2, "we may assume that only jobs in `Z` are scheduled") that a solution *is* the
@@ -39,7 +39,7 @@ when those two intervals overlap, which is exactly when they cannot share a seco
 machine. All of this is definitional here; `Section2.lean` proves the characterization
 the paper's algorithms actually run on.
 
-## Modelling choices
+## Modelling Choices
 
 * **Times are integers, magnitudes are naturals.** `p`, `q`, `d`, `w` are `ℕ`, as in the
   paper. Start times are `ℤ`, so `s j = d j - q j` is a genuine subtraction rather than a
@@ -58,6 +58,8 @@ the paper's algorithms actually run on.
 
 /-! ## 1. Instances -/
 
+set_option genInjectivity false in
+set_option genSizeOfSpec false in
 /-- An instance of the two-stage flexible flow shop `FF(1,m) || ∑ wⱼZⱼ`.
 
 `p j` is job `j`'s first-stage (preprocessing) time, `q j` its second-stage processing
@@ -110,6 +112,8 @@ lemma not_conflict_of_le {i j : I.Job} (h : (I.d i : ℤ) ≤ I.s j) : ¬ I.Conf
 
 /-! ## 3. Schedules -/
 
+set_option genInjectivity false in
+set_option genSizeOfSpec false in
 /-- A **just-in-time schedule of `Z`**: a schedule of exactly the jobs in `Z` that
 completes every one of them exactly at its due date.
 

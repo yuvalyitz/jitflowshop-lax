@@ -10,7 +10,7 @@ nondecreasing order of their start times $s_j$ — earliest start time first. So
 lost by looking only at schedules that preprocess in that order, and an algorithm that
 decides which jobs to select need not also decide in which order to preprocess them.
 
-# Formalization notes
+# Formalization Notes
 
 The conclusion is stated as a property of one schedule of the given set rather than as a
 claim about an optimal schedule of the instance. The two are the same: an optimal

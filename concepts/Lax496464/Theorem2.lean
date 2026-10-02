@@ -15,7 +15,7 @@ The answer is read off the table at the $m$ smallest indices: a set of weight $W
 compatible with them and preprocessable from the instant $0$ is exactly a feasible
 solution of weight $W'$.
 
-# Formalization notes
+# Formalization Notes
 
 Two statements: the read-off, which is a combinatorial fact about the table, and the
 running time, which is a claim about a program.

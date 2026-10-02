@@ -2,7 +2,7 @@ import Lax496464Proofs.Ram.Col1
 import Lax496464Proofs.Ram.Sort
 
 /-!
-# All the columns
+# All the Columns
 
 The table's column `W'` is `colStep` of column `W' − 1`. The machine computes them in turn,
 keeping only two — that is the whole space — and records whether any column `W'' ≥ W` has a

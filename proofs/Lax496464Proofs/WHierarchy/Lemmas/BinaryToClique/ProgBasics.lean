@@ -1,7 +1,7 @@
 import Lax496464Proofs.WHierarchy.Lemmas.BinaryToClique.ProgDefs
 
 /-!
-# Σ₁[2] model checking to Clique: tools for the program proofs
+# Σ₁[2] Model Checking to Clique: Tools for the Program Proofs
 
 Arrays that are filled from the front (`pad l n`: the list `l`, then zeros up to length `n`), the
 guarded read `rdV`, and framing (`Keep`).

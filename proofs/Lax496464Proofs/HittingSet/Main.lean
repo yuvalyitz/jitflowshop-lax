@@ -3,7 +3,7 @@ import Lax496464Proofs.HittingSet.Pairs
 import Lax496464Proofs.HittingSet.Clause
 
 /-!
-# The program
+# The Program
 
 Read the word, scan it, fall back to the formula with one empty clause if it encodes
 nothing; set the dimensions; write the three numbers, the pairs and the clause sets.

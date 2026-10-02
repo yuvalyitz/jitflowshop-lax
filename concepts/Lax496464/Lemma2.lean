@@ -20,7 +20,7 @@ machine must be able to finish $j$ by $t$. Equation (3).
 Past the last start time the table answers the question: some state carries weight $W'$
 exactly when a feasible set of weight $W'$ exists.
 
-# Formalization notes
+# Formalization Notes
 
 Both equations are stated as equivalences, so each says at once that the recursion
 invents no entry and loses none.

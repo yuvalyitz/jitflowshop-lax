@@ -9,8 +9,6 @@ namespace Lax496464Proofs.WHierarchy.Machine.Compose.RunBasics
 
 open Lax808846.Ram
 
-theorem run_zero (w : ℕ) (p : Program) (s : State) : run w p 0 s = some s := rfl
-
 theorem run_succ (w : ℕ) (p : Program) (k : ℕ) (s : State) :
     run w p (k + 1) s = (step w p s).bind (run w p k) := rfl
 
@@ -148,7 +146,7 @@ theorem plainEff_inp {w : ℕ} {i : Instr} (h : isPlain i = true) (s : State) :
 def plainRun (w : ℕ) (blk : List Instr) (s : State) : State :=
   blk.foldl (fun s i => plainEff w i s) s
 
-@[simp] theorem plainRun_nil (w : ℕ) (s : State) : plainRun w [] s = s := rfl
+@[simp] theorem plainRun_nil (w : ℕ) (s : State) : plainRun w [] s = s := by unfold plainRun; try rfl
 
 @[simp] theorem plainRun_cons (w : ℕ) (i : Instr) (blk : List Instr) (s : State) :
     plainRun w (i :: blk) s = plainRun w blk (plainEff w i s) := rfl

@@ -7,7 +7,7 @@ import Lax496464Proofs.Ram.DecodeInstance
 import Lax496464Proofs.Ram.PrintTail
 
 /-!
-# The total program
+# The Total Program
 
 `Program.prog` reads a Hitting Set word through `readHS`, which trusts the header and is proved
 correct only on a word that encodes an instance. The reduction of Theorem 1 must be a program

@@ -4,7 +4,7 @@ import Lax888481.MulticolouredClique
 
 /-!
 ---
-title: Multicoloured Clique is W[1]-complete
+title: Multicoloured Clique Is W[1]-Complete
 type: theorem
 ---
 Multicoloured Clique — given a graph whose vertices are properly coloured with $k$ colours, is
@@ -18,7 +18,7 @@ proofs.
 * **Multicoloured Clique $\le$ $p$-Clique.** Forget the colours: adjacent vertices have different
   colours, so a clique of $k$ vertices in a $k$-coloured graph has one vertex of each colour.
 
-# Formalization notes
+# Formalization Notes
 
 Multicoloured Clique is the archive's `Lax888481.MulticolouredClique.problem`: the compressed sparse
 row encoding with sorted adjacency lists, one colour per vertex, and the number of colours.

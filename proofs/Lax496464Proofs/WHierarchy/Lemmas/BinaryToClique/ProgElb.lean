@@ -1,7 +1,7 @@
 import Lax496464Proofs.WHierarchy.Lemmas.BinaryToClique.ProgTokLoop
 
 /-!
-# Σ₁[2] model checking to Clique: the candidate values
+# Σ₁[2] Model Checking to Clique: the Candidate Values
 
 `elb` sets `zk = kX x`, fills `el` with `elL x` and sets `zne = neX x`.
 -/

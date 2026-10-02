@@ -1,7 +1,7 @@
 import Lax496464Proofs.Ram.Corollary1Prog
 
 /-!
-# Theorem 4's machine, part 6: reading and sorting
+# Theorem 4's Machine, Part 6: Reading and Sorting
 
 `Corollary1Prog.sortSetup_spec` for any number of machines, and exporting that the sorted
 instance keeps the common preprocessing time.

@@ -2,7 +2,7 @@ import Lax496464Proofs.Ram.W3SweepEv
 import Lax496464Proofs.Ram.Corollary1Init
 
 /-!
-# The sweep loop, and the sweep core
+# The Sweep Loop, and the Sweep Core
 
 `sweepLoop` runs the events of the merge until all `2n` are done (`sweepLoop_spec`), and
 `core` is `initCore ; sweepLoop`: it reads the sorted arrays `PS QS DS WS SA` and the threshold

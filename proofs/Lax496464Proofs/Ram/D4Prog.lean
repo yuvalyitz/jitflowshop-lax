@@ -2,7 +2,7 @@ import Lax496464Proofs.Ram.D4Core
 import Lax496464Proofs.Ram.D2Prog
 
 /-!
-# Corollary 2's program, top level
+# Corollary 2's Program, Top Level
 
 `prog4 = sortSetup3 ; if n < 1 then answer(W = 0) else if m < 1 then answer(W = 0) else
 core4 ; finish`.  `finish` compares the entry of row `0` of the first `m` indices' block with `W`.

@@ -4,7 +4,7 @@ import Lax429075.Reductions
 
 /-!
 ---
-title: Hitting Set is NP-hard
+title: Hitting Set Is NP-Hard
 type: theorem
 ---
 Every language in NP reduces to Hitting Set in polynomial time, by a reduction whose
@@ -38,7 +38,7 @@ is stated because it is what makes the composed reduction of this submission a *
 NP-hardness statement: the numbers of the constructed shop are polynomial in $n$, $m$ and
 $k$, hence in the length of the original input.
 
-# Formalization notes
+# Formalization Notes
 
 Cook's theorem is the archive's Cook–Levin theorem (`lax-429075`), with the classes P and NP
 of `lax-434930`; polynomial time on a Turing machine is established by a word RAM program

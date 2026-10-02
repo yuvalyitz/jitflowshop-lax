@@ -1,7 +1,7 @@
 import Lax496464Proofs.WHierarchy.MccNP.Ram.ValidateRun
 
 /-!
-# The matrix loop of the validator
+# The Matrix Loop of the Validator
 
 One matrix cell per turn: each entry is `0` or `1`, the diagonal is zero, and the matrix is
 symmetric.

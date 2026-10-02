@@ -2,7 +2,7 @@ import Lax496464Proofs.HittingSet.Sweep
 import Lax496464Proofs.HittingSet.Model
 
 /-!
-# The clause sets
+# The Clause Sets
 
 For each clause: mark the elements of its literals and count them, write the count, then
 sweep the marks writing the marked elements in increasing order.

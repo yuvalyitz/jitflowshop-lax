@@ -3,7 +3,7 @@ import Lax496464Proofs.Ram.Members
 import Lax496464Proofs.Ram.ListUtil
 
 /-!
-# The membership pairs, built on the machine
+# The Membership Pairs, Built on the Machine
 
 `Members.lean` says what the pairs are: for each set `j`, the elements `i` of the universe
 with `memB x j i`, in the order of the universe. A program has the offsets and the member

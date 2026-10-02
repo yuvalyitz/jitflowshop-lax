@@ -3,7 +3,7 @@ import Lax434930.NondeterministicPolynomialTime
 
 /-!
 ---
-title: NP-hardness, and strong NP-hardness, of a scheduling problem
+title: NP-Hardness, and Strong NP-Hardness, of a Scheduling Problem
 type: definition
 ---
 A property of instances is *NP-hard* if every language in NP has a polynomial-time
@@ -16,7 +16,7 @@ NP-hard problem admits no pseudo-polynomial algorithm unless $\mathrm{P} =
 \mathrm{NP}$: an algorithm polynomial in the magnitudes of the numbers would be
 polynomial in the input length on the image of such a reduction.
 
-# Formalization notes
+# Formalization Notes
 
 Hardness is defined by quantifying over NP rather than against a fixed complete problem.
 NP is available, so the definition a textbook gives can be written down.

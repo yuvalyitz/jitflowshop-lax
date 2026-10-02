@@ -2,7 +2,7 @@ import Lax496464Proofs.Ram.D2Tab
 import Lax496464Proofs.Ram.D2Scan1
 
 /-!
-# Theorem 2, pure layer 7: what one step of the main loop establishes
+# Theorem 2, Pure Layer 7: What One Step of the Main Loop Establishes
 
 `block_rep`: if the cells of the number `c` were computed as `max(T[c₁,r], f(T[c₂, r ∸ w_j]))` from
 a table right at all numbers `> c`, they are right.  `valid_iff`: the machine's verdict.

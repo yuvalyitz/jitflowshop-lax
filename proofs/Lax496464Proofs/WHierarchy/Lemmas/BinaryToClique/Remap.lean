@@ -2,7 +2,7 @@ import Lax496464.WH_B3_LogicProblems
 import Mathlib.Tactic
 
 /-!
-# Σ₁[2] model checking to Clique: few candidate values suffice
+# Σ₁[2] Model Checking to Clique: Few Candidate Values Suffice
 
 The universe of a structure may be far larger than its word (its size is one number), so the
 graph cannot have a vertex per universe element. It does not need one: elements that occur in no

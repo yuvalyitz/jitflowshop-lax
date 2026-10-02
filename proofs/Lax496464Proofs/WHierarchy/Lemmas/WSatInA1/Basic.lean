@@ -14,9 +14,9 @@ open Lax496464Proofs.WHierarchy.HittingSet.Compress (idxOf_eq_of_least getD_idxO
 
 /-! ### Numbers in base `M` -/
 
-@[simp] theorem num_nil (M : ℕ) : num M [] = 0 := rfl
+@[simp] theorem num_nil (M : ℕ) : num M [] = 0 := by simp only [num]
 
-@[simp] theorem num_cons (M a : ℕ) (l : List ℕ) : num M (a :: l) = a + M * num M l := rfl
+@[simp] theorem num_cons (M a : ℕ) (l : List ℕ) : num M (a :: l) = a + M * num M l := by simp only [num]
 
 theorem num_append (M : ℕ) : ∀ l1 l2 : List ℕ,
     num M (l1 ++ l2) = num M l1 + M ^ l1.length * num M l2

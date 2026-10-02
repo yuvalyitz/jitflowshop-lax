@@ -189,7 +189,6 @@ structure ExtAr (as as' : List ℕ) : Prop where
   len : as'.length = 5 * as.length + 1
   zero : as'.getD 0 0 = 2
   blk : ∀ i < as.length, ∀ j < 5, as'.getD (5 * i + 1 + j) 0 = (arBlk (as.getD i 0)).getD j 0
-  pos : ∀ i < as.length, 1 ≤ as.getD i 0
 
 variable {as as' : List ℕ}
 

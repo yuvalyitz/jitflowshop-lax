@@ -3,7 +3,7 @@ import Lax496464Proofs.Ram.D3Dual
 import Lax496464Proofs.Ram.D4Row
 
 /-!
-# Corollary 2, pure layer: the dual table invariant and one block
+# Corollary 2, Pure Layer: the Dual Table Invariant and One Block
 
 `DInv` is `D3Dual.DTabOK` (entries of the numbers `≥ thr` are right on good cells, those below are
 zero) together with "every entry is at most the threshold `W`", which is what keeps every value

@@ -6,7 +6,7 @@ import Lax888481.PolynomialReduction
 
 /-!
 ---
-title: Independent Set reduces to Multicoloured Clique
+title: Independent Set Reduces to Multicoloured Clique
 type: theorem
 ---
 **Independent Set, parameterized by $k$, fpt-reduces to Multicoloured Clique, parameterized by the
@@ -37,7 +37,7 @@ The statements are:
 | `reduce_polyTime`, `independentSet_polyReduces_mcc` | polynomial time on every word; a polynomial-time reduction |
 | `independentSet_le_mcc` | an fpt-reduction in the sense of `WH_A2_FptReductions` |
 
-# Formalization notes
+# Formalization Notes
 
 **Independent Set** is `WH_F1_IndependentSetMatrix.problem`, the archive's `Lax762056` Independent
 Set on adjacency-matrix words; its threshold is a lower bound, and a set of at least $k$ independent

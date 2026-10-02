@@ -1,7 +1,7 @@
 import Lax496464Proofs.Ram.Build
 
 /-!
-# Checking that what the scan read is a Hitting Set word
+# Checking That What the Scan Read Is a Hitting Set Word
 
 The scan reads `n`, `m`, `m + 1` offsets, a member array and `k` whatever the header claims.
 `validate` checks the remaining conditions of `HittingSet.Encodes` on what was read: the offsets

@@ -4,7 +4,7 @@ import Lax496464Proofs.Ram.Validate
 import Lax496464Proofs.Ram.DecodeInstance
 
 /-!
-# The reduction, as a total function of the bit tape
+# The Reduction, as a Total Function of the Bit Tape
 
 `Lax759944.RamPolytime` needs a function `f : List ℕ → List ℕ` that `totalProg` computes. It is
 built here from what the scan recovers: `TotalProg.decY y` is the instance read off the scan's

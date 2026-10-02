@@ -1,7 +1,7 @@
 import Lax496464Proofs.Ram.T4Tail
 
 /-!
-# Theorem 4's machine, part 8: the whole program, correct
+# Theorem 4's Machine, Part 8: the Whole Program, Correct
 
 `prog4` reads the instance, sorts the jobs by start time, and runs the greedy of Section 6.1.
 -/

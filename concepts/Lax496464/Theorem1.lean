@@ -27,7 +27,7 @@ The numbers of the constructed shop are polynomial in $n$, $m$ and $k$, and henc
 length of the Hitting Set instance, so the hardness is strong: no algorithm polynomial in
 the magnitudes of the due dates can exist unless $\mathrm{P} = \mathrm{NP}$.
 
-# Formalization notes
+# Formalization Notes
 
 Two statements, with different content and different costs.
 

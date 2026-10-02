@@ -2,7 +2,7 @@ import Mathlib.Data.List.GetD
 import Mathlib.Algebra.BigOperators.Group.List.Basic
 
 /-!
-# Partial sums of a list of naturals
+# Partial Sums of a List of Naturals
 
 The three facts about `List.partialSums` (defined in the core library as `scanl (· + ·) 0`) that
 the Hitting Set word's offsets need, for lists of natural numbers: its length, its `i`-th entry

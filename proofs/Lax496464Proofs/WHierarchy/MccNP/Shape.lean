@@ -3,7 +3,7 @@ import Lax496464.WH_F1_IndependentSetMatrix
 import Lax496464.WH_F2_MccConstruction
 
 /-!
-# The words of Independent Set instances
+# The Words of Independent Set Instances
 
 `Valid` states that a word has the form `1^n 0 · (n² entries) · 1^k 0` with a symmetric `0/1`
 matrix of zero diagonal; `decode` recovers the instance. The word of an instance, its order,

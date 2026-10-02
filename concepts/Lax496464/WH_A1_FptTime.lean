@@ -3,7 +3,7 @@ import Mathlib.Computability.Partrec
 
 /-!
 ---
-title: Fixed-parameter time on the word RAM
+title: Fixed-Parameter Time on the Word RAM
 type: definition
 ---
 A function $F$ on words is computable in **fixed-parameter time** with respect to a parameter
@@ -16,7 +16,7 @@ unconstrained.
 These are the running times of fpt-algorithms and fpt-reductions; every notion of the hierarchies
 is built on them.
 
-# Formalization notes
+# Formalization Notes
 
 The machine is the word RAM `Lax808846.Ram`, with the conventions of the archive's polynomial-time
 word RAM `Lax759944.RamPolytime`:

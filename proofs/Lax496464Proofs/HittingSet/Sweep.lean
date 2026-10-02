@@ -1,7 +1,7 @@
 import Lax496464Proofs.HittingSet.Mark
 
 /-!
-# Sweeping the marks
+# Sweeping the Marks
 
 One pass over the universe: a marked element is written and unmarked. The elements come
 out in increasing order, and the marks are all clear afterwards.

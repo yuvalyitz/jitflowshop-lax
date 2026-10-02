@@ -3,7 +3,7 @@ import Lax496464.WH_A2_FptReductions
 
 /-!
 ---
-title: Model checking for Σ₁ reduces to positive Σ₁
+title: Model Checking for Σ₁ Reduces to Positive Σ₁
 type: theorem
 ---
 $p\text{-MC}(\Sigma_1) \le^{\mathrm{fpt}} p\text{-MC}(\Sigma_1^+)$, where $\Sigma_1^+$ is the class of

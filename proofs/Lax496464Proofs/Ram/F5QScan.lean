@@ -2,7 +2,7 @@ import Lax496464Proofs.Ram.F5QScale
 import Lax496464Proofs.Ram.Q3Defs
 
 /-!
-# Theorem 5 (profile sweep): the read-off
+# Theorem 5 (Profile Sweep): the Read-Off
 
 `scanCom` finds the largest weight column `c ≤ W` that has a finite cell (one pass over the flat
 table: `best := max best (i mod w1)` at every finite cell), and `outCom` writes

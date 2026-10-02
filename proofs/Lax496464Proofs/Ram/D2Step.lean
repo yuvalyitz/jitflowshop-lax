@@ -5,7 +5,7 @@ import Lax496464Proofs.Ram.D2Count
 import Lax496464Proofs.Ram.W3Front2
 
 /-!
-# Theorem 2's machine, part 6: one number of the main loop
+# Theorem 2's Machine, Part 6: One Number of the Main Loop
 -/
 
 namespace Lax496464Proofs.Ram.D2Step
@@ -148,8 +148,34 @@ theorem stepIsCode_core {J : Instance} {B n m W inf : ℕ} {PSl QSl DSl WSl NXl 
         σ.vars "zx1" = j ∧ σ.arrs "TAB" = T) stepIsCode
       (fun _σ σ' => ∃ T', σ'.arrs "TAB" = T' ∧ TabOK J n m W inf ((n + 1) ^ m) c T')
       (2 * (64 * (Zs.length + 1) + 110) + ((100 + 4) * (W + 1) + 6) + 60) := by
-  obtain ⟨hB, hn, hm, hest, hq, hi1, hinf, hinfB, lPS, lQS, lDS, lWS, lNX, ePS, eQS, eDS, eWS, eNX,
-    lPW, ePW, bpw, bm, bn, bW, bR, bp, bd, bw⟩ := sc
+  have hB := sc.hB
+  have hn := sc.hn
+  have hm := sc.hm
+  have hest := sc.hest
+  have hq := sc.hq
+  have hi1 := sc.hi1
+  have hinf := sc.hinf
+  have hinfB := sc.hinfB
+  have lPS := sc.lenPS
+  have lQS := sc.lenQS
+  have lDS := sc.lenDS
+  have lWS := sc.lenWS
+  have lNX := sc.lenNX
+  have ePS := sc.PS
+  have eQS := sc.QS
+  have eDS := sc.DS
+  have eWS := sc.WS
+  have eNX := sc.NX
+  have lPW := sc.lenPW
+  have ePW := sc.PW
+  have bpw := sc.bpw
+  have bm := sc.bm
+  have bn := sc.bn
+  have bW := sc.bW
+  have bR := sc.bR
+  have bp := sc.bp
+  have bd := sc.bd
+  have bw := sc.bw
   have hjn : j < n := hsl.lt j (by simp)
   have hjJ : j < J.jobs := by rw [hn]; exact hjn
   have hcN : c < (n + 1) ^ m := by rw [← hcode]; exact hsl.codeL_lt

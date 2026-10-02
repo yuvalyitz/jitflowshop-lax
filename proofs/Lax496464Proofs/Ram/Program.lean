@@ -6,7 +6,7 @@ import Lax496464Proofs.Ram.Build
 import Lax496464Proofs.Ram.CsrWord
 
 /-!
-# The reduction's program
+# The Reduction's Program
 
 `readHS`, then `build`, then the constants of the construction, then the three generation
 passes, and finally the four blocks and the target written from the arrays.

@@ -1,7 +1,7 @@
 import Lax496464Proofs.Ram.W3Rel
 
 /-!
-# The width sweep as a table over masks: the pure model
+# The Width Sweep as a Table over Masks: the Pure Model
 
 Final statements (`J : Instance`; `hE : EstOrdered J`; `hq : ∀ i, 0 < J.q i`;
 `hINF : ∀ j, J.d j ≤ INF`, `0 < INF`; for the concrete choice `INF = maxd J + 2`):
@@ -30,6 +30,7 @@ open Lax496464Proofs.Ram.W3Bits Lax496464Proofs.Ram.W3Tab Lax496464Proofs.Ram.W3
 
 /-! ## Events, and the merge -/
 
+set_option genSizeOfSpec false in
 /-- An event of the sweep: a job starts, or a job becomes due. -/
 inductive Ev (J : Instance) : Type
   | start (j : (scale J).Job)
@@ -273,6 +274,8 @@ theorem mem_evs (J : Instance) (e : Ev J) : e ∈ evs J := by
 
 /-! ## The sweep: slots and table, event by event -/
 
+set_option genInjectivity false in
+set_option genSizeOfSpec false in
 /-- The state of the sweep: the LIFO stack `free` of freed slots, the counter `next` of the
 slots ever handed out fresh, the slot `sl j` of each job (meaningful from its start), and the
 table `T` (mask ↦ weight ↦ least unscaled load, `INF` for none). -/
@@ -322,7 +325,13 @@ theorem inv_due (hq : ∀ i : J.Job, 0 < J.q i) {INF W ω : ℕ} {pre : List (Ev
     (hnod : ∀ k : (scale J).Job, k ≠ j →
       ¬ (t' < ((scale J).d k : ℤ) ∧ ((scale J).d k : ℤ) ≤ t)) :
     Inv J INF W ω (pre ++ [Ev.due j]) (step J INF st (Ev.due j)) t := by
-  obtain ⟨hrel, hinj, hcov, hdis, hnd, hpk, hbnd⟩ := hI
+  have hrel := hI.rel
+  have hinj := hI.inj
+  have hcov := hI.cover
+  have hdis := hI.disj
+  have hnd := hI.nodup
+  have hpk := hI.peak
+  have hbnd := hI.bnd
   have hj : j ∈ alive J t' := due_mem_alive hq htt hdj hnos
   have halive := alive_due htt hdj hnos hnod
   have hbimg : st.sl j ∈ (alive J t').image st.sl := Finset.mem_image_of_mem _ hj
@@ -373,7 +382,13 @@ theorem inv_start (hq : ∀ i : J.Job, 0 < J.q i) {INF W ω : ℕ} (hINF : ∀ j
     (hnos : ∀ k : (scale J).Job, k ≠ j → ¬ (t' < s (I := scale J) k ∧ s (I := scale J) k ≤ t))
     (hnod : ∀ k : (scale J).Job, ¬ (t' < ((scale J).d k : ℤ) ∧ ((scale J).d k : ℤ) ≤ t)) :
     Inv J INF W ω (pre ++ [Ev.start j]) (step J INF st (Ev.start j)) t := by
-  obtain ⟨hrel, hinj, hcov, hdis, hnd, hpk, hbnd⟩ := hI
+  have hrel := hI.rel
+  have hinj := hI.inj
+  have hcov := hI.cover
+  have hdis := hI.disj
+  have hnd := hI.nodup
+  have hpk := hI.peak
+  have hbnd := hI.bnd
   have hjn : j ∉ alive J t' := j_not_mem_alive_start hsj htt
   have halive := alive_start (hqs hq j) hsj htt hnos hnod
   have hag : ∀ b, ∀ k ∈ alive J t', st.sl k = Function.update st.sl j b k := fun b k hk =>

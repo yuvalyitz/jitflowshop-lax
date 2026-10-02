@@ -1,7 +1,7 @@
 import Lax496464Proofs.WHierarchy.MccNP.Ram.BodyPass
 
 /-!
-# The header of `body`
+# The Header of `body`
 
 The loop over a run of ones, and `header`, which reads `n` and `k` off the word and sets the
 positions of the matrix and the number `N = k n` of vertices.

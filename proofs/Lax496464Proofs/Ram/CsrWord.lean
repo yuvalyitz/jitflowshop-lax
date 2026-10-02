@@ -4,7 +4,7 @@ import Mathlib.Data.List.FinRange
 import Lax496464Proofs.Ram.PartialSums
 
 /-!
-# The numeric CSR word of a Hitting Set instance
+# The Numeric CSR Word of a Hitting Set Instance
 
 `HittingSet.Encodes` says when a word `x` presents an instance `P` with solution size `k`;
 nothing in the concept builds such a word *from* `P` and `k`. `csrWord P k` is that word —

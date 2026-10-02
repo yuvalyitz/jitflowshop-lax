@@ -4,7 +4,7 @@ import Lax496464Proofs.Ram.Fits
 import Lax496464Proofs.Ram.Reduction
 
 /-!
-# Theorem 2: the running time
+# Theorem 2: the Running Time
 -/
 
 namespace Lax496464Proofs.Ram.D2Final

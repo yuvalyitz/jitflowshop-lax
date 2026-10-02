@@ -24,6 +24,8 @@ namespace Lax496464Proofs.WHierarchy.Lemmas.PiTwoToMonotone.Cnf
 open Lax429075.CNF Lax496464.WH_C3_WeightedSat
 open Lax496464Proofs.WHierarchy.Lemmas.WDToWSat.Digits Lax496464Proofs.WHierarchy.Lemmas.PiTwoToMonotone.Blocks
 
+set_option genInjectivity false in
+set_option genSizeOfSpec false in
 /-- The parameters of the formula. -/
 structure Par where
   /-- The weight of the witness. -/

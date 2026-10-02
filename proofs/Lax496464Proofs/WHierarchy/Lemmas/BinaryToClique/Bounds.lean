@@ -2,7 +2,7 @@ import Lax496464Proofs.WHierarchy.Lemmas.BinaryToClique.ProgTop
 import Lax496464Proofs.WHierarchy.Lemmas.BinaryToClique.MathFinal
 
 /-!
-# Σ₁[2] model checking to Clique: the value bound and the cost bound
+# Σ₁[2] Model Checking to Clique: the Value Bound and the Cost Bound
 
 The value bound `Bv` on the tape `|x| :: x`, and the facts the running-time bound needs: the number
 `NGX x` of vertices is at most `8 · 4^q · |x|` for `q` atoms, and on an instance `q ≤ |φ|` and the

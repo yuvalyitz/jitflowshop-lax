@@ -3,7 +3,7 @@ import Lax496464Proofs.Ram.D5Row
 import Lax496464Proofs.Ram.D5Pure
 
 /-!
-# Corollary 3's machine, part 3: the block of one number
+# Corollary 3's Machine, Part 3: the Block of One Number
 
 The block of a code: two scans, the job's numbers, its limit, and the `n + 1` cells.  The table
 is that of `D5Pure.UTab` with block width `R = n + 1`; the set-up is `D2Step`'s with the
@@ -59,8 +59,34 @@ theorem stepIsCodeU_core {J : Instance} {B n m Wr inf p : ℕ} {PSl QSl DSl WSl 
         σ.vars "zx1" = j ∧ σ.arrs "TAB" = T) stepIsCodeU
       (fun _σ σ' => ∃ T', σ'.arrs "TAB" = T' ∧ UTab J n m Wr p ((n + 1) ^ m) c T')
       (2 * (64 * (Zs.length + 1) + 110) + ((100 + 4) * (n + 1) + 6) + 100) := by
-  obtain ⟨hB, hn, hm, hest, hq, hi1, hinf, hinfB, lPS, lQS, lDS, lWS, lNX, ePS, eQS, eDS, eWS, eNX,
-    lPW, ePW, bpw, bm, bn, bW, bR, bp, bd, bw⟩ := sc
+  have hB := sc.hB
+  have hn := sc.hn
+  have hm := sc.hm
+  have hest := sc.hest
+  have hq := sc.hq
+  have hi1 := sc.hi1
+  have hinf := sc.hinf
+  have hinfB := sc.hinfB
+  have lPS := sc.lenPS
+  have lQS := sc.lenQS
+  have lDS := sc.lenDS
+  have lWS := sc.lenWS
+  have lNX := sc.lenNX
+  have ePS := sc.PS
+  have eQS := sc.QS
+  have eDS := sc.DS
+  have eWS := sc.WS
+  have eNX := sc.NX
+  have lPW := sc.lenPW
+  have ePW := sc.PW
+  have bpw := sc.bpw
+  have bm := sc.bm
+  have bn := sc.bn
+  have bW := sc.bW
+  have bR := sc.bR
+  have bp := sc.bp
+  have bd := sc.bd
+  have bw := sc.bw
   have hjn : j < n := hsl.lt j (by simp)
   have hjJ : j < J.jobs := by rw [hn]; exact hjn
   have hcN : c < (n + 1) ^ m := by rw [← hcode]; exact hsl.codeL_lt

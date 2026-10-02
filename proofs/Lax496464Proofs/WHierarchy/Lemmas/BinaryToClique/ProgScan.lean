@@ -1,7 +1,7 @@
 import Lax496464Proofs.WHierarchy.Lemmas.BinaryToClique.ProgEval3
 
 /-!
-# Σ₁[2] model checking to Clique: the scan of a block
+# Σ₁[2] Model Checking to Clique: the Scan of a Block
 
 `scanC` sets `atr = 1` iff some tuple of the block of atom `am1` hits `(aw1, aw2)` (`memX`).
 -/

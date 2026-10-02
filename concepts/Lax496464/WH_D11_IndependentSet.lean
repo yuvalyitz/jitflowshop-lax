@@ -3,7 +3,7 @@ import Lax496464.WH_C1_GraphProblems
 
 /-!
 ---
-title: Independent Set is W[1]-complete
+title: Independent Set Is W[1]-Complete
 type: theorem
 ---
 $p$-Independent-Set is W[1]-complete under fpt-reductions [FG06, Corollary 6.2].

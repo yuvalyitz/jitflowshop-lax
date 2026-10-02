@@ -1,7 +1,7 @@
 import Lax496464Proofs.WHierarchy.Lemmas.WDToWSat.ProgZ
 
 /-!
-# The loop over the assignments, the loop over the variables
+# The Loop over the Assignments, the Loop over the Variables
 
 `decodeCom_spec`: the digits of `z` into `od`. `zLoop_spec`: the words of the clauses of every
 assignment `z < n^r`. `tautLoop_spec`: the words of the clauses `Y_c ∨ ¬Y_c`, `c < n^s`.

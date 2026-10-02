@@ -11,3 +11,11 @@ lake-manifest.json
 *.out
 *.synctex.gz
 /paper/main.pdf
+
+.env
+.env.*
+*.pem
+*.key
+.claude/
+.codex/
+.agents/

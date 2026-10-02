@@ -4,14 +4,14 @@ import Lax759944.TuringPolytime
 
 /-!
 ---
-title: NP-hardness of a problem on words of numbers
+title: NP-Hardness of a Problem on Words of Numbers
 type: definition
 ---
 A problem is **NP-hard** if every language in NP reduces to its yes-instances by a map computable
 in polynomial time: a map $f$ from binary words to words of numbers such that $x \in A$ if and only
 if $f(x)$ is a yes-instance, for every $x$.
 
-# Formalization notes
+# Formalization Notes
 
 **Machines.** The map is computed by a Turing machine in polynomial time
 (`Turing.TM2ComputableInPolyTime`). The machine reads the binary word and writes the canonical

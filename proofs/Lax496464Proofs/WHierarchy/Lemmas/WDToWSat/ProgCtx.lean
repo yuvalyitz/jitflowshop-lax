@@ -2,7 +2,7 @@ import Lax808846Proofs.Tactic
 import Lax496464Proofs.WHierarchy.Lemmas.WDToWSat.ProgMath
 
 /-!
-# Frames, the value bound and the context of the program's main part
+# Frames, the Value Bound and the Context of the Program's Main Part
 
 `Frame S A σ σ'`: only the scalars in `S` and the arrays in `A` changed, the input tape did not.
 `BF D x B`: the facts about the value bound `B` the program needs. `Ctx D x σ`: the arrays and

@@ -2,7 +2,7 @@ import Lax496464.FlowShop
 
 /-!
 ---
-title: Earliest-start-time order, and distinct endpoints
+title: Earliest-Start-Time Order, and Distinct Endpoints
 type: definition
 ---
 Two standing conventions of the paper's algorithmic sections, and the rescaling that
@@ -17,7 +17,7 @@ when no two of them coincide. Section 4 assumes this, and obtains it by the resc
 $$d'_j = (n+1)d_j + j, \qquad q'_j = (n+1)q_j, \qquad p'_j = (n+1)p_j ,$$
 which leaves the weights alone.
 
-# Formalization notes
+# Formalization Notes
 
 Earliest-start-time order is a property of an instance rather than a separate kind of
 object, so that every result about instances applies to one in that order without

@@ -2,7 +2,7 @@ import Lax496464Proofs.Ram.TotalReduction
 import Lax496464Proofs.Ram.Program
 
 /-!
-# Bounding the fields of `Ram.Gen.Bnd` by a power of two
+# Bounding the Fields of `Ram.Gen.Bnd` by a Power of Two
 
 Given `ExpBd P k e` — the numbers `P.n`, `P.m` and `k` are each below `2 ^ e` — this file bounds
 every field of `Gen.Bnd P k` (`Q`, `R`, `numJobs`, the member list, `jp`, `jq`, `jd`, `target`)

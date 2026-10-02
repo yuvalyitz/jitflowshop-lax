@@ -3,7 +3,7 @@ import Lax496464.EstOrder
 import Lax496464Proofs.Section6
 
 /-!
-# The greedy of Section 6.1, one step at a time, on finite sets
+# The Greedy of Section 6.1, One Step at a Time, on Finite Sets
 
 The machine of `Ram/T4Prog.lean` keeps the set `A` the greedy holds as a sum of two parts:
 `Act`, the members of `A` that may still be running (kept in two maximum trees), and the

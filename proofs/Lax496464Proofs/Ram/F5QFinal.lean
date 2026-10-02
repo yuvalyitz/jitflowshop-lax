@@ -2,7 +2,7 @@ import Lax496464Proofs.Ram.F5QOk
 import Lax496464Proofs.Ram.Q3Final
 
 /-!
-# Theorem 5, profile sweep: the running time statement
+# Theorem 5, Profile Sweep: the Running Time Statement
 
 `prog5` solves, on the words that present an instance and an accuracy `e`, the function
 `x ↦ [fptasOut I e]`, within `cost5`, at every word length at which the admissibility clauses

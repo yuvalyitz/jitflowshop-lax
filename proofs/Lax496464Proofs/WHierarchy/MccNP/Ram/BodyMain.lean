@@ -1,7 +1,7 @@
 import Lax496464Proofs.WHierarchy.MccNP.Ram.BodyHead
 
 /-!
-# The specification of `body`
+# The Specification of `body`
 
 The passes of `body` composed: on a valid word it appends the word of the multicoloured graph to
 the output within `Kbody x` steps.

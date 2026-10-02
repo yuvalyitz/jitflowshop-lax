@@ -1,7 +1,7 @@
 import Lax496464Proofs.Ram.Q3Defs
 
 /-!
-# Q3: the number theory of base-`bb` digits
+# Q3: the Number Theory of Base-`bb` Digits
 
 `dig bb x i = x / bb^i % bb`, `digsum bb qm x = ∑ i<qm, dig bb x i`.  Digit extraction, digit
 composition, uniqueness, and the effect of subtracting a power of the base on the digits.

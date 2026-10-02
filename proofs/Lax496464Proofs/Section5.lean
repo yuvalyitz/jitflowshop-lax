@@ -3,7 +3,7 @@ import Lax496464Proofs.Model.Theorem3_Printed
 import Lax496464.Lemma3
 
 /-!
-# Section 5: the sweep over due-date profiles, and what the paper prints
+# Section 5: the Sweep over Due-Date Profiles, and What the Paper Prints
 
 Section 5 replaces the alive *set* of Section 4 by its **due-date profile** — how many
 selected jobs are due at each of the next `q_max` instants — which is what makes the table

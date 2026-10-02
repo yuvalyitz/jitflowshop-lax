@@ -2,7 +2,7 @@ import Lax496464Proofs.Ram.W3Model
 import Lax496464Proofs.Ram.Dp1
 
 /-!
-# The sweep loop, model side: which event comes next, and what the state satisfies
+# The Sweep Loop, Model Side: Which Event Comes Next, and What the State Satisfies
 
 The machine's loop keeps two counters `i` (starts done) and `k` (dues done); the events done
 so far are the list `pre`.  `Pos J i k pre` says that `pre` is what the merge of `W3Model.evs`

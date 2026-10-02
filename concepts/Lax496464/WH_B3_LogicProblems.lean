@@ -3,7 +3,7 @@ import Lax888481.ParameterizedComplexity
 
 /-!
 ---
-title: Model checking and weighted Fagin definability
+title: Model Checking and Weighted Fagin Definability
 type: definition
 ---
 The two families of parameterized problems that define the hierarchies.
@@ -18,7 +18,7 @@ variable $X$ of arity $s$. *Instance:* a structure $\mathcal A$ and $k \in \math
 *Parameter:* $k$. *Question:* is there a relation $S \subseteq A^s$ with $|S| = k$ such that
 $\mathcal A \models \varphi(S)$? [FG06, p. 95]
 
-# Formalization notes
+# Formalization Notes
 
 **Words.** An instance of model checking is the word of the structure followed by the word of the
 formula; an instance of weighted definability is the word of the structure followed by $k$. Both

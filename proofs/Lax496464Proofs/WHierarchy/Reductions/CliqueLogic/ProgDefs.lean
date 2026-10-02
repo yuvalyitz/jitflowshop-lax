@@ -2,7 +2,7 @@ import Lax808846Proofs.Transfer
 import Lax496464Proofs.WHierarchy.Machine.ReadTape
 
 /-!
-# The IMP+ programs of the two clique reductions: definitions
+# The IMP+ Programs of the Two Clique Reductions: Definitions
 
 The array `a` holds the word `x` (a CSR graph followed by `k`); `g_n` holds the number of vertices.
 

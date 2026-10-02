@@ -1,7 +1,7 @@
 import Lax496464Proofs.WHierarchy.Lemmas.BinaryToClique.ProgHdr
 
 /-!
-# Σ₁[2] model checking to Clique: one step of the tokenizer, per tag
+# Σ₁[2] Model Checking to Clique: One Step of the Tokenizer, per Tag
 
 `Corr x st σ`: the machine state `σ` holds the tokenizer state `st` (arrays filled from the front).
 Each kind of node — relation atom, equation, other — moves `Corr x st` to `Corr x (step st)`.

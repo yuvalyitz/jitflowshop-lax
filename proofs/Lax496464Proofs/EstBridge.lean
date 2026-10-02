@@ -3,7 +3,7 @@ import Lax496464Proofs.Model.Sorted
 import Lax496464.Lemma1
 
 /-!
-# Instances in earliest-start-time order
+# Instances in Earliest-Start-Time Order
 
 Sections 3 to 6 all work with the jobs numbered in nondecreasing order of start time. The
 development carries that hypothesis in the instance itself (`EstFFJ`); the concepts state

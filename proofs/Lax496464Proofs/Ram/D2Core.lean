@@ -4,7 +4,7 @@ import Lax496464Proofs.Ram.D2Setup
 import Lax496464Proofs.Ram.Corollary1Init
 
 /-!
-# Theorem 2's machine, part 7: the core
+# Theorem 2's Machine, Part 7: the Core
 
 `core2` takes the sorted arrays `PS QS DS WS` and the scalars `n m W` (as `sortSetup3` leaves them)
 and fills the table.  Its specification, `core2_spec`, describes the final contents of the table: for
@@ -149,7 +149,22 @@ theorem setup2_spec {J : Instance} {B n m W : ℕ} (ci : CI J B n m W) :
         σ'.vars "W" = W ∧ σ'.arrs "TAB" = List.replicate ((n + 1) ^ m * (W + 1)) 0 ∧
         σ'.arrs "VALID" = List.replicate ((n + 1) ^ m) 0)
       (setupCost n m) := by
-  obtain ⟨hB, hn, hmach, hn1, hm, hest, hq, bpw, bm, bn, bW, bR, bd, bp, bs, bw⟩ := ci
+  have hB := ci.hB
+  have hn := ci.hn
+  have hmach := ci.hmach
+  have hn1 := ci.hn1
+  have hm := ci.hm
+  have hest := ci.hest
+  have hq := ci.hq
+  have bpw := ci.bpw
+  have bm := ci.bm
+  have bn := ci.bn
+  have bW := ci.bW
+  have bR := ci.bR
+  have bd := ci.bd
+  have bp := ci.bp
+  have bs := ci.bs
+  have bw := ci.bw
   have hNB : (n + 1) ^ m < B := lt_of_le_of_lt (Nat.le_mul_of_pos_right _ (by omega)) bR
   have hJn : (List.range J.jobs).length = n := by simp [hn]
   have lD : (DSL J).length = n := by simp [DSL, hn]

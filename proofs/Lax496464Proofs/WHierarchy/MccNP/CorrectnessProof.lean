@@ -2,7 +2,7 @@ import Lax496464.WH_F4_IndependentSetToMcc
 import Mathlib.Combinatorics.SimpleGraph.Clique
 
 /-!
-# Correctness of the multicoloured graph
+# Correctness of the Multicoloured Graph
 
 An independent set of at least `k` vertices contains `k` distinct pairwise non-adjacent vertices
 `v_0, …, v_{k-1}`, and these correspond to the multicoloured cliques `{(c, v_c)}` of the

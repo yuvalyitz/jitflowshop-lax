@@ -1,7 +1,7 @@
 import Lax496464Proofs.Ram.F5MPre
 
 /-!
-# Theorem 5 (table of Section 3): everything after the front end
+# Theorem 5 (Table of Section 3): Everything After the Front End
 
 `rest5m = pre5w ; if n < 1 then write 0 else if m < 1 then write 0 else core2 ; scanM ; outCom`.
 Given the sorted arrays of `J` and the accuracy `e` in `W`, it writes `fptasOut J e`: the exact table

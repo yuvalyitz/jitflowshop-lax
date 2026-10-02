@@ -5,7 +5,7 @@ import Mathlib.Logic.Equiv.Fin.Basic
 
 /-!
 ---
-title: The multicoloured graph of an Independent Set instance
+title: The Multicoloured Graph of an Independent Set Instance
 type: definition
 ---
 Let $G$ be a graph on $n$ vertices and $k \in \mathbb N$. The **multicoloured graph** of $(G, k)$
@@ -24,7 +24,7 @@ the construction of [FHRV09, Lemma 1] applied to the complement of $G$ (see also
 The **reduction** `reduce` maps the word of an instance $(G, k)$ of `WH_F1_IndependentSetMatrix` to
 the word of its multicoloured graph, and every other word to the empty word.
 
-# Formalization notes
+# Formalization Notes
 
 **Vertex numbering.** The vertex $(c, v)$ is numbered $v + nc$ (`finProdFinEquiv`), so the
 vertices are listed colour by colour, and the vertex $s$ is $(\lfloor s/n \rfloor, s \bmod n)$.

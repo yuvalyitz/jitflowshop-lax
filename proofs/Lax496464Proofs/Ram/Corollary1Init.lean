@@ -3,7 +3,7 @@ import Lax496464Proofs.Ram.ListUtil
 import Lax496464Proofs.Ram.ListUtil
 
 /-!
-# Corollary 1: the initial constants
+# Corollary 1: the Initial Constants
 
 Before the table can be filled, the machine needs a sentinel `cinf` strictly larger than
 every due date the sorted array `DS` holds — the table's `+∞`. A single scan finds it: keep

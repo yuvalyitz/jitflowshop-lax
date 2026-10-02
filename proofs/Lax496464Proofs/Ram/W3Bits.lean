@@ -4,7 +4,7 @@ import Mathlib.Algebra.BigOperators.Group.Finset.Basic
 import Mathlib.Tactic
 
 /-!
-# Sets of slots as bit masks
+# Sets of Slots as Bit Masks
 
 The width sweep keeps a table indexed by the set of *slots* the running selected jobs occupy,
 written as the number `∑ i ∈ S, 2^i`. This file is the arithmetic of that encoding, using

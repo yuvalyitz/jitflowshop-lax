@@ -4,7 +4,7 @@ import Lax496464Proofs.Model.Sorted
 namespace Lax496464Proofs
 
 /-!
-# Lemma 4: the greedy of Section 6.1 dominates every feasible solution
+# Lemma 4: the Greedy of Section 6.1 Dominates Every Feasible Solution
 
 Section 6.1 sweeps the jobs in EST order, maintaining a feasible `Sⱼ ⊆ Jⱼ = {1, …, j}`. At
 step `j` it adds job `j` outright unless one of the two stopping rules fires, in which case

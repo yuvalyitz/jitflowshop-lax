@@ -60,7 +60,6 @@ def ClI (α : Formula) (k : ℕ) (σ : Env) : Prop :=
 structure Fits (α : Formula) (k B : ℕ) : Prop where
   code_lt : ∀ C ∈ α, ∀ l ∈ C, litCode l < B
   T_lt : T α + α.length + 2 < B
-  k_lt : k < B
 
 theorem cOff_le_T (α : Formula) {j : ℕ} (hj : j ≤ α.length) : cOff α j ≤ T α := by
   rw [← cOff_length]; exact cOff_mono α hj

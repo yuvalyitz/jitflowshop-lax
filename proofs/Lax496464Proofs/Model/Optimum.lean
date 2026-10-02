@@ -4,7 +4,7 @@ import Mathlib.Data.Fintype.Powerset
 namespace Lax496464Proofs
 
 /-!
-# The optimum of an instance
+# The Optimum of an Instance
 
 `Feasible` says which sets of jobs can all be completed just in time; the problem asks
 for the heaviest such set. This file gives that number a name and the three facts every

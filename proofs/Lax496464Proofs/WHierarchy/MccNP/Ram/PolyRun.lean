@@ -1,7 +1,7 @@
 import Lax496464Proofs.WHierarchy.MccNP.Ram.PolyProg
 
 /-!
-# The program computes the reduction
+# The Program Computes the Reduction
 
 On every word `x`, the program run on `|x| :: x` prints `reduce x` within `Kfull x` steps, with all
 values below `Bd x`.

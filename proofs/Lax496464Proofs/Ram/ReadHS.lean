@@ -2,7 +2,7 @@ import Lax496464Proofs.Ram.CsrRead
 import Lax496464Proofs.Ram.Build
 
 /-!
-# Reading a Hitting Set word
+# Reading a Hitting Set Word
 
 `[n, m, o₀ … o_m, member₀ … member_{L−1}, k]`: the two counts, the `m+1` offsets, the
 members, and the solution size. The two variable-length blocks are read by

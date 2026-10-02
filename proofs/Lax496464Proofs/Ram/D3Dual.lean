@@ -1,7 +1,7 @@
 import Lax496464Proofs.Ram.D2Tab
 
 /-!
-# Corollaries 2 and 3, pure layer 1: the dual table
+# Corollaries 2 and 3, Pure Layer 1: the Dual Table
 
 The primal table of Theorem 2 records, for a weight `W'`, the latest instant `P'` from which a set
 of weight `W'` compatible with `X` can be preprocessed.  The dual table records, for an instant `t`,

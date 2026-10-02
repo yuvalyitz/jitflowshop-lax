@@ -7,14 +7,11 @@ namespace Lax496464Proofs.WHierarchy.Machine.SizeFacts
 
 open Lax759944.BinaryWordEncoding
 
-theorem bitSize_nil : bitSize [] = 0 := rfl
+theorem bitSize_nil : bitSize [] = 0 := by unfold bitSize; try rfl
 
 theorem bitSize_cons (v : ℕ) (x : List ℕ) : bitSize (v :: x) = v.size + 1 + bitSize x := by
   simp [bitSize, encode, encodeNat, Nat.size_eq_bits_len]
   omega
-
-theorem bitSize_append (x y : List ℕ) : bitSize (x ++ y) = bitSize x + bitSize y := by
-  simp [bitSize, encode]
 
 /--
 ---

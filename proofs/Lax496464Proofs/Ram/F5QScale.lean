@@ -1,7 +1,7 @@
 import Lax496464Proofs.Ram.F5QFit
 
 /-!
-# Theorem 5 (profile sweep): the scale factor, the rescaling pass and the threshold
+# Theorem 5 (Profile Sweep): the Scale Factor, the Rescaling Pass and the Threshold
 -/
 
 namespace Lax496464Proofs.Ram.F5QScale

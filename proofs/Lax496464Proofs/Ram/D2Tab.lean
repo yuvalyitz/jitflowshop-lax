@@ -2,7 +2,7 @@ import Lax496464Proofs.Ram.D2Ach
 import Lax496464Proofs.Ram.D2Valid
 
 /-!
-# Theorem 2, pure layer 6: the table invariant, and how one step preserves it
+# Theorem 2, Pure Layer 6: the Table Invariant, and How One Step Preserves It
 
 The main loop fills the numbers `c = N-1, N-2, …, 0`.  `TabOK thr T` says that the entries of `T`
 of every code `≥ thr` are right (`Rep` of `AchGe`) and that those of every number `< thr` are still

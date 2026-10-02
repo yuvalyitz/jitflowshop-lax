@@ -1,7 +1,7 @@
 import Lax496464Proofs.Ram.D5Step
 
 /-!
-# Corollary 3's machine, part 4: the main loop over the numbers
+# Corollary 3's Machine, Part 4: the Main Loop over the Numbers
 
 `topComU` (the number of the empty set: its block is zero already, only `VALID` is set),
 `stepComU` (decide whether a number is a code, and if so fill its block), `bodyComU`,

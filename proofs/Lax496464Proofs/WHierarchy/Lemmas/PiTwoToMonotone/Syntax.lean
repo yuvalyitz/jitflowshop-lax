@@ -192,6 +192,8 @@ def posList (xs ys : List ℕ) : List ℕ := ys.dedup ++ xs.dedup
 
 /-! ### The data of the reduction -/
 
+set_option genInjectivity false in
+set_option genSizeOfSpec false in
 /-- The fixed data of the reduction. -/
 structure Data where
   /-- The arity of `X`. -/

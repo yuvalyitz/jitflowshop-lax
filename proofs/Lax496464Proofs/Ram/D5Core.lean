@@ -2,7 +2,7 @@ import Lax496464Proofs.Ram.D2Core
 import Lax496464Proofs.Ram.D5Loop
 
 /-!
-# Corollary 3's machine, part 5: the core
+# Corollary 3's Machine, Part 5: the Core
 
 `core5 = setup2 ; loopComU`.  The set-up of Theorem 2 is used at the table parameter `W := n`
 (the scalar `"W"` holds `n` when it runs, so `R := n + 1`, the block width), and the actual

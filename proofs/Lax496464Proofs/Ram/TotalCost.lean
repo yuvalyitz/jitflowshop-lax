@@ -2,7 +2,7 @@ import Lax496464Proofs.Ram.TotalRun
 import Lax496464Proofs.Ram.CsrWord
 
 /-!
-# The polynomial bound on `totalProg`'s running time
+# The Polynomial Bound on `totalProg`'s Running Time
 
 `totalProg`'s cost, in each of its three cases, as a polynomial in the tape length and in the
 bit-length `S` of the word bound `Bd y`. The dominant case is the valid one: the same

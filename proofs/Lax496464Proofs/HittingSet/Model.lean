@@ -2,7 +2,7 @@ import Lax496464Proofs.HittingSet.Correct
 import Lax391470Proofs.Bits
 
 /-!
-# The output, bit by bit
+# The Output, Bit by Bit
 
 The zeros and ones of the encoding of the image, arranged the way the program produces
 them: the three numbers, the pair of each variable, and the set of each clause as its size

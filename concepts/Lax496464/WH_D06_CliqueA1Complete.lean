@@ -2,7 +2,7 @@ import Lax496464.WH_D02_CliqueInA1
 
 /-!
 ---
-title: Clique is A[1]-complete
+title: Clique Is A[1]-Complete
 type: theorem
 ---
 $p$-Clique is A[1]-complete under fpt-reductions [FG06, Theorem 6.1].

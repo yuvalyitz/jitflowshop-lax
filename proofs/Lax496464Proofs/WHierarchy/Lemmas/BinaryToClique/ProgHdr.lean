@@ -2,7 +2,7 @@ import Lax496464Proofs.WHierarchy.Lemmas.BinaryToClique.ProgBasics
 import Lax496464Proofs.WHierarchy.Reductions.CliqueMCC.Bounds
 
 /-!
-# Σ₁[2] model checking to Clique: the header phase
+# Σ₁[2] Model Checking to Clique: the Header Phase
 
 `hdr` sets `zs = sX x`, fills `bs` with the block starts `hp x i` (`i < zs`), leaves the formula start
 `hp x zs` in `zp` and the size of the universe in `zN`.

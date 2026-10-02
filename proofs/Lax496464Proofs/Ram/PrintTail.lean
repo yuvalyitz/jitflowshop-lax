@@ -3,7 +3,7 @@ import Lax496464Proofs.Ram.Program
 import Lax496464Proofs.Ram.InstanceWord
 
 /-!
-# The bit-printing output stage
+# The Bit-Printing Output Stage
 
 `Program.finalOut_spec`'s `header`/`dumps`/`target'` `write` the reduction's numbers raw to the
 output tape. A Turing-machine composition needs the output already as zeros and ones — each

@@ -4,7 +4,7 @@ import Lax496464Proofs.Model.Optimum
 namespace Lax496464Proofs
 
 /-!
-# Section 8: the construction reducing Hitting Set to `FF(1,m) || ∑ Zⱼ`
+# Section 8: the Construction Reducing Hitting Set to `FF(1,m) || ∑ Zⱼ`
 
 The instance built in Section 8.1, written out. Its correctness — the paper's Lemmas 6 to 9
 — is proved in `Model/Lemma6_Schedule.lean` and `Model/Lemma7to9_Extract.lean`, and
@@ -13,7 +13,7 @@ the concept's `Theorem1.construct_correct` axiom). What is here is the construct
 the identities the paper states about it, and the bound that makes the reduction *strongly*
 NP-hard rather than merely NP-hard.
 
-## The construction
+## The Construction
 
 Given `(U, F, k)` with `|U| = n` and `|F| = m`, the time axis is divided into
 `R = k(n−1) + 1` **segments**, each of `m` **epochs**, and `Q = (k−1)(n+1)`. The epoch
@@ -34,7 +34,7 @@ calibrated so that the elements selected on a machine can never decrease along t
 axis. With `R` that large, some segment must then use one element per machine throughout,
 and those `k` elements are a hitting set.
 
-## Where the paper's printed constants need reading twice
+## Where the Paper's Printed Constants Need Reading Twice
 
 * `p(A^r_{i,j})` is printed as `(1/(k−1))·g(r,j)·Q`. Since `Q = (k−1)(n+1)`, that is the
   integer `g(r,j)·(n+1)`, which is what is used below — and it is why the construction
@@ -47,7 +47,7 @@ and those `k` elements are a hitting set.
   element index is used as an additive offset that must be at least `1` — it is what keeps
   the `n` jobs of a family distinct and orders them — so the offset below is `i + 1`.
 
-## What is *not* here
+## What Is *Not* Here
 
 Lemmas 6–9. `Lemma 6` (a hitting set gives a schedule) needs the explicit assignment of
 epoch `j`'s jobs to machine `i(k')` together with the preprocessing-feasibility

@@ -2,7 +2,7 @@ import Lax496464.Construction
 import Mathlib.Data.List.GetD
 
 /-!
-# The membership pairs, read off the word
+# The Membership Pairs, Read Off the Word
 
 `Construction.memberList` enumerates the pairs `(j, i)` with `i ∈ F j`, set by set and
 within a set in the order of the universe. A program has only the word, which presents

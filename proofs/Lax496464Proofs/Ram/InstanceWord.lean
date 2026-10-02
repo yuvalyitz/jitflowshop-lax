@@ -3,7 +3,7 @@ import Lax496464.WordEncoding
 import Mathlib.Data.List.GetD
 
 /-!
-# An instance as a word
+# An Instance as a Word
 
 The inverse of `Ram/Decode.lean`: the word a reduction has to write. `instanceWord I` is
 the header followed by the four blocks, and `encodesInstance_instanceWord` says it is read
@@ -43,7 +43,7 @@ variable {I}
 @[simp] theorem length_instanceWord : (instanceWord I).length = 2 + 4 * I.jobs := by
   simp [instanceWord]; ring
 
-@[simp] theorem jobCount_instanceWord : jobCount (instanceWord I) = I.jobs := rfl
+@[simp] theorem jobCount_instanceWord : jobCount (instanceWord I) = I.jobs := by simp [jobCount, instanceWord]
 
 private theorem getD_tail {j : ℕ} :
     (instanceWord I).getD (2 + j) 0 =

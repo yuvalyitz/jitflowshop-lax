@@ -3,7 +3,7 @@ import Lax496464.WH_C3_WeightedSat
 
 /-!
 ---
-title: Weighted d-CNF satisfiability is in A[1]
+title: Weighted d-CNF Satisfiability Is in A[1]
 type: theorem
 ---
 For every $d$, $p\text{-WSat}(d\text{-CNF}) \in \mathrm{A}[1]$ [FG06, Theorem 6.28]. Together with

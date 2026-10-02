@@ -2,7 +2,7 @@ import Lax496464Proofs.Ram.TotalBnd
 import Lax496464Proofs.Ram.Fits
 
 /-!
-# `totalProg` on every tape, case by case
+# `totalProg` on Every Tape, Case by Case
 
 The word bound `Bd y` and the three runs of `totalProg` that the `Solves` statement of
 `Ram/TotalFinal.lean` combines: on a tape whose scan never finishes

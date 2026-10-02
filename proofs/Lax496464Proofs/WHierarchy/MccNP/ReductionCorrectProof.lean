@@ -5,7 +5,7 @@ import Lax496464Proofs.WHierarchy.MccNP.WordEncodesProof
 import Lax496464Proofs.WHierarchy.MccNP.MccUniqueness
 
 /-!
-# The reduction on words is correct
+# The Reduction on Words Is Correct
 
 `reduce` on the words of instances and elsewhere, and the facts that it maps instances to
 instances and preserves the answer. They follow from the correctness of the construction, the

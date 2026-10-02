@@ -1,7 +1,7 @@
 import Lax496464Proofs.Ram.D2Digits
 
 /-!
-# Theorem 2, pure layer 2: replacing the smallest threshold
+# Theorem 2, Pure Layer 2: Replacing the Smallest Threshold
 
 The recursion (1) of Section 3 removes the smallest threshold `j` of `X` and inserts the smallest
 index `≥ y` not already in `X` (`y = j+1` for `X₁`, `y = nxt j` for `X₂`).  On digit strings that is

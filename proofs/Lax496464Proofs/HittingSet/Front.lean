@@ -2,7 +2,7 @@ import Lax496464Proofs.HittingSet.Correct
 import Lax391470Proofs.L2Main
 
 /-!
-# Reading and scanning the word
+# Reading and Scanning the Word
 
 The archive's reader puts the bits into an array; its finite-state scan of a formula's
 encoding leaves the literals in three flat arrays — indices, signs, clause numbers — with

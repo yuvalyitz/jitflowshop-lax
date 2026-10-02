@@ -3,7 +3,7 @@ import Lax496464Proofs.Ram.ListUtil
 import Lax496464Proofs.Ram.D2Count
 
 /-!
-# Theorem 2's machine, part 5: the powers of `n+1`, and the code of the first `m` indices
+# Theorem 2's Machine, Part 5: the Powers of `n+1`, and the Code of the First `m` Indices
 
 `PW[i] = (n+1)^i` for `i ≤ m` (`pwSetup`), and `zk`, the number of the set `{0,…,min m n - 1}` — the
 thresholds the table is read off at (`code0Loop`).  Both cost `O(m)`.

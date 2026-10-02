@@ -3,7 +3,7 @@ import Lax496464Proofs.WHierarchy.MccNP.Ram.BodyDefs
 import Lax496464Proofs.WHierarchy.MccNP.Ram.BodyMath
 
 /-!
-# The adjacency test of the program
+# The Adjacency Test of the Program
 
 `adjCom` decides whether two vertices of the multicoloured graph are adjacent, reading one entry
 of the matrix held in array `a`.

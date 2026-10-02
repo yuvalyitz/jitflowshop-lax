@@ -3,7 +3,7 @@ import Lax496464Proofs.WHierarchy.MccNP.Ram.FptTimeProof
 import Lax496464Proofs.WHierarchy.MccNP.Ram.ValidateStmt
 
 /-!
-# Sizes for the polynomial bound
+# Sizes for the Polynomial Bound
 
 On a valid word `x`, the entries of the output and the values of the program are bounded by
 `(|x| + 2) ^ 4`.

@@ -2,7 +2,7 @@ import Lax496464Proofs.Ram.F5QRest
 import Lax496464Proofs.Ram.F5WScan
 
 /-!
-# Theorem 5 (endpoint sweep): the passes before the exact core
+# Theorem 5 (Endpoint Sweep): the Passes Before the Exact Core
 
 `pre5w = fit ; k ; rescale ; W := 2 e n²`.  Run on the sorted arrays of `J` with the accuracy `e` in
 the scalar `W`, it leaves in `WS` the weights of `scaled J e`, in `kk` the factor `scaleK J e` and in

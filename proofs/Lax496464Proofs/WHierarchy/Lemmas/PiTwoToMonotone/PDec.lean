@@ -1,7 +1,7 @@
 import Lax496464Proofs.WHierarchy.Lemmas.PiTwoToMonotone.PCtx
 
 /-!
-# The decision on an `X`-atom and the conflict test
+# The Decision on an `X`-Atom and the Conflict Test
 
 `decCom_spec`: with the block `bl` and values `vl` in `bd1, vd1` and the code `u` in `w_c`,
 `decCom` sets `w_f` to `1` if `Blocks.dec` decides `u ∈ t`, to `0` otherwise, and sets `g_und` if it

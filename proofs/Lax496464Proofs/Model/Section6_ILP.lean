@@ -5,7 +5,7 @@ import Lax496464Proofs.Model.ConsecutiveOnes
 namespace Lax496464Proofs
 
 /-!
-# Section 6.2: the integer program, and Lemma 5 as a statement about its matrix
+# Section 6.2: the Integer Program, and Lemma 5 as a Statement About Its Matrix
 
 For `FF(1,m)|pⱼ = p, proper|∑wⱼZⱼ` the paper writes an ILP over binary variables `xⱼ`
 (job `j` selected), maximizing `∑ wⱼxⱼ` subject to

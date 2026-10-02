@@ -3,7 +3,7 @@ import Lax496464.WH_C1_GraphProblems
 
 /-!
 ---
-title: Clique is W[1]-complete
+title: Clique Is W[1]-Complete
 type: theorem
 ---
 $p$-Clique is W[1]-complete under fpt-reductions [FG06, Theorems 6.1 and 6.35]: it is in W[1]

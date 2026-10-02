@@ -3,7 +3,7 @@ import Lax496464Proofs.Ram.ListUtil
 import Lax496464Proofs.Ram.Q3Init
 
 /-!
-# Theorem 5 (profile sweep): the fit pass
+# Theorem 5 (Profile Sweep): the Fit Pass
 
 `fitCom` zeroes the weight of every unfit job (`p + q > d`) in the sorted array `WS` and leaves in
 the scalar `wm` the largest weight that is left (`w_max'`).

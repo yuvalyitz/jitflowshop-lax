@@ -2,7 +2,7 @@ import Lax496464Proofs.Ram.F5MOk
 import Lax496464Proofs.Ram.F5WFinal
 
 /-!
-# Theorem 5 (table of Section 3): `prog5m` runs
+# Theorem 5 (Table of Section 3): `prog5m` Runs
 
 `prog5m_run`: on a word presenting an instance and an accuracy, with positive processing times,
 `prog5m` writes `[fptasOut I e]` (`= f5 x`) below the value bound `bound x (T5m x)`, within

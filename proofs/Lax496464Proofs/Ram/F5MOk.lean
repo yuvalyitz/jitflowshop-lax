@@ -2,7 +2,7 @@ import Lax496464Proofs.Ram.F5MRest
 import Lax496464Proofs.Ram.D2Layout
 
 /-!
-# Theorem 5 (table of Section 3): the whole program and its layout
+# Theorem 5 (Table of Section 3): the Whole Program and Its Layout
 -/
 
 namespace Lax496464Proofs.F5MOk

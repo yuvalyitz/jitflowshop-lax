@@ -6,7 +6,7 @@ import Lax496464Proofs.Ram.Reduction
 import Lax496464.Corollary2
 
 /-!
-# Corollary 2: the running time
+# Corollary 2: the Running Time
 
 The dual table of Section 3: for each instant `t = 0 … P` the largest weight attainable from it,
 capped at the threshold.  The program is `D4Prog.prog4`; the table has `P + 1` rows per set of

@@ -68,7 +68,7 @@ theorem kOf_complWord (x : List ℕ) : kOf (complWord x) = kOf x := by
 theorem psum_succ (x : List ℕ) (s : ℕ) : psum x (s + 1) = psum x s + degW x s := by
   unfold psum; rw [List.range_succ]; simp
 
-theorem psum_zero (x : List ℕ) : psum x 0 = 0 := rfl
+theorem psum_zero (x : List ℕ) : psum x 0 = 0 := by unfold psum; try rfl
 
 theorem psum_mono (x : List ℕ) {s t : ℕ} (h : s ≤ t) : psum x s ≤ psum x t := by
   induction t, h using Nat.le_induction with

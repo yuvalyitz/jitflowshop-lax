@@ -15,7 +15,7 @@ of the following holds:
   $P'$, and a set of weight $W' - w_j$ compatible with $X_2$ can be preprocessed from
   $P' + p_j$ — job $j$ is selected, and is preprocessed first.
 
-# Formalization notes
+# Formalization Notes
 
 The lemma is an equivalence, and both directions are needed: one says the recursion never
 returns an entry no solution realizes, the other that it misses none.

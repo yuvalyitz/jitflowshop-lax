@@ -3,7 +3,7 @@ import Lax429075.EncodingCorrect
 import Lax429075Proofs.DecoderSoundness
 
 /-!
-# The reduction on words
+# The Reduction on Words
 
 Correctness on words, and the three size facts: the required size lies between two and the
 size of the universe, the pairs alone cover the universe, and the instance is polynomial in

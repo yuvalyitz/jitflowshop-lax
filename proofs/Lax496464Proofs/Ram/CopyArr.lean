@@ -2,7 +2,7 @@ import Lax496464Proofs.Ram.Imp
 import Lax496464Proofs.Ram.ListUtil
 
 /-!
-# Copying one array into another
+# Copying One Array into Another
 
 `Build.RC` (and its downstream callers) wants `"OFF"`/`"MEM"` sized *exactly* to the CSR data
 they hold. `parseCom` cannot pre-size its own scratch arrays that way — it discovers the true

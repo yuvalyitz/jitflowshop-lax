@@ -4,7 +4,7 @@ import Lax496464.ProperInstances
 
 /-!
 ---
-title: The greedy of Section 6.1, and its domination order
+title: The Greedy of Section 6.1, and Its Domination Order
 type: definition
 ---
 The algorithm behind the first half of the fourth theorem, for the case in which all
@@ -20,7 +20,7 @@ reaching job $j$:
 The set kept is compared to others through a *domination* order: $S$ dominates $S'$ when,
 below every threshold, $S'$ has no more due dates than $S$.
 
-# Formalization notes
+# Formalization Notes
 
 The greedy is given as a relation between the set before a step and the set after it,
 not as a function. Both rules leave a choice — which job with the largest due date to

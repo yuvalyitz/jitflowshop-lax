@@ -5,7 +5,7 @@ import Mathlib.Data.Fin.Tuple.Sort
 namespace Lax496464Proofs
 
 /-!
-# The consecutive ones property
+# The Consecutive Ones Property
 
 Definition 1 of the paper: a `0/1` matrix *has the consecutive ones property* when each row
 is of the form `(0, …, 0, 1, …, 1, 0, …, 0)`. Stated order-theoretically — the ones in a row

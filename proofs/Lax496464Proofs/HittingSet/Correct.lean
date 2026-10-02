@@ -2,7 +2,7 @@ import Lax496464.HittingSetHardness
 import Mathlib.Tactic
 
 /-!
-# Correctness of the construction
+# Correctness of the Construction
 
 A hitting set of size `vars F` meets each of the `vars F` disjoint pairs in exactly one
 element, so it is a truth assignment; it meets the set of a clause exactly when that

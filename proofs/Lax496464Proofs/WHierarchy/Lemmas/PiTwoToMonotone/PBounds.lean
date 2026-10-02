@@ -2,7 +2,7 @@ import Lax496464Proofs.WHierarchy.Lemmas.PiTwoToMonotone.PLayout
 import Lax496464Proofs.WHierarchy.Lemmas.WDToWSat.Bounds
 
 /-!
-# The value bound and the cost bound
+# The Value Bound and the Cost Bound
 
 With `T = c₀ · (|x| + 1) · (k + 1)` and `G = T^E₀` (constants fixed by the formula): every constant
 of the formula (`W`, `C`, `P`, `Q`, …) is at most `G`, the largest constant `big` is at most `20·G⁴`

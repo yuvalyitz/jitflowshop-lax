@@ -6,7 +6,7 @@ import Mathlib.Tactic.GCongr
 import Mathlib.Tactic.Linarith
 
 /-!
-# Corollary 4: W[2]-hardness for the number of machines
+# Corollary 4: W[2]-Hardness for the Number of Machines
 
 The reduction of Section 8 is an fpt-reduction from Hitting Set, parameterized by the
 solution size, to the shop problem parameterized by the number of machines. Its

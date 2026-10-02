@@ -3,7 +3,7 @@ import Lax496464Proofs.Ram.ListUtil
 import Lax496464Proofs.Ram.Q3Defs
 
 /-!
-# Q3: the three flat passes of one sweep event, as IMP+ commands
+# Q3: the Three Flat Passes of One Sweep Event, as IMP+ Commands
 
 Each command is one flat loop `i := 0; while i < N do ..` over the `N = bt * w1` cells.  Scalars
 and arrays follow the shared naming convention of `Q3Defs` (live scalars are only read; every

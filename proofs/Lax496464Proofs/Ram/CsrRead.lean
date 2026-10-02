@@ -3,7 +3,7 @@ import Lax496464.HittingSet
 import Mathlib.Data.List.GetD
 
 /-!
-# Reading a Hitting Set word
+# Reading a Hitting Set Word
 
 The word of a Hitting Set instance is `n`, `m`, the `m+1` offsets, the member array as long
 as the last offset says, and the solution size — read strictly in that order, so one pass

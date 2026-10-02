@@ -3,7 +3,7 @@ import Mathlib.Tactic.Ring
 import Mathlib.Tactic.Linarith
 
 /-!
-# The parameter of a model-checking word, computed by a scan: mathematics
+# The Parameter of a Model-Checking Word, Computed by a Scan: Mathematics
 
 A model-checking word is `s, arities, size, blocks, formula`. The blocks are skipped with the
 header (block `i` is `c_i` followed by `c_i · arity_i` entries), and the size of the formula is the
@@ -19,6 +19,8 @@ open Lax496464Proofs.WHierarchy.Logic.StructureCode Lax496464Proofs.WHierarchy.L
 
 /-! ### Decoding a model-checking word -/
 
+set_option genInjectivity false in
+set_option genSizeOfSpec false in
 /-- A model-checking word, taken apart. -/
 structure Dec where
   A : Structure
@@ -180,12 +182,12 @@ def psize (fs : List Formula) : ℕ := (fs.map Formula.size).sum
 @[simp] theorem pend_nil : pend [] = [] := rfl
 
 @[simp] theorem pend_cons (f : Formula) (fs : List Formula) :
-    pend (f :: fs) = f.encode ++ pend fs := rfl
+    pend (f :: fs) = f.encode ++ pend fs := by unfold pend; try rfl
 
 @[simp] theorem psize_nil : psize [] = 0 := rfl
 
 @[simp] theorem psize_cons (f : Formula) (fs : List Formula) :
-    psize (f :: fs) = f.size + psize fs := rfl
+    psize (f :: fs) = f.size + psize fs := by unfold psize; try rfl
 
 theorem pend_eq_nil {fs : List Formula} (h : pend fs = []) : fs = [] := by
   cases fs with

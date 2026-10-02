@@ -2,7 +2,7 @@ import Lax496464Proofs.Ram.D2Count
 import Lax496464Proofs.Ram.Dp1
 
 /-!
-# Theorem 2, pure layer 5: the table's entries mean what Section 3 says
+# Theorem 2, Pure Layer 5: the Table's Entries Mean What Section 3 Says
 
 The table `T[X, W']` here is the *monotone* form of Section 3's: the latest instant from which a set
 of weight **at least** `W'` compatible with `X` can be preprocessed (`AchGe`).  Recursion (1) turns

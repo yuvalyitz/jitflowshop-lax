@@ -3,7 +3,7 @@ import Lax496464Proofs.WHierarchy.Reductions.CliqueLogic.ProgDefs
 import Lax496464Proofs.WHierarchy.Reductions.CliqueLogic.GraphStructure
 
 /-!
-# The adjacency test
+# The Adjacency Test
 
 `adjTest` scans the block of `u` for `v` and sets `g_f` to `1` if it finds it.
 -/

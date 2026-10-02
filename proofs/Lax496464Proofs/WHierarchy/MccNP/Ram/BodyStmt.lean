@@ -2,7 +2,7 @@ import Lax808846Proofs.Tactic
 import Lax496464Proofs.WHierarchy.MccNP.Ram.BodyMain
 
 /-!
-# The specification of the program body
+# The Specification of the Program Body
 
 `body_spec`: on a valid word `x` in array `a`, `body` appends `WH_F2_MccConstruction.word (decode x)` to
 the output within `Kbody x = bodyC * (kOf x + 1) ^ 2 * (|x| + 1)` steps, leaving the arrays, the

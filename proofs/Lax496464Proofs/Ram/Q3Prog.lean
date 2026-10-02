@@ -3,7 +3,7 @@ import Lax496464Proofs.Ram.Q3Finish
 import Lax496464Proofs.Ram.Q3Front
 
 /-!
-# Theorem 3, profile sweep: the whole program, correct
+# Theorem 3, Profile Sweep: the Whole Program, Correct
 
 `prog3 = frontQ ; coreCom ; finishCom`.  The front end reads and sorts, the core builds the whole
 final table, the finish reads the answer off it.

@@ -4,7 +4,7 @@ import Lax496464Proofs.WHierarchy.MccNP.Ram.BodyRead
 import Lax496464Proofs.WHierarchy.MccNP.Ram.BodyOk
 
 /-!
-# The running time in the parameter
+# The Running Time in the Parameter
 
 The IMP+ program `readStruct; body` is compiled under a layout of its scalars and the array `a`, and
 the transfer theorem turns its verified run into the word RAM bound `c * (k + 1) ^ 2 * (|x| + 1)`.

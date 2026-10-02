@@ -1,7 +1,7 @@
 import Lax496464Proofs.Ram.Imp
 
 /-!
-# A run below a bound is a run below every larger bound
+# A Run Below a Bound Is a Run Below Every Larger Bound
 -/
 
 namespace Lax496464Proofs.Ram.W3BMono

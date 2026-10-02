@@ -1,7 +1,7 @@
 import Lax496464Proofs.Ram.D2Bound
 
 /-!
-# Corollary 3: the running time, against the printed bound
+# Corollary 3: the Running Time, Against the Printed Bound
 
 The program's cost is that of Theorem 2's at the table parameter `W := n`, plus a constant:
 `O((n+1)^(m+1) + sortCost)`.

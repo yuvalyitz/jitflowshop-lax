@@ -3,7 +3,7 @@ import Lax888481.ParameterizedComplexity
 
 /-!
 ---
-title: Independent Set on adjacency matrices
+title: Independent Set on Adjacency Matrices
 type: definition
 ---
 **$p$-Independent-Set.** *Instance:* a graph $G$ on $n$ vertices and $k \in \mathbb N$.
@@ -12,7 +12,7 @@ type: definition
 
 This is the source problem of the reduction to Multicoloured Clique in part F.
 
-# Formalization notes
+# Formalization Notes
 
 **Instances and question** are those of the archive's Independent Set (`Lax762056.GraphProblems`),
 whose NP-hardness is proved there. An instance is written as the bit string

@@ -3,7 +3,7 @@ import Lax808846Proofs.Reasoning
 import Lax808846Proofs.Spec
 
 /-!
-# Writing one self-delimited number to the output
+# Writing One Self-Delimited Number to the Output
 
 `printNat` writes `bitsNat v` — `v.size` ones, a zero, then `v.size` binary digits, least
 significant first — to the output tape, reading `v` off `"vv"` and touching no other input.

@@ -1,7 +1,7 @@
 import Lax496464Proofs.WHierarchy.Lemmas.PiTwoToMonotone.PDec
 
 /-!
-# The conflict test
+# The Conflict Test
 
 `cfCom_spec`: with the blocks and values `b1, v1, b2, v2` in `bd1, vd1, bd2, vd2`, `cfCom` sets
 `g_cf` to `1` iff they are in `Blocks.Conflict`, by one loop over the pairs of slots.

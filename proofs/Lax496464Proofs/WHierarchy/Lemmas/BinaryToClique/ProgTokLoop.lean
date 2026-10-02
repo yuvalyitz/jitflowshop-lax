@@ -1,7 +1,7 @@
 import Lax496464Proofs.WHierarchy.Lemmas.BinaryToClique.ProgTok3
 
 /-!
-# Σ₁[2] model checking to Clique: the tokenizer loop
+# Σ₁[2] Model Checking to Clique: the Tokenizer Loop
 
 After `|x|` turns the machine holds `tok x` (`tokz_spec`).
 -/

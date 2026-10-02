@@ -7,7 +7,7 @@ import Mathlib.Tactic.Common
 namespace Lax496464Proofs
 
 /-!
-# Non-overlapping intervals fit inside the horizon they end in
+# Non-Overlapping Intervals Fit Inside the Horizon They End in
 
 One general fact, used by `Section2.lean` and by nothing else in this development:
 pairwise non-overlapping intervals that start at or after `0` and end at or before `T`

@@ -3,7 +3,7 @@ import Lax496464.WH_B3_LogicProblems
 import Lax496464Proofs.WHierarchy.Logic.SatFacts
 
 /-!
-# Σ₁[2] model checking to Clique: the data of a quantifier-free formula
+# Σ₁[2] Model Checking to Clique: the Data of a Quantifier-Free Formula
 
 For a quantifier-free formula `ψ`: its atoms in prefix order (`atoms`, `nA` of them), its nodes in
 prefix order (`toks`, the tag and the atom number of each node), the two variables of each atom

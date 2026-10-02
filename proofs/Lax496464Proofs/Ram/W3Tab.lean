@@ -3,7 +3,7 @@ import Lax496464Proofs.Section4
 import Lax496464.Normalization
 
 /-!
-# The width sweep's table, as the paper's recursion computes it
+# The Width Sweep's Table, as the Paper's Recursion Computes It
 
 `Section4.reachable_start`/`reachable_due` are the paper's equations (3) and (4), on the scaled
 instance `scale J` (whose endpoints are distinct). This file turns them into statements about a
@@ -27,7 +27,7 @@ variable (J : Instance)
 def Nsc : ℕ := J.jobs + 1
 
 theorem sc_p (j : J.Job) : (scale J).p j = Nsc J * J.p j := rfl
-theorem sc_q (j : J.Job) : (scale J).q j = Nsc J * J.q j := rfl
+theorem sc_q (j : J.Job) : (scale J).q j = Nsc J * J.q j := by unfold scale; try rfl
 theorem sc_d (j : J.Job) : (scale J).d j = Nsc J * J.d j + (j : ℕ) := rfl
 /-- The scaled start time: `N · s j + j`. -/
 theorem sc_s (j : J.Job) : s (I := scale J) j = (Nsc J : ℤ) * s (I := J) j + (j : ℕ) := by

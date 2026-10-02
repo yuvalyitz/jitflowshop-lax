@@ -5,7 +5,7 @@ import Mathlib.Algebra.Order.Interval.Finset.SuccPred
 namespace Lax496464Proofs
 
 /-!
-# Theorem 3, second bullet: the printed recursion computes the right optimum
+# Theorem 3, Second Bullet: the Printed Recursion Computes the Right Optimum
 
 `Lemma3_Literal.lean` shows that recursion (5), exactly as printed, does not maintain Lemma 3's
 invariant "`Tⱼ[x⃗, W']` is the least load of a solution whose profile is `x⃗`". This file proves

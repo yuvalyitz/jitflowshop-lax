@@ -6,7 +6,7 @@ import Mathlib.Combinatorics.Hall.Finite
 namespace Lax496464Proofs
 
 /-!
-# Section 3: jobs in EST order, and the state space of the dynamic program
+# Section 3: Jobs in EST Order, and the State Space of the Dynamic Program
 
 Sections 3 to 6 of the paper all begin from the same standing assumption — *"we will assume
 henceforth that the input set of jobs `J` is sorted by the EST order, so that
@@ -14,7 +14,7 @@ henceforth that the input set of jobs `J` is sorted by the EST order, so that
 `m` jobs*. This file supplies both: `EstFFJ`, an instance whose jobs are `Fin n` already in
 EST order, and `CompatibleWith`, the relation the table's first index means.
 
-## What "compatible with `X`" says, and how it is written here
+## What "Compatible with `X`" Says, and How It Is Written Here
 
 The paper takes `X = {x₁ < ⋯ < x_{|X|}}` and calls a schedule *compatible with `X`* when
 only jobs from `{x_i, …, n}` run on machine `i`, and machines `|X|+1, …, m` run nothing.
@@ -39,6 +39,8 @@ namespace FlexFlowJIT
 
 /-! ## 1. Instances with their jobs in EST order -/
 
+set_option genInjectivity false in
+set_option genSizeOfSpec false in
 /-- An `FF(1,m)` instance whose jobs are `Fin n`, indexed in Early Start Time order. -/
 structure EstFFJ where
   /-- `n`, the number of jobs. -/

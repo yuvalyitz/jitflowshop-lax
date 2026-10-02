@@ -4,12 +4,12 @@ import Lax496464Proofs.Model.Section2
 namespace Lax496464Proofs
 
 /-!
-# Section 8, Lemma 6: a hitting set yields a schedule
+# Section 8, Lemma 6: a Hitting Set Yields a Schedule
 
 The forward direction of Theorem 1's correctness. Given a hitting set `H` of size `k`,
 this file builds an explicit `FFJ.JITSchedule` of `R·m·(2k−1)` jobs of `Theorem1.inst`.
 
-## The schedule, in one picture
+## The Schedule, in One Picture
 
 Write `g = g(r,j)` for an epoch's position and `o = i + 1` for an element's offset. The
 construction has two independent tilings, and the whole proof is that both of them are
@@ -32,7 +32,7 @@ ends exactly where epoch `g+1`'s begins, because `g(g+1) = (g+1)((g+1)−1)`.
 That both tilings are *exact* — no slack anywhere — is what forces the `R·m·(2k−1)` target
 in the converse direction, which is Lemmas 7–9 and is **not** in this file.
 
-## Notes on the formalization
+## Notes on the Formalization
 
 * Positions are carried as `gp = g − 1 = r·m + j` rather than `g`, purely so that no
   natural-number subtraction appears: every bound is then a polynomial identity `ring` can
@@ -63,7 +63,7 @@ def gp (P : HSInstance) (r : ℕ) (j : Fin P.m) : ℕ := r * P.m + j.val
 
 variable (P : HSInstance) (k : ℕ)
 
-lemma g_eq_gp_succ (r : ℕ) (j : Fin P.m) : g P r j = gp P r j + 1 := rfl
+lemma g_eq_gp_succ (r : ℕ) (j : Fin P.m) : g P r j = gp P r j + 1 := by unfold g gp; omega
 
 /-- Distinct epochs have distinct positions: `(r, j) ↦ r·m + j` is injective because
 `j < m`. -/

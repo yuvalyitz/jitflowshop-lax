@@ -5,7 +5,7 @@ import Mathlib.Data.Nat.Bits
 
 /-!
 ---
-title: Binary encoding of an instance
+title: Binary Encoding of an Instance
 type: definition
 ---
 An instance as a binary word, the representation against which classical complexity
@@ -14,7 +14,7 @@ in unary, which makes the encoding self-delimiting; an instance is the number of
 the number of machines, and then the four arrays of preprocessing times, processing
 times, due dates and weights, in that order.
 
-# Formalization notes
+# Formalization Notes
 
 This encoding exists beside the word encoding and does not replace it. The two answer
 different questions. A word RAM is handed numbers and charges one instruction per

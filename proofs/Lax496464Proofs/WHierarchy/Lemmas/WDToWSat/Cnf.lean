@@ -16,6 +16,7 @@ namespace Lax496464Proofs.WHierarchy.Lemmas.WDToWSat.Cnf
 
 open Lax496464.WH_B1_Structures Lax496464.WH_B2_FirstOrder
 
+set_option genSizeOfSpec false in
 /-- An atom whose variables are positions `j` in the list of bound variables. -/
 inductive Atom
   /-- `R_i` applied to the positions `js`. -/
@@ -26,6 +27,8 @@ inductive Atom
   | setVar (js : List ℕ)
   deriving DecidableEq
 
+set_option genInjectivity false in
+set_option genSizeOfSpec false in
 /-- A literal: an atom with a sign. -/
 structure Lit where
   /-- `true` for the atom, `false` for its negation. -/

@@ -2,7 +2,7 @@ import Lax496464Proofs.Ram.Sort
 import Lax496464.WordEncoding
 
 /-!
-# Putting the jobs of a word into earliest-start-time order
+# Putting the Jobs of a Word into Earliest-Start-Time Order
 
 The word presents the jobs in an arbitrary order. The dynamic programs of Sections 3–6 index
 their tables by the order of the start times `s j = d j − q j`, so every one of them begins by

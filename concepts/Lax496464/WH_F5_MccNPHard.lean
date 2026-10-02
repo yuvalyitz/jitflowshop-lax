@@ -4,7 +4,7 @@ import Lax762056.IndependentSetHardness
 
 /-!
 ---
-title: Multicoloured Clique is NP-hard
+title: Multicoloured Clique Is NP-Hard
 type: theorem
 ---
 **Multicoloured Clique is NP-hard**: every language in NP reduces to it by a map computable in
@@ -18,7 +18,7 @@ The reduction to Independent Set always produces an instance, so the composite a
 word of a Multicoloured Clique instance (`mcc_npHard_in`), which is what a further reduction that is
 correct only on instances needs.
 
-# Formalization notes
+# Formalization Notes
 
 NP-hardness is `WH_F3_NPHard.NPHard`, for the problem without its parameter. The parameterized
 statement is `WH_F4_IndependentSetToMcc.independentSet_le_mcc`.

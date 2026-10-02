@@ -3,7 +3,7 @@ import Lax496464.ParameterizedComplexity
 import Lax808846.RamComputes
 
 /-!
-# From the concepts' word-length hypothesis to the pipeline's
+# From the Concepts' Word-Length Hypothesis to the Pipeline's
 
 A running-time statement of this submission admits a word length by two inequalities: the
 `Fits c w x` of `ParameterizedComplexity`, which says that a constant times the length of

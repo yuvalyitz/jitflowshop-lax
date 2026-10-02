@@ -2,7 +2,7 @@ import Lax496464Proofs.WHierarchy.MccNP.Shape
 import Mathlib.Data.List.GetD
 
 /-!
-# Arithmetic of the reduction body
+# Arithmetic of the Reduction Body
 
 The adjacency test `adjW` and the degree `degW` read off the word, and the identification of the
 word of the construction with the lists written by the passes of `body`.

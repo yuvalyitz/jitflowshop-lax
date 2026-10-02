@@ -1,7 +1,7 @@
 import Lax496464Proofs.WHierarchy.Lemmas.BinaryToClique.ProgElb
 
 /-!
-# Σ₁[2] model checking to Clique: the stack operations
+# Σ₁[2] Model Checking to Clique: the Stack Operations
 
 The stack `l` (top first) is held in the array `st` as its first `zsp` entries, bottom first:
 `st.take zsp = l.reverse`. Each operation of a node moves `l` to `evStep c (g, m) l`.

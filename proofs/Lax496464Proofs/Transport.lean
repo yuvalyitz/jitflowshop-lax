@@ -1,7 +1,7 @@
 import Lax496464Proofs.Model.Defs
 
 /-!
-# Renaming the jobs of an instance
+# Renaming the Jobs of an Instance
 
 Section 8's construction names its jobs structurally — a selection job is a triple
 (segment, set, element of that set) — while an instance handed to a machine numbers them
@@ -17,6 +17,8 @@ namespace Lax496464Proofs.Transport
 
 open FFJ
 
+set_option genInjectivity false in
+set_option genSizeOfSpec false in
 /-- A renaming of the jobs of `I` as the jobs of `J`, preserving all the data. -/
 structure Iso (I J : FFJ) where
   /-- The bijection between job names. -/

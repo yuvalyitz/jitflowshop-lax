@@ -1,7 +1,7 @@
 import Lax496464Proofs.Ram.D2Scan
 
 /-!
-# Theorem 2, pure layer 3: which numbers are codes
+# Theorem 2, Pure Layer 3: Which Numbers Are Codes
 
 The machine has to skip every number that is not the code of a set of thresholds — without reading
 its digits one by one.  A number `c < b^m` is a code iff it is the all-padding number, or its first

@@ -1,7 +1,7 @@
 import Lax496464Proofs.Ram.TotalReduction
 
 /-!
-# `totalProg`'s layout
+# `totalProg`'s Layout
 
 The final `RamPolytime f` assembly (`RamBridge.ramPolytime_of_poly`) needs `totalProg` compiled
 against a `Layout` (`compileProgram`), and `Com.Ok` checked against it — exactly what

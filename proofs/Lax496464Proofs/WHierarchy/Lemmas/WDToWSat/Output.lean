@@ -21,6 +21,8 @@ open Lax496464.WH_B1_Structures Lax496464.WH_B2_FirstOrder Lax496464.WH_B3_Logic
 open Lax496464Proofs.WHierarchy.Lemmas.WDToWSat.Cnf Lax496464Proofs.WHierarchy.Lemmas.WDToWSat.Digits
 open Lax496464Proofs.WHierarchy.Lemmas.WDToWSat.Word
 
+set_option genInjectivity false in
+set_option genSizeOfSpec false in
 /-- The fixed data of the reduction. -/
 structure Data where
   /-- The arity of `X`. -/

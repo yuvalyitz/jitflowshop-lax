@@ -2,7 +2,7 @@ import Lax496464Proofs.WHierarchy.Lemmas.WDToWSat.ProgDefs
 import Lax496464Proofs.WHierarchy.Lemmas.PiTwoToMonotone.Syntax
 
 /-!
-# The IMP+ program of `p-WD_φ ≤ p-WSat(monotone)`: definitions
+# The IMP+ Program of `p-WD_φ ≤ p-WSat(monotone)`: Definitions
 
 The setup is the one of `Lemmas/WDToWSat` (read the tape, the header, the fit test, the block
 positions, `L`, the elements `U`, powers of `n = |U|`), run for the data `wd Dt` of that reduction

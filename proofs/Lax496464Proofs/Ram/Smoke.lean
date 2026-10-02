@@ -1,7 +1,7 @@
 import Lax496464Proofs.Ram.Fits
 
 /-!
-# The pipeline, end to end, on the smallest program there is
+# The Pipeline, End to End, on the Smallest Program There Is
 
 `echo` reads one number and writes it back. Nothing about the shop is involved; the point
 is that the three layers this submission's running-time proofs are built from — an IMP+

@@ -18,7 +18,7 @@ $O(W \cdot m^{q_{\max}} \cdot n)$ time.
 Neither bound involves the number of machines in the exponent, so both are useful
 precisely where the program of the second theorem is not.
 
-# Formalization notes
+# Formalization Notes
 
 Two statements, one per program, each with its own fitting condition for its own table,
 and each restricted to no slice: both programs decide the problem on every instance, and

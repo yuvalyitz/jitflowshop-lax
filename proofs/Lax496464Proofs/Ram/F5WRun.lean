@@ -3,7 +3,7 @@ import Lax496464Proofs.Ram.F5QFinal
 import Lax496464Proofs.Ram.W3Final
 
 /-!
-# Theorem 5 (endpoint sweep): `prog5w` runs
+# Theorem 5 (Endpoint Sweep): `prog5w` Runs
 
 `prog5w_run`: on a word presenting an instance and an accuracy, with positive processing times,
 `prog5w` writes `[fptasOut I e]` (`= f5 x`) below the value bound `bound x (T5w x)`, within

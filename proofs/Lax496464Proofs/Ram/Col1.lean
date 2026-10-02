@@ -3,7 +3,7 @@ import Lax496464Proofs.Ram.Sort
 import Lax496464Proofs.Ram.ListUtil
 
 /-!
-# One column of the one-machine table, on the machine
+# One Column of the One-Machine Table, on the Machine
 
 `fCom` computes the recursion's second branch (`Dp1.fNat`) from the code of the entry it looks
 up and the three numbers of the job, in natural numbers only; `colLoop` fills a column from the

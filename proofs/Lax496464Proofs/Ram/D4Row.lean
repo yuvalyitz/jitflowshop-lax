@@ -2,7 +2,7 @@ import Lax496464Proofs.Ram.D2Rows
 import Lax496464Proofs.Ram.D3Dual
 
 /-!
-# Corollary 2's machine: the cells of one set (dual table)
+# Corollary 2's Machine: the Cells of One Set (Dual Table)
 
 The block of the set with number `c` has the `R+1` rows `t = 0 … R` (`R = P`, the total preprocessing
 time); the cell `(c, t)` sits at `c·(R+1) + t`.  For `X₁`, `X₂` with numbers `c₁, c₂ > c` the cell is

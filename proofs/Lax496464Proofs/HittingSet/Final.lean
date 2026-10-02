@@ -4,7 +4,7 @@ import Lax391470Proofs.L2Final
 import Lax391470Proofs.RamToTuring
 
 /-!
-# The reduction runs in polynomial time
+# The Reduction Runs in Polynomial Time
 
 The program of `Main`, compiled to the word RAM, computes the zeros and ones of the
 reduction within a polynomial number of instructions; polynomial time on the word RAM

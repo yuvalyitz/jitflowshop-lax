@@ -1,7 +1,7 @@
 import Lax496464Proofs.Ram.D3Dual
 
 /-!
-# Corollary 3, pure layer: the dual table with equal preprocessing times
+# Corollary 3, Pure Layer: the Dual Table with Equal Preprocessing Times
 
 With `p_j = p` for all `j`, the instant a partial solution has spent is `u * p` where `u` is the
 number of jobs selected so far, so the rows of the dual table are `u = 0 … n` and row `u` stands for

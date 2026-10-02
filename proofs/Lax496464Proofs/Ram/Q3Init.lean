@@ -1,7 +1,7 @@
 import Lax496464Proofs.Ram.Q3Defs
 
 /-!
-# Q3: the initialisation commands of the profile sweep
+# Q3: the Initialisation Commands of the Profile Sweep
 
 Three IMP+ commands, each with a `Spec`.  Temporaries come from the pool
 `"i" "u1" "u2" "u3" "u4" "u5" "u6"`.

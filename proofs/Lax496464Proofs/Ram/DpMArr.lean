@@ -2,7 +2,7 @@ import Lax496464Proofs.Ram.DpM
 import Lax496464Proofs.Ram.Dp1
 
 /-!
-# The `m`-machine table, as a function of a plain list of thresholds
+# The `m`-Machine Table, as a Function of a Plain List of Thresholds
 
 `Dp1.lean`'s "column form in natural numbers only" (`fNat`/`colStep`/`colAll`) works because with
 one threshold, the paper's `j₁` is always the very next index — no gap to skip. With `m` thresholds

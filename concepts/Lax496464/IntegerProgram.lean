@@ -5,7 +5,7 @@ import Mathlib.Data.Matrix.Mul
 
 /-!
 ---
-title: The integer program of Section 6.2
+title: The Integer Program of Section 6.2
 type: definition
 ---
 When all preprocessing times are equal to $p$, a set of jobs is feasible exactly when it
@@ -21,7 +21,7 @@ can only increase.
 Maximizing $\sum_j w_j x_j$ subject to these is therefore the problem itself, written as
 an integer program with $2n$ constraints and $n$ variables.
 
-# Formalization notes
+# Formalization Notes
 
 The constraint matrix is indexed by a sum type, one copy of the jobs for each family, so
 that the two families can be told apart without an arithmetic encoding of the row index.

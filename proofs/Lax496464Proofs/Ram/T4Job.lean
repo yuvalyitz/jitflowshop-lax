@@ -1,7 +1,7 @@
 import Lax496464Proofs.Ram.T4Step
 
 /-!
-# Theorem 4's machine, part 4: `stepJob` takes `MI k` to `MI (k+1)`
+# Theorem 4's Machine, Part 4: `stepJob` Takes `MI k` to `MI (k+1)`
 -/
 
 namespace Lax496464Proofs.Ram.T4Job

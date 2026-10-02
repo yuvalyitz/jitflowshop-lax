@@ -18,7 +18,7 @@ The correspondence the section asserts — that the feasible solutions of the pr
 exactly the feasible sets — is stated here too. It holds on every instance with equal,
 positive preprocessing times and nonnegative start times, proper or not.
 
-# Formalization notes
+# Formalization Notes
 
 Three statements: that the program describes the problem, that its matrix has the
 consecutive ones property, and that the matrix is therefore totally unimodular.

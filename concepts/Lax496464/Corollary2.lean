@@ -14,7 +14,7 @@ correctness; only the axis the table is indexed along changes.
 This is the better of the two bounds whenever the preprocessing times are small and the
 weights are not.
 
-# Formalization notes
+# Formalization Notes
 
 No new combinatorial statement is needed. The dual table is the same predicate with its
 two numerical arguments exchanged, so the correctness of recursion (1) is the correctness

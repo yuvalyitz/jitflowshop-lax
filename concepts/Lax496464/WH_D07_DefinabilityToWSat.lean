@@ -4,7 +4,7 @@ import Lax496464.WH_C3_WeightedSat
 
 /-!
 ---
-title: Weighted definability of a Π₁ sentence reduces to weighted d-CNF satisfiability
+title: Weighted Definability of a Π₁ Sentence Reduces to Weighted d-CNF Satisfiability
 type: theorem
 ---
 For every $\Pi_1$-sentence $\varphi(X)$ there is a $d \ge 1$ such that

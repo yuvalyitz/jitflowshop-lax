@@ -3,7 +3,7 @@ import Lax496464Proofs.Ram.Q3Defs
 import Lax496464Proofs.Ram.ListUtil
 
 /-!
-# Theorem 3, profile sweep: the read-off (`finish`)
+# Theorem 3, Profile Sweep: the Read-Off (`finish`)
 
 After the sweep, `Yes` holds exactly when some profile `x < bt` has `T[x][W] < INF`.  One scan over
 the `bt` profiles, then a single `write`.  Mentions scalars `ok i bt w1 W cinf` and array `T`.

@@ -73,7 +73,11 @@ theorem ph1 (hok : NOK x p i r c) :
         Keep negVars σ σ') 80 := by
   have hl := len_lt_Bv x
   have hx := getD_lt_Bv x (p + 3)
-  obtain ⟨h1, h2, h3, h4, h5⟩ := hok
+  have h1 := hok.pos
+  have h2 := hok.code
+  have h3 := hok.bi
+  have h4 := hok.bc
+  have h5 := hok.bp
   refine keep_neg ?_ (by intro y hy; simp [writes, Com.wvars] at hy) (by simp [writes, Com.warrs])
     (by simp [writes, Com.reads])
   unfold writes
@@ -108,7 +112,11 @@ theorem ph2 (hok : NOK x p i r c) :
     Spec (Bv x) (NC x p i r c) (wseqOf 1 (V "fc") (V "ln"))
       (fun σ σ' => σ'.out = σ.out ++ List.range' c r ∧ Keep negVars σ σ') (28 * r + 40) := by
   have hl := len_lt_Bv x
-  obtain ⟨h1, h2, h3, h4, h5⟩ := hok
+  have h1 := hok.pos
+  have h2 := hok.code
+  have h3 := hok.bi
+  have h4 := hok.bc
+  have h5 := hok.bp
   obtain ⟨f1, f2, f3⟩ := wseqOf_frame 1 (V "fc") (V "ln")
   refine keep_neg ?_ f1 f2 f3
   unfold wseqOf
@@ -122,7 +130,11 @@ theorem ph5 (hok : NOK x p i r c) :
     Spec (Bv x) (NC x p i r c) (wseqOf 1 (V "fc") (.mul (L 2) (V "ln")))
       (fun σ σ' => σ'.out = σ.out ++ List.range' c (2 * r) ∧ Keep negVars σ σ') (56 * r + 40) := by
   have hl := len_lt_Bv x
-  obtain ⟨h1, h2, h3, h4, h5⟩ := hok
+  have h1 := hok.pos
+  have h2 := hok.code
+  have h3 := hok.bi
+  have h4 := hok.bc
+  have h5 := hok.bp
   obtain ⟨f1, f2, f3⟩ := wseqOf_frame 1 (V "fc") (.mul (L 2) (V "ln"))
   refine keep_neg ?_ f1 f2 f3
   unfold wseqOf
@@ -136,7 +148,11 @@ theorem ph10 (hok : NOK x p i r c) :
     Spec (Bv x) (NC x p i r c) (wseqOf 1 FV (V "ln"))
       (fun σ σ' => σ'.out = σ.out ++ List.range' (c + r) r ∧ Keep negVars σ σ') (28 * r + 40) := by
   have hl := len_lt_Bv x
-  obtain ⟨h1, h2, h3, h4, h5⟩ := hok
+  have h1 := hok.pos
+  have h2 := hok.code
+  have h3 := hok.bi
+  have h4 := hok.bc
+  have h5 := hok.bp
   obtain ⟨f1, f2, f3⟩ := wseqOf_frame 1 FV (V "ln")
   refine keep_neg ?_ f1 f2 f3
   unfold wseqOf
@@ -151,7 +167,11 @@ theorem ph3 (hok : NOK x p i r c) :
       (fun σ σ' => σ'.out = σ.out ++ (lexF (ysOf x p r) (List.range' c r)).encode ∧
         Keep negVars σ σ') (84 * r + 120) := by
   have hl := len_lt_Bv x
-  obtain ⟨h1, h2, h3, h4, h5⟩ := hok
+  have h1 := hok.pos
+  have h2 := hok.code
+  have h3 := hok.bi
+  have h4 := hok.bc
+  have h5 := hok.bp
   obtain ⟨f1, f2, f3⟩ := lexOf_frame 0 Y0 1 (V "fc")
   refine keep_neg ?_ f1 f2 f3
   unfold lexOf
@@ -168,7 +188,11 @@ theorem ph7 (hok : NOK x p i r c) :
       (fun σ σ' => σ'.out = σ.out ++ (lexF (List.range' c r) (ysOf x p r)).encode ∧
         Keep negVars σ σ') (84 * r + 120) := by
   have hl := len_lt_Bv x
-  obtain ⟨h1, h2, h3, h4, h5⟩ := hok
+  have h1 := hok.pos
+  have h2 := hok.code
+  have h3 := hok.bi
+  have h4 := hok.bc
+  have h5 := hok.bp
   obtain ⟨f1, f2, f3⟩ := lexOf_frame 1 (V "fc") 0 Y0
   refine keep_neg ?_ f1 f2 f3
   unfold lexOf
@@ -185,7 +209,11 @@ theorem ph8 (hok : NOK x p i r c) :
       (fun σ σ' => σ'.out = σ.out ++ (lexF (ysOf x p r) (List.range' (c + r) r)).encode ∧
         Keep negVars σ σ') (84 * r + 120) := by
   have hl := len_lt_Bv x
-  obtain ⟨h1, h2, h3, h4, h5⟩ := hok
+  have h1 := hok.pos
+  have h2 := hok.code
+  have h3 := hok.bi
+  have h4 := hok.bc
+  have h5 := hok.bp
   obtain ⟨f1, f2, f3⟩ := lexOf_frame 0 Y0 1 FV
   refine keep_neg ?_ f1 f2 f3
   unfold lexOf
@@ -202,7 +230,11 @@ theorem ph11 (hok : NOK x p i r c) :
       (fun σ σ' => σ'.out = σ.out ++ (lexF (List.range' (c + r) r) (ysOf x p r)).encode ∧
         Keep negVars σ σ') (84 * r + 120) := by
   have hl := len_lt_Bv x
-  obtain ⟨h1, h2, h3, h4, h5⟩ := hok
+  have h1 := hok.pos
+  have h2 := hok.code
+  have h3 := hok.bi
+  have h4 := hok.bc
+  have h5 := hok.bp
   obtain ⟨f1, f2, f3⟩ := lexOf_frame 1 FV 0 Y0
   refine keep_neg ?_ f1 f2 f3
   unfold lexOf
@@ -218,7 +250,11 @@ theorem ph4 (hok : NOK x p i r c) :
     Spec (Bv x) (NC x p i r c) (writes [L 5, L 4, L 0, RI 4, .mul (L 2) (V "ln")])
       (fun σ σ' => σ'.out = σ.out ++ [5, 4, 0, 5 * i + 4, 2 * r] ∧ Keep negVars σ σ') 60 := by
   have hl := len_lt_Bv x
-  obtain ⟨h1, h2, h3, h4, h5⟩ := hok
+  have h1 := hok.pos
+  have h2 := hok.code
+  have h3 := hok.bi
+  have h4 := hok.bc
+  have h5 := hok.bp
   refine keep_neg ?_ (by intro y hy; simp [writes, Com.wvars] at hy) (by simp [writes, Com.warrs])
     (by simp [writes, Com.reads])
   unfold writes
@@ -242,7 +278,11 @@ theorem ph9 (hok : NOK x p i r c) :
     Spec (Bv x) (NC x p i r c) (writes [L 4, L 0, RI 3, V "ln"])
       (fun σ σ' => σ'.out = σ.out ++ [4, 0, 5 * i + 3, r] ∧ Keep negVars σ σ') 60 := by
   have hl := len_lt_Bv x
-  obtain ⟨h1, h2, h3, h4, h5⟩ := hok
+  have h1 := hok.pos
+  have h2 := hok.code
+  have h3 := hok.bi
+  have h4 := hok.bc
+  have h5 := hok.bp
   refine keep_neg ?_ (by intro y hy; simp [writes, Com.wvars] at hy) (by simp [writes, Com.warrs])
     (by simp [writes, Com.reads])
   unfold writes

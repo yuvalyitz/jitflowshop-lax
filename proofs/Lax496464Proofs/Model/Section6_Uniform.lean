@@ -4,7 +4,7 @@ import Lax496464Proofs.Model.Optimum
 namespace Lax496464Proofs
 
 /-!
-# Section 6: uniform preprocessing times, and proper instances
+# Section 6: Uniform Preprocessing Times, and Proper Instances
 
 Two structural facts the paper's `p_j = p` algorithms are built on.
 

@@ -1,7 +1,7 @@
 import Lax496464Proofs.Ram.D2Core
 
 /-!
-# Corollary 2's machine: the total preprocessing time
+# Corollary 2's Machine: the Total Preprocessing Time
 
 `sumCom` leaves `P = Σ_k PS[k]` in the scalar `"R"` (the caller then adds one to get the block
 width); `O(n)`.

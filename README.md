@@ -1,4 +1,4 @@
-# Just-in-time scheduling in two-stage flexible flow shops
+# Just-in-Time Scheduling in Two-Stage Flexible Flow Shops and the W-Hierarchy
 
 A [Lax archive](https://github.com/lax-archive/lax) submission (`lax-496464`) formalizing the
 paper of Heeger, Hermelin, Itzhaki, Schieber and Shabtay on the two-stage flexible flow shop
@@ -6,16 +6,19 @@ paper of Heeger, Hermelin, Itzhaki, Schieber and Shabtay on the two-stage flexib
 just in time, the five algorithms built on it, and the hardness of the general case. See
 `abstract.md` for the mathematics.
 
-**Status: complete.** All 41 statements are proved, with no `sorry`. This includes the
-NP-hardness of Hitting Set (Karp 1972; Garey and Johnson 1979, problem SP8), proved by the
-standard reduction from satisfiability. Every conclusion depends only on Lean's three standard
-axioms, except that the hardness statements (Theorem 1 and `HittingSetHardness`) additionally
-use three statements of archive submissions they depend on: the Cook–Levin theorem
-(`Lax429075.SATHard.hardness`), the round trip of its CNF encoding
-(`Lax429075.EncodingCorrect.roundtrip`), and the equivalence of word RAM and Turing machine
-polynomial time (`lax-759944`).
+The submission also includes the W-hierarchy foundations used by parameterized hardness
+proofs, following Flum and Grohe (2006): FPT-reductions, W[1] = A[1], W[1]-completeness of
+Clique, Independent Set and Multicoloured Clique, and W[2]-completeness of Hitting Set and
+Dominating Set. These are documented in the `WH_*` concept modules.
 
-## What is proved
+**Scope.** The annotated manuscript covers the flow-shop results. The W-hierarchy material
+is documented in the archive's concept pages and Lean modules.
+
+**Contents.** The merged submission contains 72 concepts and 133 proof entries. Its proofs
+use Lean's standard axioms and explicitly declared statements from archive dependencies.
+The archive's proof network records how those statements are discharged.
+
+## What Is Proved
 
 | Result | Statement | Concept |
 |---|---|---|
@@ -34,7 +37,7 @@ Each running-time statement is proved as a word RAM program, written in IMP+, co
 archive's verified compiler, and shown to compute the stated function within the stated number
 of instructions on the word encoding of an instance.
 
-## Deviations from the printed text
+## Deviations from the Printed Text
 
 These are settled in the concept modules' formalization notes:
 
@@ -53,16 +56,14 @@ Lean `v4.33.0` via [elan](https://github.com/leanprover/elan), and the
 [`lax` CLI](https://github.com/lax-archive/lax). The mathlib revision is pinned in
 `manifest.yaml`.
 
-## Verifying it
+## Verifying It
 
-    lax build --nonstrict .
+    lax build .
 
-reports `38 concepts · 41 proofs`. `--nonstrict` is needed only because the proofs package
-depends on `lax-391470` (One-machine `R_j, L_max`) through a local path; a strict build needs
-that submission registered and required by its commit. The remaining warnings are structural
-(four proof-package dependencies, two sibling paths) and unused-lemma notes for declarations
-Lean generates itself, structure fields, and definitional `simp` lemmas that other proofs use
-only through `simp`.
+The strict build checks all 72 concepts and 133 proof entries. External dependencies are
+pinned to registered archive commits, including ISEM (`lax-888481`) and RJLMax
+(`lax-391470`). Warnings about dependencies on proof packages describe the reuse of
+verified implementations; they do not indicate missing proofs.
 
 To audit axioms, write a scratch file **outside** the package, import `Lax496464Proofs`,
 `#print axioms` a conclusion theorem (each is tagged `conclusion:`), and run
@@ -71,11 +72,11 @@ To audit axioms, write a scratch file **outside** the package, import `Lax496464
 > Anything placed inside `proofs/Lax496464Proofs/` must also be imported by
 > `Lax496464Proofs.lean`, or the build is rejected.
 
-## Reading it
+## Reading It
 
-Read `concepts/` and let the build vouch for `proofs/`: the statements are short, the proofs
-about 51,000 lines. Lean's kernel checks the proofs; only a reader can judge whether the
-statements say what they claim.
+Start with `concepts/` for the mathematical statements and their formalization notes.
+Lean's kernel checks the proofs; the definitions and hypotheses still require mathematical
+review.
 
 Suggested order: `abstract.md`; `concepts/Lax496464/FlowShop.lean` and `Problems.lean`
 (the model and its word encoding); `Feasibility.lean`; then the theorem modules. In `proofs/`,
@@ -86,3 +87,8 @@ dual tables and the main dynamic program, `F5*` approximation scheme, `Total*` a
 Hitting Set (`Correct.lean` the mathematics, `Words.lean` the reduction on words, `Front.lean`
 through `Final.lean` its word RAM program and the transfer to a Turing machine, `Hardness.lean`
 the composition with the Cook–Levin theorem).
+
+For the W-hierarchy, read `WH_A1_FptTime.lean` and `WH_A2_FptReductions.lean` first,
+then the `WH_B*` logic and hierarchy definitions, the `WH_C*` problem definitions, and
+the `WH_D*`, `WH_E*` and `WH_F*` completeness and hardness results. Their implementations
+are under `concepts/Lax496464/WHierarchy/` and `proofs/Lax496464Proofs/WHierarchy/`.

@@ -3,7 +3,7 @@ import Lax496464.EstOrder
 
 /-!
 ---
-title: The endpoint sweep of Section 4, and its table
+title: The Endpoint Sweep of Section 4, and Its Table
 type: definition
 ---
 The algorithm behind the first half of the third theorem. The time axis is swept from
@@ -21,7 +21,7 @@ does to the table.
 Since $X$ is a set of jobs alive at one instant, it has at most $\omega$ members, so the
 table has $2^\omega$ columns — which is where the running time comes from.
 
-# Formalization notes
+# Formalization Notes
 
 The table is again a predicate rather than a value, downward closed in the preprocessing
 budget, for the reason given for the table of Section 3.

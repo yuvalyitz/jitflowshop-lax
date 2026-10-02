@@ -3,7 +3,7 @@ import Lax496464Proofs.WHierarchy.Machine.ReadTape
 import Lax496464Proofs.WHierarchy.Logic.McParam.Math
 
 /-!
-# The parameter of a model-checking word, computed by a scan: the program
+# The Parameter of a Model-Checking Word, Computed by a Scan: the Program
 
 After `readTape` (array `a` = the word, `rt_n` = its length), `headSkip` moves `mp_p` over the
 structure using its header, and `scanLoop` walks the formula, adding up the contributions of its

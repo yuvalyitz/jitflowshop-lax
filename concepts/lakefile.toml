@@ -30,11 +30,12 @@ git = "https://github.com/EdouardBonnet/cook-levin"
 rev = "905f2da2698d5b38002676f74632aa716e731389"
 subDir = "concepts"
 
-# parameterized problems and strict fpt-reductions on the word RAM; a path require while
-# lax-888481 is a draft, to become a git require on its registered commit
+# Parameterized problems and strict FPT-reductions from registered lax-888481.
 [[require]]
 name = "Lax888481"
-path = "../../isem-lax/concepts"
+git = "https://github.com/yuvalyitz/isem-lax"
+rev = "3cdde85ce7b7eed2938def9b9be0b5434f615c0f"
+subDir = "concepts"
 
 # the compressed sparse row encoding of a graph, and the graph-with-parameter word format
 [[require]]

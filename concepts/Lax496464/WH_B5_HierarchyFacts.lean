@@ -2,7 +2,7 @@ import Lax496464.WH_B4_Hierarchies
 
 /-!
 ---
-title: Basic facts about the hierarchies
+title: Basic Facts About the Hierarchies
 type: theorem
 ---
 * The defining problems are parameterized problems: the parameters of $p\text{-WD}_\varphi$ (the

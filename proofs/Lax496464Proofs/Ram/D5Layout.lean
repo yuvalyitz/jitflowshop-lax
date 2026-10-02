@@ -2,7 +2,7 @@ import Lax496464Proofs.Ram.D5Prog
 import Lax496464Proofs.Ram.D2Layout
 
 /-!
-# Corollary 3's program: its layout
+# Corollary 3's Program: Its Layout
 -/
 
 namespace Lax496464Proofs.Ram.D5Layout

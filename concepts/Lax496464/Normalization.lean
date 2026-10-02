@@ -3,7 +3,7 @@ import Lax496464.EstOrder
 
 /-!
 ---
-title: Every instance may be assumed to have distinct endpoints
+title: Every Instance May Be Assumed to Have Distinct Endpoints
 type: theorem
 ---
 On an instance in earliest-start-time order, the rescaling of Section 4 changes neither
@@ -12,7 +12,7 @@ pairwise distinct. So an algorithm may assume distinct endpoints, which is what 
 sweeps of Sections 4 and 5 do when they step from one endpoint to the next and treat each
 step as carrying a single event.
 
-# Formalization notes
+# Formalization Notes
 
 Three statements, because the rescaling has three things to deliver: it preserves the
 feasible sets, it preserves their weights, and it separates the endpoints. The first is

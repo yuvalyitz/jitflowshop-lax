@@ -23,7 +23,7 @@ construction of the reduction needs, and the upper bound is a normalization: a h
 set of size exactly $k$ cannot exist once $k$ exceeds the universe. Neither restriction
 costs anything — see the statement of the problem's hardness.
 
-# Formalization notes
+# Formalization Notes
 
 The family is presented to a machine in the compressed sparse row form that presents a
 graph to a machine elsewhere in the archive: an array of $m+1$ offsets cutting a member

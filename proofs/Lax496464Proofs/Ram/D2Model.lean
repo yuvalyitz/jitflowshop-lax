@@ -1,7 +1,7 @@
 import Lax496464Proofs.Ram.D2Ach
 
 /-!
-# Theorem 2 / Corollaries 2 and 3 on the word RAM: design and feasibility
+# Theorem 2 / Corollaries 2 and 3 on the Word RAM: Design and Feasibility
 
 **Feasibility verdict.**  The bound printed in `Theorem2.theorem2_time`,
 `c·(W+1)·(n+1)^m + c·sortCost`, *is* attainable, with no factor `m`, so no repair of the concept

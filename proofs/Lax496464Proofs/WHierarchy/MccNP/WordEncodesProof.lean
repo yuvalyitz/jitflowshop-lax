@@ -2,7 +2,7 @@ import Lax496464.WH_F4_IndependentSetToMcc
 import Mathlib.Combinatorics.SimpleGraph.DegreeSum
 
 /-!
-# The word encodes the multicoloured graph
+# The Word Encodes the Multicoloured Graph
 
 The proof of `WH_F4_IndependentSetToMcc.word_encodes`, with the facts about the word (length, targets,
 adjacency) used by the other modules.

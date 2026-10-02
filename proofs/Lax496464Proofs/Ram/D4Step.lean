@@ -3,7 +3,7 @@ import Lax496464Proofs.Ram.D4Row
 import Lax496464Proofs.Ram.D2Step
 
 /-!
-# Corollary 2's machine: one number of the main loop (dual table)
+# Corollary 2's Machine: One Number of the Main Loop (Dual Table)
 
 The same loop as `D2Step`, with the table of width `R + 1` (rows `t = 0 … R`, `R = P`), the cell of
 `D4Row`, and the invariant `D4Tab.DInv`.  The block of the empty set is all zero, so the top number
@@ -88,8 +88,31 @@ theorem stepIsCode4_core {J : Instance} {B n m W R : ℕ} {PSl QSl DSl WSl NXl P
         σ.vars "zx1" = j ∧ σ.arrs "TAB" = T) stepIsCode4
       (fun _σ σ' => ∃ T', σ'.arrs "TAB" = T' ∧ DInv J n m W R ((n + 1) ^ m) c T')
       (2 * (64 * (Zs.length + 1) + 110) + ((100 + 4) * (R + 1) + 6) + 60) := by
-  obtain ⟨hB, hn, hm, hest, hq, lPS, lQS, lDS, lWS, lNX, ePS, eQS, eDS, eWS, eNX,
-    lPW, ePW, bpw, bm, bn, bW, bR, bp, bd, bw⟩ := sc
+  have hB := sc.hB
+  have hn := sc.hn
+  have hm := sc.hm
+  have hest := sc.hest
+  have hq := sc.hq
+  have lPS := sc.lenPS
+  have lQS := sc.lenQS
+  have lDS := sc.lenDS
+  have lWS := sc.lenWS
+  have lNX := sc.lenNX
+  have ePS := sc.PS
+  have eQS := sc.QS
+  have eDS := sc.DS
+  have eWS := sc.WS
+  have eNX := sc.NX
+  have lPW := sc.lenPW
+  have ePW := sc.PW
+  have bpw := sc.bpw
+  have bm := sc.bm
+  have bn := sc.bn
+  have bW := sc.bW
+  have bR := sc.bR
+  have bp := sc.bp
+  have bd := sc.bd
+  have bw := sc.bw
   have hjn : j < n := hsl.lt j (by simp)
   have hjJ : j < J.jobs := by rw [hn]; exact hjn
   have hcN : c < (n + 1) ^ m := by rw [← hcode]; exact hsl.codeL_lt

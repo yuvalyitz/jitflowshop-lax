@@ -3,7 +3,7 @@ import Lax496464Proofs.Model.Section6_Uniform
 namespace Lax496464Proofs
 
 /-!
-# Section 6.1: the two steps of the greedy algorithm
+# Section 6.1: the Two Steps of the Greedy Algorithm
 
 Section 6.1's algorithm for the *unweighted* `FF(1,m)|pⱼ = p|∑Zⱼ` problem sweeps the jobs
 in EST order, maintaining a feasible set `Sⱼ ⊆ {1, …, j}`. At step `j` it tests the two

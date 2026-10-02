@@ -2,7 +2,7 @@ import Lax496464Proofs.Ram.W3SweepModel
 import Lax496464Proofs.Ram.W3FrontX
 
 /-!
-# The width of the sorted instance is at most the width of the word
+# The Width of the Sorted Instance Is at Most the Width of the Word
 
 `widthJ_le_widthOf`: for the instance `J = permute I f` the sorted instance is a re-indexing of,
 `widthJ J ≤ widthOf x`; and the arrays: `SA` is `dueOrder J` (`sa_eq`).

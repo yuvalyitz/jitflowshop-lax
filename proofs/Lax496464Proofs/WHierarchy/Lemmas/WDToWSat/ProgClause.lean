@@ -1,7 +1,7 @@
 import Lax496464Proofs.WHierarchy.Lemmas.WDToWSat.ProgAtom
 
 /-!
-# The clauses
+# The Clauses
 
 `clauseCom_spec`: under the digits `ds` in `od`, `clauseCom C` writes `clauseWords D x ds C`, and
 `clausesCom_spec` the words of a list of clauses. Built from the literals without `X` (`nonXCom`,

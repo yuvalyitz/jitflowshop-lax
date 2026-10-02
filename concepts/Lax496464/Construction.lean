@@ -3,7 +3,7 @@ import Lax496464.HittingSet
 
 /-!
 ---
-title: The construction of Section 8
+title: The Construction of Section 8
 type: definition
 ---
 The shop built from a Hitting Set instance $(F_1, \dots, F_m)$ over $\{1, \dots, n\}$
@@ -27,7 +27,7 @@ A hitting set of size $k$ selects, in every epoch, one selection job — the one
 element hitting that epoch's set — and $2(k-1)$ dummies, one pair for each of the other
 $k-1$ elements. The target is $R \cdot m \cdot (2k-1)$ just-in-time jobs.
 
-# Formalization notes
+# Formalization Notes
 
 **Two corrections to the published construction.** Both are recorded here because the
 construction below is the corrected one.

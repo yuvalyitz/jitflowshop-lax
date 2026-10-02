@@ -78,13 +78,7 @@ theorem encodesWD_append {y : List ℕ} {A : Structure} (hy : Encodes y A) (k : 
 /-- The canonical model-checking word of `(A, φ)`. -/
 def mcWord (A : Structure) (φ : Formula) : List ℕ := canonicalWord A ++ φ.encode
 
-theorem encodesMC_mcWord (A : Structure) (φ : Formula) : EncodesMC (mcWord A φ) A φ :=
-  encodesMC_append (encodes_canonicalWord A) φ
-
 /-- The canonical weighted-definability word of `(A, k)`. -/
 def wdWord (A : Structure) (k : ℕ) : List ℕ := canonicalWord A ++ [k]
-
-theorem encodesWD_wdWord (A : Structure) (k : ℕ) : EncodesWD (wdWord A k) A k :=
-  encodesWD_append (encodes_canonicalWord A) k
 
 end Lax496464Proofs.WHierarchy.Logic.Words

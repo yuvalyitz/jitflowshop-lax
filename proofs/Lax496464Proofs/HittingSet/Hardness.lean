@@ -6,7 +6,7 @@ import Lax434930Proofs.PolynomialComposition
 import Lax434930Proofs.TM2Bounds
 
 /-!
-# Hitting Set is NP-hard
+# Hitting Set Is NP-Hard
 
 Cook's theorem in the archive's form, followed by the reduction from satisfiability.
 -/

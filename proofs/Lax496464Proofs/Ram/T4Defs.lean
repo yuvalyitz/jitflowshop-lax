@@ -2,7 +2,7 @@ import Lax496464Proofs.Ram.SegProg
 import Lax496464Proofs.Ram.T4Trees
 
 /-!
-# Theorem 4's machine, part 1: the trees as sets
+# Theorem 4's Machine, Part 1: the Trees as Sets
 
 `TreeOK` says that the array `a` is a maximum tree whose leaves are a given function and
 whose cells all fit in a word; `tset`/`tfind` (`Ram/SegProg.lean`) are restated on it, and

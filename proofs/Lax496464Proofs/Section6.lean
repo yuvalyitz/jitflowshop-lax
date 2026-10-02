@@ -5,7 +5,7 @@ import Lax496464.Lemma4
 import Lax496464.Lemma5
 
 /-!
-# Section 6: uniform preprocessing times
+# Section 6: Uniform Preprocessing Times
 
 With `p_j = p` for every job, Condition 1 stops depending on *which* jobs are selected and
 counts only *how many*, and the problem becomes tractable in two different ways.
@@ -20,7 +20,7 @@ as a count, constraint (7) is Condition 2 tested at each start time — and obse
 *proper* instance the constraint matrix has the consecutive ones property, hence is totally
 unimodular, so the linear relaxation is integral.
 
-## An erratum in Lemma 4's proof
+## An Erratum in Lemma 4's Proof
 
 The paper's proof of Lemma 4 drops "a job with the largest due date" from `A ∪ {j}` and
 argues that domination is preserved. That step needs the dropped job to have the largest due

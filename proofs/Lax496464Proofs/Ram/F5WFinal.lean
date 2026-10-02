@@ -1,7 +1,7 @@
 import Lax496464Proofs.Ram.F5WRun
 
 /-!
-# Theorem 5, endpoint sweep: the running time statement
+# Theorem 5, Endpoint Sweep: the Running Time Statement
 
 `prog5w` solves, on the words that present an instance and an accuracy `e`, the function
 `x ↦ [fptasOut I e]`, within `cost5wX`, at every word length at which the admissibility clauses

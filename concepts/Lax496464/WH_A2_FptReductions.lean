@@ -3,7 +3,7 @@ import Lax888481.ParameterizedComplexity
 
 /-!
 ---
-title: Fpt-reductions, FPT, hardness and completeness
+title: FPT-Reductions, FPT, Hardness and Completeness
 type: definition
 ---
 A *parameterized problem* consists of a set of instances, the yes-instances among them, and a
@@ -22,7 +22,7 @@ For a class $C$ of parameterized problems, $[C]^{\mathrm{fpt}}$ is the class of 
 problems that fpt-reduce to a member of $C$. A problem is **$C$-hard** if every member of $C$
 fpt-reduces to it, and **$C$-complete** if it is moreover a member of $C$ [FG06, Chapter 2].
 
-# Formalization notes
+# Formalization Notes
 
 **Problems** are the archive's `Lax888481.ParameterizedComplexity.Problem`: a set `Domain` of words
 encoding instances, a predicate `Yes`, and the parameter `param`. Reductions and algorithms are

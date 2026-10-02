@@ -3,7 +3,7 @@ import Lax496464Proofs.WHierarchy.Lemmas.BinaryToClique.StructWord
 import Lax496464Proofs.WHierarchy.Logic.FormulaCode
 
 /-!
-# Σ₁[2] model checking to Clique: the tokenizer on a formula
+# Σ₁[2] Model Checking to Clique: the Tokenizer on a Formula
 
 Started at the code of a quantifier-free formula `ψ` (no relation variable, arity at most two), the
 tokenizer takes one step per node of `ψ` and appends exactly the data of `ψ` (`after`): its nodes,

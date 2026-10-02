@@ -2,7 +2,7 @@ import Lax496464Proofs.WHierarchy.Lemmas.WDToWSat.ProgMain
 import Lax496464Proofs.WHierarchy.Machine.SizeFacts
 
 /-!
-# The value bound and the cost bound
+# The Value Bound and the Cost Bound
 
 `BF_Bv`: the value bound `Bv D x` has the properties `BF` the program needs. `Kprog_le`: the cost
 is at most `400 · T^e` for `T = Cc · (|x| + 1) · (k + 1)` and `e = r + s + 2`, so fixed-parameter

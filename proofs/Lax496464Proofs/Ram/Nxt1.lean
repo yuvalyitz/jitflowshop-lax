@@ -1,7 +1,7 @@
 import Lax496464Proofs.Ram.Cols1
 
 /-!
-# The paper's `j₂` for every job, by scanning
+# The Paper's `j₂` for Every Job, by Scanning
 
 `nxt j` is the first job after `j` whose second operation starts at or after `d j` — that is,
 the first `x > j` with `d j + q x ≤ d x` — or `n` if there is none. For each `j` the machine

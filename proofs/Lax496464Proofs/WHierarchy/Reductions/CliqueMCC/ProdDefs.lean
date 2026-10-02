@@ -2,7 +2,7 @@ import Lax808846Proofs.Tactic
 import Lax496464Proofs.WHierarchy.Reductions.CliqueMCC.ProdMath
 
 /-!
-# p-Clique to Multicoloured Clique: the IMP+ program
+# P-Clique to Multicoloured Clique: the IMP+ Program
 
 The array `a` holds the word `x` (graph block, then `k`). The body writes `prodWord x`: the
 multicoloured graph on the `N = k n` copies `s` (colour `s / n`, vertex `s % n`), in compressed

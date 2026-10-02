@@ -1,7 +1,7 @@
 import Lax496464Proofs.WHierarchy.MccNP.Ram.BodyRow
 
 /-!
-# The passes of `body`
+# The Passes of `body`
 
 The four passes of `body`, writing the number of edges, the offsets, the targets and the colours,
 with their loop invariants and costs.

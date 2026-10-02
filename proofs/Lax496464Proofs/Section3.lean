@@ -2,7 +2,7 @@ import Lax496464Proofs.EstBridge
 import Lax496464.Theorem2
 
 /-!
-# Section 3: the dynamic program over sets of thresholds
+# Section 3: the Dynamic Program over Sets of Thresholds
 
 The table `T[X, W']` of Section 3 is indexed by a set `X` of `m` *thresholds* — one per
 second-stage machine, the earliest job that machine may still take — and a weight `W'`,

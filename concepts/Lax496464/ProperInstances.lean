@@ -2,7 +2,7 @@ import Lax496464.FlowShop
 
 /-!
 ---
-title: Uniform preprocessing times, and proper instances
+title: Uniform Preprocessing Times, and Proper Instances
 type: definition
 ---
 Two restrictions on an instance, both from Section 6 of the paper.
@@ -10,7 +10,7 @@ Two restrictions on an instance, both from Section 6 of the paper.
 An instance has *uniform preprocessing times* when all $p_j$ are equal. It is *proper*
 when no job's second-operation interval $[s_j, d_j)$ contains another's.
 
-# Formalization notes
+# Formalization Notes
 
 Uniformity is stated as the existence of a common value rather than as a constant carried
 by the instance, so that it is a property of an instance and not a different kind of

@@ -2,7 +2,7 @@ import Lax496464Proofs.Ram.T4Defs
 import Lax496464Proofs.Ram.Dp1
 
 /-!
-# Theorem 4's machine, part 2: expiring the jobs that have ended
+# Theorem 4's Machine, Part 2: Expiring the Jobs That Have Ended
 
 Before job `k` is considered, every member of the active set whose due date is at most the
 start time of job `k` is removed from both trees and from the running count. The loop stops as
