@@ -104,3 +104,6 @@ bibEntries:
 paper:
   folder: paper
   main: main.tex
+issue:
+  repositoryId: 1320232165
+  number: 151
